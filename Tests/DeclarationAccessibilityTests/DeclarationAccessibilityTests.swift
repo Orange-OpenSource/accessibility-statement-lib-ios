@@ -1,11 +1,11 @@
 import XCTest
-@testable import DeclarationAccessibilityPackage
+@testable import DeclarationAccessibility
 
-final class DeclarationAccessibilityPackageTests: XCTestCase {
+final class DeclarationAccessibilityTests: XCTestCase {
     func testExample() throws {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct
         // results.
-        XCTAssertEqual(DeclarationAccessibilityPackage().text, "Hello, World!")
+        XCTAssertEqual(DeclarationAccessibility().text, "Hello, World!")
     }
 }

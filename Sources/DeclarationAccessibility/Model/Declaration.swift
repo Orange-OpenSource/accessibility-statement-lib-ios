@@ -1,20 +1,20 @@
 //
 //  Declaration.swift
-//  a11y-modele-declaration
+//  DeclarationAccessibility
 //
-//  Created by Tayeb SEDRAIA on 04/05/2021.
+//  Created by Tayeb SEDRAIA on 21/09/2023.
 //
 
 import Foundation
 
-// MARK: - Declaration
-public struct Declaration {
+struct Declaration {
     public var title : String = String()
     public var lang: String = String()
     public var status: String = String()
     public var auditDate: String = String()
     public var conformity: String = String()
-    public var conformityAverrage: String = String()
+    public var conformityAverage: CGFloat = CGFloat()
+    public var conformityAverageDisplay: String = String ()
     public var referentialName: String = String()
     public var referentialVersion: String = String()
     public var referentialLevel: String = String()
@@ -22,5 +22,4 @@ public struct Declaration {
     public var detailUrl: String = String()
     public var identityAdresse: String = String()
     public var identityName: String = String()
-
 }
