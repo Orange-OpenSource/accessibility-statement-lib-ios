@@ -2,7 +2,7 @@
 //  Declaration.swift
 //  DeclarationAccessibility
 //
-//  Created by Tayeb SEDRAIA on 21/09/2023.
+//  Created by Orange on 21/09/2023.
 //
 
 import Foundation

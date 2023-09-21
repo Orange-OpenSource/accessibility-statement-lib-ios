@@ -2,7 +2,7 @@
 //  DeclarationDataParser.swift
 //  DeclarationAccessibility
 //
-//  Created by Tayeb SEDRAIA on 21/09/2023.
+//  Created by Orange on 21/09/2023.
 //
 
 import Foundation
@@ -18,10 +18,10 @@ class DeclarationDataParser: NSObject, XMLParserDelegate {
                 xmlParser.delegate = self
                 xmlParser.parse()
             } else {
-                print("Erreur lors de la création de l'analyseur XML.")
+                print("Error when creating the XML parser.")
             }
         } else {
-            print("Fichier XML introuvable dans le bundle.")
+            print("XML file not found in the bundle.")
         }
     }
 

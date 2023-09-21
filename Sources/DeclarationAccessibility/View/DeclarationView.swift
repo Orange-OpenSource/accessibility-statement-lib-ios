@@ -2,29 +2,27 @@
 //  SwiftUIView.swift
 //  
 //
-//  Created by Tayeb SEDRAIA on 21/09/2023.
+//  Created by Orange on 21/09/2023.
 //
 
 import SwiftUI
 
-struct DeclarationView: View {
-    var declarations = Declaration() // Déclarez la variable ici
+public struct DeclarationView: View {
+    var declarations = Declaration()
 
-    init(xmlFileName: String) {
+    public init(xmlFileName: String) {
         let parser = DeclarationDataParser()
         parser.parseXML(fileName: xmlFileName)
         self.declarations = parser.declarations
-        print(self.declarations)
     }
     
-    var body: some View {
+    public var body: some View {
         NavigationView {
             ScrollView {
-                VStack(spacing: 0) {
+                VStack() {
                     VStack {
                         CircularProgressView(declarations: declarations)
                             .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height / 3.5)
-                            //.background(Color.red)
                     }
                     .padding(.top, 30)
 
@@ -40,17 +38,17 @@ struct DeclarationView: View {
 }
 
 
-struct DeclarationView_Previews: PreviewProvider {
-    static var previews: some View {
-        DeclarationView(xmlFileName: "orange-design-system")
+public struct DeclarationView_Previews: PreviewProvider {
+    public static var previews: some View {
+        DeclarationView(xmlFileName: "")
     }
 }
 
-struct CircularProgressView: View {
+public struct CircularProgressView: View {
     
 var declarations: Declaration
 
-    var body: some View {
+    public var body: some View {
         VStack {
             ZStack {
                 // Background for the progress bar
@@ -80,9 +78,9 @@ var declarations: Declaration
 }
 
 ///Seconf View
-struct InformationView: View {
+public struct InformationView: View {
     var declarations: Declaration
-    var body: some View {
+    public var body: some View {
         ScrollView {
             VStack(spacing: -20) {
                 GroupView(title: "Date of Audit", subTitle: declarations.auditDate)
@@ -93,7 +91,7 @@ struct InformationView: View {
             
             HStack {
                 Button(action: {
-                    if let url = URL(string: "https://a11y-guidelines.orange.com/fr/") {
+                    if let url = URL(string: declarations.detailUrl) {
                         UIApplication.shared.open(url)
                     }
                 }) {
@@ -109,7 +107,7 @@ struct InformationView: View {
 
 
 
-struct GroupView: View {
+public struct GroupView: View {
     let title: String
     let subTitle: String
     let text: String?
@@ -120,13 +118,13 @@ struct GroupView: View {
         self.text = text
     }
 
-    var body: some View {
+    public var body: some View {
         VStack(alignment: .leading, spacing: 5) {
             Text(title)
                 .font(.title3)
                 .bold()
-                .multilineTextAlignment(.leading) // Alignement du texte sur plusieurs lignes
-                .frame(maxWidth: .infinity, alignment: .leading) // Alignement du texte à gauche
+                .multilineTextAlignment(.leading) // Text alignment across multiple lines.
+                .frame(maxWidth: .infinity, alignment: .leading) // Left text alignment.
             Text(subTitle)
                 .font(.body)
             if let text = text, !text.isEmpty {
