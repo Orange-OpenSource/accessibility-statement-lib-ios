@@ -18,21 +18,23 @@ public struct DeclarationView: View {
     
     public var body: some View {
         NavigationView {
-            ScrollView {
-                VStack() {
-                    VStack {
-                        CircularProgressView(declarations: declarations)
-                            .frame(width: UIScreen.main.bounds.width)
-                    }
-                    .padding(.top, 15)
+            GeometryReader { geometry in // orientation
+                ScrollView {
+                    VStack() {
+                        VStack {
+                            CircularProgressView(declarations: declarations)
+                                .frame(width: geometry.size.width)
+                        }
+                        .padding(.top, 15)
 
-                    VStack {
-                        InformationView(declarations: declarations)
-                            .frame(width: UIScreen.main.bounds.width)
+                        VStack {
+                            InformationView(declarations: declarations)
+                                .frame(width: geometry.size.width)
+                        }
                     }
                 }
+                .navigationBarTitle("Declaration")
             }
-            .navigationBarTitle("Declaration")
         }
     }
 }
