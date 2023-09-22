@@ -55,8 +55,8 @@ public struct CircularProgressView: View {
                 // Background for the progress bar
                 Circle()
                     .stroke(lineWidth: 15)
-                    .opacity(0.1)
-                    .foregroundColor(.gray)
+                    .opacity(0.3)
+                    .foregroundColor(Color(UIColor.systemGray2))
                     .frame(width: circleSize, height: circleSize)
                 Text("\(declarations.conformityAverageDisplay)% compliant")
                     .font(.body)
