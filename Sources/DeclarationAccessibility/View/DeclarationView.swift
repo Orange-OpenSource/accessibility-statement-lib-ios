@@ -1,6 +1,6 @@
 //
 //  SwiftUIView.swift
-//  
+//
 //
 //  Created by Orange on 21/09/2023.
 //
@@ -22,9 +22,9 @@ public struct DeclarationView: View {
                 VStack() {
                     VStack {
                         CircularProgressView(declarations: declarations)
-                            .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height / 3.5)
+                            .frame(width: UIScreen.main.bounds.width)
                     }
-                    .padding(.top, 30)
+                    .padding(.top, 15)
 
                     VStack {
                         InformationView(declarations: declarations)
@@ -46,7 +46,8 @@ public struct DeclarationView_Previews: PreviewProvider {
 
 public struct CircularProgressView: View {
     
-var declarations: Declaration
+    var declarations: Declaration
+    let circleSize: CGFloat = 200
 
     public var body: some View {
         VStack {
@@ -56,8 +57,11 @@ var declarations: Declaration
                     .stroke(lineWidth: 15)
                     .opacity(0.1)
                     .foregroundColor(.gray)
+                    .frame(width: circleSize, height: circleSize)
                 Text("\(declarations.conformityAverageDisplay)% compliant")
                     .font(.body)
+                    .multilineTextAlignment(.center)
+                    .frame(width: 150, height: 150)
                 
                 // Foreground or the actual progress bar
                 Circle()
@@ -66,12 +70,14 @@ var declarations: Declaration
                     .foregroundColor(.orange)
                     .rotationEffect(Angle(degrees: 270.0))
                     .animation(.linear, value: declarations.conformityAverage)
+                    .frame(width: circleSize, height: circleSize)
             }
             Text("This application is \(declarations.conformityAverageDisplay)% compliant with WCAG criteria")
                 .font(.body)
+                .multilineTextAlignment(.center)
                 .padding(.top, 10)
+                .padding([.leading, .trailing], 30)
 
-                
                 Divider()
         }
     }
@@ -84,6 +90,7 @@ public struct InformationView: View {
         ScrollView {
             VStack(spacing: -20) {
                 GroupView(title: "Date of Audit", subTitle: declarations.auditDate)
+                    .accessibilityElement(children: .combine)
                 GroupView(title: "Identity of the declarant", subTitle: declarations.identityName, text: declarations.identityAdresse)
                 GroupView(title: "Repository", subTitle: declarations.referentialName)
                 GroupView(title: "Application technology", subTitle: declarations.technologies)
@@ -97,8 +104,8 @@ public struct InformationView: View {
                 }) {
                     Text("More details")
                         .padding()
-                        .background(.black)
-                        .foregroundColor(.white)
+                        .background(Color(UIColor.label))
+                        .foregroundColor(Color(UIColor.systemBackground))
                 }
             }
         }
