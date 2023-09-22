@@ -62,6 +62,7 @@ public struct CircularProgressView: View {
                     .font(.body)
                     .multilineTextAlignment(.center)
                     .frame(width: 150, height: 150)
+                    .accessibilityHidden(true)
                 
                 // Foreground or the actual progress bar
                 Circle()
@@ -94,7 +95,9 @@ public struct InformationView: View {
                 GroupView(title: "Identity of the declarant", subTitle: declarations.identityName, text: declarations.identityAdresse)
                     .accessibilityElement(children: .combine)
                 GroupView(title: "Repository", subTitle: declarations.referentialName)
+                    .accessibilityElement(children: .combine)
                 GroupView(title: "Application technology", subTitle: declarations.technologies)
+                    .accessibilityElement(children: .combine)
             }
             
             HStack {
