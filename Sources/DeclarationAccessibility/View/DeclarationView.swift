@@ -92,6 +92,7 @@ public struct InformationView: View {
                 GroupView(title: "Date of Audit", subTitle: declarations.auditDate)
                     .accessibilityElement(children: .combine)
                 GroupView(title: "Identity of the declarant", subTitle: declarations.identityName, text: declarations.identityAdresse)
+                    .accessibilityElement(children: .combine)
                 GroupView(title: "Repository", subTitle: declarations.referentialName)
                 GroupView(title: "Application technology", subTitle: declarations.technologies)
             }
