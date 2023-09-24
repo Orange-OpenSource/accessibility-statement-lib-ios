@@ -10,7 +10,7 @@ import SwiftUI
 struct CircularProgressView: View {
     var declarations: Declaration
     let circleSize: CGFloat = 200
-    @State private var selectedTheme: Theme = .innovation
+    var selectedTheme: Theme
     
     public var body: some View {
         VStack {
@@ -70,11 +70,17 @@ struct CircularProgressView: View {
 }
 
 struct CircularProgressView_Previews: PreviewProvider {
+    @State static var selectedTheme: Theme = .orange
+
     static var previews: some View {
-        CircularProgressView(declarations: Declaration(
-            conformityAverage: 0.75,
-            conformityAverageDisplay: "75"
-        ))
-        .environment(\.locale,.init(identifier: "fr"))
+        CircularProgressView(
+            declarations: Declaration(
+                conformityAverage: 0.75,
+                conformityAverageDisplay: "75"
+            ),
+            selectedTheme: selectedTheme
+        )
+        .environment(\.locale, .init(identifier: "fr"))
     }
 }
+

@@ -8,40 +8,35 @@
 import SwiftUI
 
 public struct DeclarationView: View {
-    var declarations = Declaration()
+    var declarations: Declaration
+    var selectedTheme: Theme
 
-    public init(xmlFileName: String) {
+    public init(xmlFileName: String, selectedTheme: Theme) {
         let parser = DeclarationDataParser()
         parser.parseXML(fileName: xmlFileName)
         self.declarations = parser.declarations
+        self.selectedTheme = selectedTheme
     }
     
     public var body: some View {
         NavigationView {
-            GeometryReader { geometry in // oriantation
-                ScrollView {
-                    VStack() {
-                        VStack {
-                            CircularProgressView(declarations: declarations)
-                                .frame(width: geometry.size.width)
-                        }
-                        .padding(.top, 15)
-
-                        VStack {
-                            InformationView(declarations: declarations)
-                                .frame(width: geometry.size.width)
-                        }
-                    }
+            ScrollView {
+                VStack {
+                    CircularProgressView(declarations: declarations, selectedTheme: selectedTheme)
+                        .frame(maxWidth: .infinity) // Utilisez maxWidth pour occuper toute la largeur
+                    
+                    InformationView(declarations: declarations)
+                        .frame(maxWidth: .infinity) // Utilisez maxWidth pour occuper toute la largeur
                 }
-                .navigationBarTitle("Declaration")
+                .padding(.top, 15)
             }
+            .navigationBarTitle("Declaration")
         }
     }
 }
 
-
 public struct DeclarationView_Previews: PreviewProvider {
     public static var previews: some View {
-        DeclarationView(xmlFileName: "")
+        DeclarationView(xmlFileName: "", selectedTheme: .innovation)
     }
 }
