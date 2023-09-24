@@ -12,13 +12,13 @@ public struct InformationView: View {
     public var body: some View {
         ScrollView {
             VStack(spacing: -20) {
-                GroupView(title: "Date of Audit", subTitle: declarations.auditDate)
+                GroupView(title: "date_title", subTitle: declarations.auditDate)
                     .accessibilityElement(children: .combine)
-                GroupView(title: "Identity of the declarant", subTitle: declarations.identityName, text: declarations.identityAdresse)
+                GroupView(title: "identity_title", subTitle: declarations.identityName, text: declarations.identityAdresse)
                     .accessibilityElement(children: .combine)
-                GroupView(title: "Repository", subTitle: declarations.referentialName)
+                GroupView(title: "referential_title", subTitle: declarations.referentialName)
                     .accessibilityElement(children: .combine)
-                GroupView(title: "Application technology", subTitle: declarations.technologies)
+                GroupView(title: "technology_title", subTitle: declarations.technologies)
                     .accessibilityElement(children: .combine)
             }
             
@@ -28,7 +28,7 @@ public struct InformationView: View {
                         UIApplication.shared.open(url)
                     }
                 }) {
-                    Text("More details")
+                    Text("detail_button", bundle: .module)
                         .padding()
                         .background(Color(UIColor.label))
                         .foregroundColor(Color(UIColor.systemBackground))
@@ -39,13 +39,12 @@ public struct InformationView: View {
 }
 
 
-
 public struct GroupView: View {
-    let title: String
+    let title: LocalizedStringKey
     let subTitle: String
     let text: String?
 
-    init(title: String, subTitle: String, text: String? = nil) {
+    public init(title: LocalizedStringKey, subTitle: String, text: String? = nil) {
         self.title = title
         self.subTitle = subTitle
         self.text = text
@@ -53,14 +52,14 @@ public struct GroupView: View {
 
     public var body: some View {
         VStack(alignment: .leading, spacing: 5) {
-            Text(title)
+            Text(title, bundle: .module)
                 .font(.title3)
                 .bold()
-                .multilineTextAlignment(.leading) // Text alignment across multiple lines.
-                .frame(maxWidth: .infinity, alignment: .leading) // Left text alignment.
+                .multilineTextAlignment(.leading)
+                .frame(maxWidth: .infinity, alignment: .leading)
             Text(subTitle)
                 .font(.body)
-            if let text = text, !text.isEmpty {
+            if let text = text {
                 Text(text)
                     .font(.body)
             }
@@ -68,6 +67,7 @@ public struct GroupView: View {
         .padding()
     }
 }
+
 
 struct InformationView_Previews: PreviewProvider {
     static var previews: some View {
@@ -81,5 +81,6 @@ struct InformationView_Previews: PreviewProvider {
             identityAdresse: "Test Identity Adresse",
             identityName: "Test Identity Name"
         ))
+        .environment(\.locale,.init(identifier: "fr"))
     }
 }
