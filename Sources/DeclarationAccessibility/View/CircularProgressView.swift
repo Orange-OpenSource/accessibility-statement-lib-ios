@@ -29,7 +29,7 @@ struct CircularProgressView: View {
                         value: "",
                         comment: ""
                     )
-                    .replacingOccurrences(of: "%@", with: declarations.conformityAverageDisplay)
+                    .replacingOccurrences(of: "@", with: declarations.conformityAverageDisplay)
                 )
                 .font(.body)
                 .multilineTextAlignment(.center)
@@ -56,7 +56,7 @@ struct CircularProgressView: View {
                     value: "",
                     comment: ""
                 )
-                .replacingOccurrences(of: "%@", with: declarations.conformityAverageDisplay)
+                .replacingOccurrences(of: "@", with: declarations.conformityAverageDisplay)
             )
             .font(.body)
             .multilineTextAlignment(.center)
@@ -72,7 +72,7 @@ struct CircularProgressView_Previews: PreviewProvider {
     static var previews: some View {
         CircularProgressView(declarations: Declaration(
             conformityAverage: 0.75,
-            conformityAverageDisplay: "75%"
+            conformityAverageDisplay: "75"
         ))
         .environment(\.locale,.init(identifier: "fr"))
     }

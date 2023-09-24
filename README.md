@@ -24,8 +24,6 @@ DeclarationView(xmlFileName: "accessibility_result")
 ```
 
 * Add the results XML file from the va11ydette in racine folder of your project and rename it "accessibility_result.xml"
-* Add the "xmlFileName" attribute of the DeclarationView method
-
 
 
 Exemple
@@ -39,7 +37,7 @@ import DeclarationAccessibility
 struct SwiftUIView: View {
     var body: some View {
         VStack {
-           DeclarationView(xmlFileName: "orange-design-system")
+           DeclarationView(xmlFileName: "accessibility_result")
         }
     }
 }
