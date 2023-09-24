@@ -8,11 +8,11 @@
 import Foundation
 import SwiftUI
 
-enum Theme: String {
+public enum Theme: String {
     case innovation
     case orange
 
-    var color: Color {
+    public var color: Color {
         switch self {
         case .innovation:
             return Color.blue
