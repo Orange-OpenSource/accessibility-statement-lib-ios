@@ -10,6 +10,7 @@ import SwiftUI
 struct CircularProgressView: View {
     var declarations: Declaration
     let circleSize: CGFloat = 200
+    @State private var selectedTheme: Theme = .innovation
     
     public var body: some View {
         VStack {
@@ -41,7 +42,7 @@ struct CircularProgressView: View {
                 Circle()
                     .trim(from: 0.0, to: min(declarations.conformityAverage, 1.0))
                     .stroke(style: StrokeStyle(lineWidth: 15, lineCap: .round, lineJoin: .round))
-                    .foregroundColor(Color(UIColor(red: 0.883, green: 0.463, blue: 0.176, alpha: 1)))
+                    .foregroundColor(selectedTheme.color)
                 
                     .rotationEffect(Angle(degrees: 270.0))
                     .animation(.linear, value: declarations.conformityAverage)
