@@ -70,15 +70,13 @@ struct CircularProgressView: View {
 }
 
 struct CircularProgressView_Previews: PreviewProvider {
-    @State static var selectedTheme: Theme = .orange
-
     static var previews: some View {
         CircularProgressView(
             declarations: Declaration(
                 conformityAverage: 0.75,
                 conformityAverageDisplay: "75"
             ),
-            selectedTheme: selectedTheme
+            selectedTheme: .innovation
         )
         .environment(\.locale, .init(identifier: "fr"))
     }

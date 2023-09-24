@@ -15,9 +15,9 @@ public enum Theme: String {
     public var color: Color {
         switch self {
         case .innovation:
-            return Color.blue
+            return Color(UIColor(red: 0.138, green: 0.352, blue: 0.726, alpha: 1))
         case .orange:
-            return Color(UIColor(red: 0.883, green: 0.463, blue: 0.176, alpha: 1))
+            return Color(UIColor(red: 0.841, green: 0.490, blue: 0.254, alpha: 1))
         }
     }
 }

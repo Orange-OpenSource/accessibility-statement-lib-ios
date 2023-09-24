@@ -37,7 +37,7 @@ import DeclarationAccessibility
 struct SwiftUIView: View {
     var body: some View {
         VStack {
-           DeclarationView(xmlFileName: "accessibility_result")
+            DeclarationView(xmlFileName: "orange-design-system", selectedTheme: .orange)
         }
     }
 }
