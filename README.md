@@ -20,10 +20,11 @@ https://github.com/Orange-OpenSource/accessibility-statement-lib-ios.git"
 Usage
 -----
 ```swift
-DeclarationView(xmlFileName: "accessibility_result")
+DeclarationView(xmlFileName: "accessibility_result", selectedTheme: .orange, url: "https://a11y-guidelines.orange.com/fr/")
 ```
 
 * Add the results XML file from the va11ydette in racine folder of your project and rename it "accessibility_result.xml"
+* Add xmlFileName, selectedTheme and url to DeclarationView
 
 
 Exemple
@@ -37,7 +38,7 @@ import DeclarationAccessibility
 struct SwiftUIView: View {
     var body: some View {
         VStack {
-            DeclarationView(xmlFileName: "orange-design-system", selectedTheme: .orange)
+            DeclarationView(xmlFileName: "accessibility_result", selectedTheme: .orange, url: "https://a11y-guidelines.orange.com/fr/")
         }
     }
 }
