@@ -44,7 +44,6 @@ public struct DeclarationView: View {
     }
     
     public var body: some View {
-        NavigationView {
             ScrollView {
                 VStack {
                     CircularProgressView(declarations: declarations, selectedTheme: selectedTheme)
@@ -56,7 +55,6 @@ public struct DeclarationView: View {
                 .padding(.top, 15)
             }
         }
-    }
 }
 
 public struct DeclarationView_Previews: PreviewProvider {
