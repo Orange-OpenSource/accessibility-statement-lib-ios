@@ -20,20 +20,17 @@ public struct DeclarationView: View {
     }
     
     public var body: some View {
-        NavigationView {
             ScrollView {
                 VStack {
                     CircularProgressView(declarations: declarations, selectedTheme: selectedTheme)
-                        .frame(maxWidth: .infinity) // Utilisez maxWidth pour occuper toute la largeur
+                        .frame(maxWidth: .infinity)
                     
                     InformationView(declarations: declarations)
-                        .frame(maxWidth: .infinity) // Utilisez maxWidth pour occuper toute la largeur
+                        .frame(maxWidth: .infinity)
                 }
                 .padding(.top, 15)
             }
-            .navigationBarTitle("Declaration")
         }
-    }
 }
 
 public struct DeclarationView_Previews: PreviewProvider {
