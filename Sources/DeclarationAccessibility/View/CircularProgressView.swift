@@ -96,7 +96,7 @@ struct CircularProgressView_Previews: PreviewProvider {
                 conformityAverage: 0.75,
                 conformityAverageDisplay: "75"
             ),
-            selectedTheme: .orange
+            selectedTheme: .innovation
         )
         .environment(\.locale, .init(identifier: "fr"))
     }
