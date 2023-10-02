@@ -22,24 +22,17 @@
 
 import Foundation
 
-struct Declaration {
-    
-    // =======================
-    // MARK: Stored Properties
-    // =======================
-    
-    public var title : String = String()
-    public var lang: String = String()
-    public var status: String = String()
-    public var auditDate: String = String()
-    public var conformity: String = String()
-    public var conformityAverage: CGFloat = CGFloat()
-    public var conformityAverageDisplay: String = String ()
-    public var referentialName: String = String()
-    public var referentialVersion: String = String()
-    public var referentialLevel: String = String()
-    public var technologies: String = String()
-    public var detailUrl: String = String()
-    public var identityAdresse: String = String()
-    public var identityName: String = String()
+extension Bundle {
+    public static var ease: Bundle {
+        #if SWIFT_PACKAGE
+        return Bundle.module
+        #else
+        return Bundle(for: EASEBundleResource.self)
+        #endif
+    }
 }
+
+#if SWIFT_PACKAGE
+#else
+class EASEBundleResource {}
+#endif
