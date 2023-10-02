@@ -16,6 +16,22 @@ Import Accessibility Statement lib in your project
 https://github.com/Orange-OpenSource/accessibility-statement-lib-ios.git"
 ```
 
+2. Add this line in Package.swift
+
+```
+dependencies: [.package(url: "https://github.com/Orange-OpenSource/accessibility-statement-lib-ios.git", .branch("master"))
+
+],
+
+    targets: [
+
+        .target(
+
+            name: "OrangeDesignSystem",
+
+            dependencies: [.product(name: "DeclarationAccessibility", package: "accessibility-statement-lib-ios")],
+```
+
 
 Usage
 -----
