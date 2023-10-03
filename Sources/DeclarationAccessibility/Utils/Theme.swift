@@ -36,11 +36,11 @@ public enum Theme: String {
     public var color: Color {
         switch self {
         case .innovation:
-            return Color("innovation", bundle: Bundle.ease)
+            return Color("Innovation", bundle: Bundle.ease)
         case .orange:
-            return Color("orange", bundle: Bundle.ease)
+            return Color("Orange", bundle: Bundle.ease)
         case .sosh:
-            return Color("sosh", bundle: Bundle.ease)
+            return Color("Sosh", bundle: Bundle.ease)
         }
     }
     
