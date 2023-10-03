@@ -31,13 +31,38 @@ public enum Theme: String {
     
     case innovation
     case orange
+    case sosh
 
     public var color: Color {
         switch self {
         case .innovation:
-            return Color("Innovation", bundle: Bundle.ease)
+            return Color("innovation", bundle: Bundle.ease)
         case .orange:
-            return Color("Orange", bundle: Bundle.ease)
+            return Color("orange", bundle: Bundle.ease)
+        case .sosh:
+            return Color("sosh", bundle: Bundle.ease)
+        }
+    }
+    
+    public var buttonColor: Color {
+        switch self {
+        case .innovation:
+            return Color("btn_innovation", bundle: Bundle.ease)
+        case .orange:
+            return Color("btn_orange", bundle: Bundle.ease)
+        case .sosh:
+            return Color("btn_sosh", bundle: Bundle.ease)
+        }
+    }
+    
+    public var foregroundColor: Color {
+        switch self {
+        case .innovation:
+            return Color("fdg_innovation", bundle: Bundle.ease)
+        case .orange:
+            return Color("fdg_orange", bundle: Bundle.ease)
+        case .sosh:
+            return Color("fdg_sosh", bundle: Bundle.ease)
         }
     }
 }

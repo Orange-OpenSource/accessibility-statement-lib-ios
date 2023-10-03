@@ -50,7 +50,7 @@ public struct DeclarationView: View {
                     CircularProgressView(declarations: declarations, selectedTheme: selectedTheme)
                         .frame(maxWidth: .infinity)
                     
-                    InformationView(declarations: declarations)
+                    InformationView(declarations: declarations, selectedTheme: selectedTheme)
                         .frame(maxWidth: .infinity)
                 }
                 .padding(.top, 15)
