@@ -40,7 +40,7 @@ DeclarationView(xmlFileName: "accessibility_result", selectedTheme: .orange, url
 ```
 
 * Add the results XML file from the va11ydette in racine folder of your project and rename it "accessibility_result.xml"
-* Add xmlFileName, selectedTheme and url to DeclarationView
+* Add xmlFileName, selectedTheme (orange, sosh, or innnovation) and url to DeclarationView
 
 
 Exemple
