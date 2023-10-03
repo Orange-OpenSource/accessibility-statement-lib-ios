@@ -28,6 +28,7 @@ public struct InformationView: View {
     // MARK: Properties
     // =======================
     var declarations: Declaration
+    public var selectedTheme: Theme
     
     public var body: some View {
         ScrollView {
@@ -48,10 +49,19 @@ public struct InformationView: View {
                         UIApplication.shared.open(url)
                     }
                 }) {
-                    Text("detail_button", bundle: .module)
-                        .padding()
-                        .background(Color(UIColor.label))
-                        .foregroundColor(Color(UIColor.systemBackground))
+                    if #available(iOS 16.0, *) {
+                        Text("detail_button", bundle: .module)
+                            .padding()
+                            .background(selectedTheme.buttonColor)
+                            .foregroundColor(selectedTheme.foregroundColor)
+                            .font(.title3).bold()
+                    } else {
+                        Text("detail_button", bundle: .module)
+                            .padding()
+                            .background(selectedTheme.buttonColor)
+                            .foregroundColor(selectedTheme.foregroundColor)
+                            .font(.title3)
+                    }
                 }
             }
         }
@@ -100,7 +110,7 @@ struct InformationView_Previews: PreviewProvider {
             detailUrl: "https://example.com",
             identityAdresse: "Test Identity Adresse",
             identityName: "Test Identity Name"
-        ))
+        ), selectedTheme: .orange)
         .environment(\.locale,.init(identifier: "fr"))
     }
 }
