@@ -29,7 +29,7 @@ public struct DeclarationView: View {
     // =======================
     var declarations: Declaration
     var selectedTheme: Theme
-
+    
     
     // =================
     // MARK: Initializer
@@ -44,17 +44,15 @@ public struct DeclarationView: View {
     }
     
     public var body: some View {
-        NavigationView {
-            ScrollView {
-                VStack {
-                    CircularProgressView(declarations: declarations, selectedTheme: selectedTheme)
-                        .frame(maxWidth: .infinity)
-                    
-                    InformationView(declarations: declarations, selectedTheme: selectedTheme)
-                        .frame(maxWidth: .infinity)
-                }
-                .padding(.top, 15)
+        ScrollView {
+            VStack {
+                CircularProgressView(declarations: declarations, selectedTheme: selectedTheme)
+                    .frame(maxWidth: .infinity)
+                
+                InformationView(declarations: declarations, selectedTheme: selectedTheme)
+                    .frame(maxWidth: .infinity)
             }
+            .padding(.top, 15)
         }
     }
 }
