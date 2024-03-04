@@ -12,6 +12,8 @@ class DeclarationDataParser: NSObject, XMLParserDelegate {
     var declarations: Declaration = Declaration()
     private var currentElement = ""
     private var currentData = ""
+    private var insideResults = false
+
 
     func parseXML(fileName: String) {
         if let url = Bundle.main.url(forResource: fileName, withExtension: "xml") {
@@ -28,27 +30,27 @@ class DeclarationDataParser: NSObject, XMLParserDelegate {
 
     func parser(_ parser: XMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String]) {
         currentElement = elementName
+            if elementName == "results" {
+                insideResults = true
+            }
     }
 
     public func parser(_ parser: XMLParser, foundCharacters string: String) {
         let data = string.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
 
-        if (!data.isEmpty) {
+        if insideResults && currentElement == "conformity" {
+            // If inside <results> and the current element is "conformity"
+            self.declarations.conformity += data
+        }
+
+        if (!data.isEmpty && currentElement != "conformity") {
+            // If data is not empty and current element is not "conformity"
             switch self.currentElement {
             case "title_app":
                 self.declarations.title += " \(data)"
             case "audit_date":
                 self.declarations.auditDate += " \(data)"
                 self.declarations.auditDate = self.dateToFrench(inputDate: self.declarations.auditDate)
-            case "conformity":
-                self.declarations.conformity += " \(data)"
-                let result = declarations.conformity.split(separator: " ")
-                let conformityArrayDouble = result.map { Double($0)! }
-                let sumArray = conformityArrayDouble.reduce(0, +)
-                let average = (sumArray / Double(conformityArrayDouble.count))
-                let averageAsString = Int(average.rounded())
-                self.declarations.conformityAverageDisplay = String(averageAsString)
-                self.declarations.conformityAverage = CGFloat(average / 100)
             case "technology":
                 self.declarations.technologies += "\(data)"
             case "version":
@@ -65,8 +67,10 @@ class DeclarationDataParser: NSObject, XMLParserDelegate {
         }
     }
 
+
     func parserDidEndDocument(_ parser: XMLParser) {
         print("Analyse XML terminée.")
+        insideResults = false
         declarationDataUpdated()
     }
 
