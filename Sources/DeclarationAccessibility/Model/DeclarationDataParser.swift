@@ -66,7 +66,7 @@ class DeclarationDataParser: NSObject, XMLParserDelegate {
             }
             
             self.declarations.identityName = "Orange SA"
-            self.declarations.identityAdresse = "Siège sociale : 111, quai du Président Rooevelt, 91130 Issy-les-Moulieaux"
+            self.declarations.identityAdresse = "Siège social : 111, quai du Président Roosevelt, CS 70222, 91130 Issy-les-Moulineaux CEDEX"
             self.declarations.referentialName = "WCAG " + declarations.referentialVersion + " " + declarations.referentialLevel
         }
     }
