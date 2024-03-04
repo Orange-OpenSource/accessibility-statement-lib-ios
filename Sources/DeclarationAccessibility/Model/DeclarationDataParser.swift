@@ -20,10 +20,10 @@ class DeclarationDataParser: NSObject, XMLParserDelegate {
                 xmlParser.delegate = self
                 xmlParser.parse()
             } else {
-                print("Error when creating the XML parser.")
+                Log.error("Error when creating the XML parser.")
             }
         } else {
-            print("XML file not found in the bundle.")
+            Log.error("XML file not found in the bundle.")
         }
     }
 
@@ -72,12 +72,12 @@ class DeclarationDataParser: NSObject, XMLParserDelegate {
     }
 
     func parserDidEndDocument(_ parser: XMLParser) {
-        print("Analyse XML terminée.")
+        Log.log("XML statement parsing completed.")
         declarationDataUpdated()
     }
 
     func parser(_ parser: XMLParser, parseErrorOccurred parseError: Error) {
-        print("Erreur d'analyse XML: \(parseError.localizedDescription)")
+        Log.error("Error occured while processing XML: '\(parseError.localizedDescription)'")
 
     }
     
