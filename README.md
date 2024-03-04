@@ -10,31 +10,29 @@ To use it, you need the XML accessibility result file from the [Orange va11ydett
 Import Accessibility Statement lib in your project
 ------
 
-1. To integrate DeclarationAccessibility into your Xcode project using Swift Package Manager
+1. To integrate DeclarationAccessibility into your Xcode project using _Swift Package Manager_, declare a new dependency:
+
+```swift
+// Add in the dependencies of your Package.swift
+.package(url: "https://github.com/Orange-OpenSource/accessibility-statement-lib-ios.git", .exact("1.0.0"))
 
 ```
-https://github.com/Orange-OpenSource/accessibility-statement-lib-ios.git"
-```
 
-2. Add this line in Package.swift
+2. Then add the dependency product in the target you want:
 
-```
-dependencies: [.package(url: "https://github.com/Orange-OpenSource/accessibility-statement-lib-ios.git", .branch("master"))
-
-],
-
-    targets: [
-
-        .target(
-
-            name: "OrangeDesignSystem",
-
-            dependencies: [.product(name: "DeclarationAccessibility", package: "accessibility-statement-lib-ios")],
+```swift
+.target(
+    name: "YourTargetName",
+    dependencies: [
+        .product(name: "DeclarationAccessibility", package: "accessibility-statement-lib-ios")
+    ],
+)
 ```
 
 
 Usage
 -----
+
 ```swift
 DeclarationView(xmlFileName: "accessibility_result", selectedTheme: .orange, url: "https://a11y-guidelines.orange.com/fr/")
 ```
@@ -65,5 +63,3 @@ struct SwiftUIView_Previews: PreviewProvider {
     }
 }
 ```
-
-
