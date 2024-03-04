@@ -12,8 +12,7 @@ class DeclarationDataParser: NSObject, XMLParserDelegate {
     var declarations: Declaration = Declaration()
     private var currentElement = ""
     private var currentData = ""
-    private var insideResults = false
-
+    var foundTotalResult: Bool = false
 
     func parseXML(fileName: String) {
         if let url = Bundle.main.url(forResource: fileName, withExtension: "xml") {
@@ -30,27 +29,32 @@ class DeclarationDataParser: NSObject, XMLParserDelegate {
 
     func parser(_ parser: XMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String]) {
         currentElement = elementName
-            if elementName == "results" {
-                insideResults = true
+        if elementName == "result" {
+            if let type = attributeDict["type"], type == "total" {
+                foundTotalResult = true
+            } else {
+                foundTotalResult = false
             }
+        }
     }
 
     public func parser(_ parser: XMLParser, foundCharacters string: String) {
         let data = string.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
 
-        if insideResults && currentElement == "conformity" {
-            // If inside <results> and the current element is "conformity"
-            self.declarations.conformity += data
-        }
-
-        if (!data.isEmpty && currentElement != "conformity") {
-            // If data is not empty and current element is not "conformity"
+        if (!data.isEmpty) {
             switch self.currentElement {
             case "title_app":
                 self.declarations.title += " \(data)"
             case "audit_date":
                 self.declarations.auditDate += " \(data)"
                 self.declarations.auditDate = self.dateToFrench(inputDate: self.declarations.auditDate)
+            case "conformity":
+                if foundTotalResult {
+                    if let conformity = Float(string) {
+                        self.declarations.conformityAverage = CGFloat(conformity / 100)
+                        self.declarations.conformityAverageDisplay = String(Int(conformity.rounded()))
+                    }
+                }
             case "technology":
                 self.declarations.technologies += "\(data)"
             case "version":
@@ -67,16 +71,21 @@ class DeclarationDataParser: NSObject, XMLParserDelegate {
         }
     }
 
-
     func parserDidEndDocument(_ parser: XMLParser) {
         print("Analyse XML terminée.")
-        insideResults = false
         declarationDataUpdated()
     }
 
     func parser(_ parser: XMLParser, parseErrorOccurred parseError: Error) {
         print("Erreur d'analyse XML: \(parseError.localizedDescription)")
 
+    }
+    
+    func parser(_ parser: XMLParser, didEndElement elementName: String, namespaceURI: String?, qualifiedName qName: String?) {
+        if elementName == "result" {
+            foundTotalResult = false
+            currentData = ""
+        }
     }
 
     func declarationDataUpdated() {
