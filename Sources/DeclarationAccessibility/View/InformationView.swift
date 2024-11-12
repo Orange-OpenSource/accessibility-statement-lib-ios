@@ -9,13 +9,14 @@
 import SwiftUI
 
 public struct InformationView: View {
-    
-    // =======================
+
     // MARK: Properties
-    // =======================
+
     var declarations: Declaration
     public var selectedTheme: Theme
-    
+
+    // MARK: Body
+
     public var body: some View {
         ScrollView {
             VStack(spacing: -20) {
@@ -28,20 +29,25 @@ public struct InformationView: View {
                 GroupView(title: "technology_title", subTitle: declarations.technologies)
                     .accessibilityElement(children: .combine)
             }
-            
+
             HStack {
-                Button(action: {
-                    if let url = URL(string: declarations.detailUrl) {
-                        UIApplication.shared.open(url)
-                    }
-                }) {
-                    if #available(iOS 16.0, *) {
-                        Text("detail_button", bundle: .module)
-                            .padding()
-                            .background(selectedTheme.buttonColor)
-                            .foregroundColor(selectedTheme.foregroundColor)
-                            .font(.title3).bold()
-                    } else {
+                if declarations.useWebView {
+                    NavigationLink(
+                        destination: WebViewPage(url: declarations.detailUrl),
+                        label: {
+                            Text("detail_button", bundle: .module)
+                                .padding()
+                                .background(selectedTheme.buttonColor)
+                                .foregroundColor(selectedTheme.foregroundColor)
+                                .font(.title3)
+                        }
+                    )
+                } else {
+                    Button(action: {
+                        if let url = URL(string: declarations.detailUrl) {
+                            UIApplication.shared.open(url)
+                        }
+                    }) {
                         Text("detail_button", bundle: .module)
                             .padding()
                             .background(selectedTheme.buttonColor)
@@ -53,7 +59,6 @@ public struct InformationView: View {
         }
     }
 }
-
 
 public struct GroupView: View {
     let title: LocalizedStringKey
@@ -84,6 +89,16 @@ public struct GroupView: View {
     }
 }
 
+struct WebViewPage: View {
+    var url: String
+    
+    var body: some View {
+        EASEWebView(from: URL(string: url)!)
+            .navigationTitle("Details")
+    }
+}
+
+// MARK: Preview
 
 struct InformationView_Previews: PreviewProvider {
     static var previews: some View {
