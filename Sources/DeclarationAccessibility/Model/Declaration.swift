@@ -28,4 +28,5 @@ struct Declaration {
     public var detailUrl: String = String()
     public var identityAdresse: String = String()
     public var identityName: String = String()
+    public var useWebView: Bool = Bool()
 }
