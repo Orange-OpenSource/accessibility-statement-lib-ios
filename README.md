@@ -39,15 +39,17 @@ DeclarationView(xmlFileName: "accessibility_result", selectedTheme: .orange, url
 
 * Add the results XML file from the va11ydette in racine folder of your project and rename it "accessibility_result.xml"
 * Add xmlFileName, selectedTheme (orange, sosh, or innnovation) and url to DeclarationView
+* By default, the URL will open in Safari. If you wish to open the details page in a WebView, you need to set the 'useWebView: true' parameter, with the HTML page loaded locally
 
-
-Exemple
+Example with Safari
 -----
 
 1. To integrate DeclarationView
 ```swift
 import SwiftUI
 import DeclarationAccessibility
+
+// MARK: Body
 
 struct SwiftUIView: View {
     var body: some View {
@@ -60,6 +62,40 @@ struct SwiftUIView: View {
 struct SwiftUIView_Previews: PreviewProvider {
     static var previews: some View {
         SwiftUIView()
+    }
+}
+```
+
+Example with a WebView
+-----
+
+1. To integrate DeclarationView
+```swift
+import DeclarationAccessibility
+import SwiftUI
+
+struct SwiftUIView: View {
+
+    // MARK: Stored properties
+
+    let detailsPageURL: URL
+
+    // MARK: Initializer
+
+    init() {
+        guard let detailsPageURL = Bundle.main.url(forResource: "accessibility_detail", withExtension: "html") else {
+            fatalError("Unable to find accessibility_detail.html in resources")
+        }
+
+        self.detailsPageURL = detailsPageURL
+    }
+
+    // MARK: Body
+
+    var body: some View {
+        VStack {
+            DeclarationView(xmlFileName: "accessibility_result", selectedTheme: .orange, url: detailsPageURL.absoluteString, useWebView: true)
+        }
     }
 }
 ```

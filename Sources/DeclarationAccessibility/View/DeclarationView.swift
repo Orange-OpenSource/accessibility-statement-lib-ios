@@ -9,24 +9,21 @@
 import SwiftUI
 
 public struct DeclarationView: View {
-    
-    // =======================
+
     // MARK: Properties
-    // =======================
+
     var declarations: Declaration
     var selectedTheme: Theme
-    
-    
-    // =================
+
     // MARK: Initializer
-    // =================
-    
-    public init(xmlFileName: String, selectedTheme: Theme, url: String) {
+
+    public init(xmlFileName: String, selectedTheme: Theme, url: String, useWebView: Bool = false) {
         let parser = DeclarationDataParser()
         parser.parseXML(fileName: xmlFileName)
         self.declarations = parser.declarations
         self.selectedTheme = selectedTheme
         self.declarations.detailUrl = url
+        self.declarations.useWebView = useWebView
     }
     
     public var body: some View {
@@ -40,11 +37,5 @@ public struct DeclarationView: View {
             }
             .padding(.top, 15)
         }
-    }
-}
-
-public struct DeclarationView_Previews: PreviewProvider {
-    public static var previews: some View {
-        DeclarationView(xmlFileName: "", selectedTheme: .innovation, url: "https://a11y-guidelines.orange.com/fr/")
     }
 }
