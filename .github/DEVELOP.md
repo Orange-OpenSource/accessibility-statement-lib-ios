@@ -235,6 +235,8 @@ We use *GitHub Actions* so as to define several workflows with some actions to b
 
 Workflows are the following:
 - [Check translations](https://github.com/Orange-OpenSource/accessibility-statement-lib-ios/blob/master/.github/workflows/check-wordings.yml) to check if there are localizations troubles
+- [Run SwiftLint](https://github.com/Orange-OpenSource/accessibility-statement-lib-ios/blob/master/.github/workflows/swiftlint.yml) to check if sources are clean
+- [Gitleaks](https://github.com/Orange-OpenSource/accessibility-statement-lib-ios/blob/master/.github/workflows/gitleaks.yml) to look for secrets leaks
 
 ## Use of GenAI
 
