@@ -43,6 +43,10 @@ brew update
 # For SwiftFormat (at least 0.58.5)
 brew install swiftformat
 # or `brew upgrade swiftformat` to get updates if old version installed
+
+# For SwiftLint (at least 0.62.2)
+brew install swiftlint
+# or `brew upgrade swiftlint` to get updates if old version installed
 ```
 
 Ensure you have the suitable _Ruby_ version. We recommend the use of [rbenv](https://github.com/rbenv/rbenv) to load the suitable version of ruby.
