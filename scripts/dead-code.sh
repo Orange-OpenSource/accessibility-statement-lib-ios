@@ -9,4 +9,4 @@
 
 set -euo pipefail
 
-cd .. && swiftlint --strict --config .swiftlint.yml .
+cd .. && periphery scan --relative-results --format xcode

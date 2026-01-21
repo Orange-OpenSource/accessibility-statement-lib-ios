@@ -7,6 +7,7 @@
   * [About release note and changelog](#about-release-note-and-changelog)
 - [Linter](#linter)
 - [Formater](#formater)
+- [Dead code](#dead-code)
 - [Update of dependencies](#update-of-dependencies)
 - [CI/CD](#cicd)
 - [Use of GenAI](#use-of-genai)
@@ -47,6 +48,10 @@ brew install swiftformat
 # For SwiftLint (at least 0.62.2)
 brew install swiftlint
 # or `brew upgrade swiftlint` to get updates if old version installed
+
+# For Periphery (https://github.com/peripheryapp/periphery) for dead code hunt (at least 3.1.0)
+# If you used Periphery V2 before, follow their migration guide: https://github.com/peripheryapp/periphery/wiki/3.0-Migration-Guide
+brew install periphery
 ```
 
 Ensure you have the suitable _Ruby_ version. We recommend the use of [rbenv](https://github.com/rbenv/rbenv) to load the suitable version of ruby.
@@ -212,6 +217,15 @@ git config --local --add core.hooksPath .git-hooks
 ```
 
 *SwiftFormat* is not used in GitHub Actions CI/CD because sources should be formatted before beeing pushed, not after.
+
+## Dead code
+
+We use `Periphery` to look for dead code and help developers to track it and remove it. This tool should be run locally.
+
+```shell
+cd scripts
+./dead-code.sh
+```
 
 ## CI/CD
 
