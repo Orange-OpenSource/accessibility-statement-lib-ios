@@ -1,20 +1,15 @@
-/*
-* Software Name: accessibility-statement-lib-ios
-* SPDX-FileCopyrightText: Copyright (c) 2021-2023 Orange SA
-* SPDX-License-Identifier: Apache-2.0
-*
-* This software is distributed under the Apache License 2.0.
-*/
+// Software Name: accessibility-statement-lib-ios
+// SPDX-FileCopyrightText: Copyright (c) Orange SA
+// SPDX-License-Identifier: Apache-2.0
+//
+// This software is distributed under the Apache 2.0 license,
+// the text of which is available at https://opensource.org/license/apache-2-0
+// or see the "LICENSE" file for more details.
 
 import Foundation
 import SwiftUI
 
 public enum Theme: String {
-    
-    // ==================
-    // MARK: Color access
-    // ==================
-    
     case innovation
     case orange
     case sosh
@@ -29,7 +24,7 @@ public enum Theme: String {
             return Color("Sosh", bundle: Bundle.ease)
         }
     }
-    
+
     public var buttonColor: Color {
         switch self {
         case .innovation:
@@ -40,7 +35,7 @@ public enum Theme: String {
             return Color("btn_sosh", bundle: Bundle.ease)
         }
     }
-    
+
     public var foregroundColor: Color {
         switch self {
         case .innovation:

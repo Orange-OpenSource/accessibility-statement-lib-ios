@@ -1,16 +1,15 @@
-/*
-* Software Name: accessibility-statement-lib-ios
-* SPDX-FileCopyrightText: Copyright (c) 2021-2023 Orange SA
-* SPDX-License-Identifier: Apache-2.0
-*
-* This software is distributed under the Apache License 2.0.
-*/
+// Software Name: accessibility-statement-lib-ios
+// SPDX-FileCopyrightText: Copyright (c) Orange SA
+// SPDX-License-Identifier: Apache-2.0
+//
+// This software is distributed under the Apache 2.0 license,
+// the text of which is available at https://opensource.org/license/apache-2-0
+// or see the "LICENSE" file for more details.
 
 import SwiftUI
 import WebKit
 
 struct EASEWebView: UIViewRepresentable {
-
     enum ContentSource {
         case url(URL)
         case html(String)
@@ -23,22 +22,22 @@ struct EASEWebView: UIViewRepresentable {
     // MARK: Initializer
 
     init(from url: URL) {
-        self.source = .url(url)
+        source = .url(url)
     }
 
     init(with htmlContent: String) {
-        self.source = .html(htmlContent)
+        source = .html(htmlContent)
     }
 
     // MARK: UIViewRepresentable
 
     @MainActor
-    func makeUIView(context: Context) -> WKWebView {
+    func makeUIView(context _: Context) -> WKWebView {
         WKWebView()
     }
 
     @MainActor
-    func updateUIView(_ webView: WKWebView, context: Context) {
+    func updateUIView(_ webView: WKWebView, context _: Context) {
         switch source {
         case let .url(url):
             let request = URLRequest(url: url)

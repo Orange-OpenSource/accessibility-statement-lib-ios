@@ -1,15 +1,15 @@
-/*
-* Software Name: accessibility-statement-lib-ios
-* SPDX-FileCopyrightText: Copyright (c) 2021-2023 Orange SA
-* SPDX-License-Identifier: Apache-2.0
-*
-* This software is distributed under the Apache License 2.0.
-*/
+// Software Name: accessibility-statement-lib-ios
+// SPDX-FileCopyrightText: Copyright (c) Orange SA
+// SPDX-License-Identifier: Apache-2.0
+//
+// This software is distributed under the Apache 2.0 license,
+// the text of which is available at https://opensource.org/license/apache-2-0
+// or see the "LICENSE" file for more details.
 
 import Foundation
 
 class DeclarationDataParser: NSObject, XMLParserDelegate {
-    var declarations: Declaration = Declaration()
+    var declarations: Declaration = .init()
     private var currentElement = ""
     private var currentData = ""
     var foundTotalResult: Bool = false
@@ -27,7 +27,7 @@ class DeclarationDataParser: NSObject, XMLParserDelegate {
         }
     }
 
-    func parser(_ parser: XMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String]) {
+    func parser(_: XMLParser, didStartElement elementName: String, namespaceURI _: String?, qualifiedName _: String?, attributes attributeDict: [String: String]) {
         currentElement = elementName
         if elementName == "result" {
             if let type = attributeDict["type"], type == "total" {
@@ -38,50 +38,49 @@ class DeclarationDataParser: NSObject, XMLParserDelegate {
         }
     }
 
-    public func parser(_ parser: XMLParser, foundCharacters string: String) {
+    func parser(_: XMLParser, foundCharacters string: String) {
         let data = string.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
 
-        if (!data.isEmpty) {
-            switch self.currentElement {
+        if !data.isEmpty {
+            switch currentElement {
             case "title_app":
-                self.declarations.title += " \(data)"
+                declarations.title += " \(data)"
             case "audit_date":
-                self.declarations.auditDate += " \(data)"
-                self.declarations.auditDate = self.dateToFrench(inputDate: self.declarations.auditDate)
+                declarations.auditDate += " \(data)"
+                declarations.auditDate = dateToFrench(inputDate: declarations.auditDate)
             case "conformity":
                 if foundTotalResult {
                     if let conformity = Float(string) {
-                        self.declarations.conformityAverage = CGFloat(conformity / 100)
-                        self.declarations.conformityAverageDisplay = String(Int(conformity.rounded()))
+                        declarations.conformityAverage = CGFloat(conformity / 100)
+                        declarations.conformityAverageDisplay = String(Int(conformity.rounded()))
                     }
                 }
             case "technology":
-                self.declarations.technologies += "\(data)"
+                declarations.technologies += "\(data)"
             case "version":
-                self.declarations.referentialVersion += " \(data)"
+                declarations.referentialVersion += " \(data)"
             case "level":
-                self.declarations.referentialLevel += data
+                declarations.referentialLevel += data
             default:
                 break
             }
-            
-            self.declarations.identityName = "Orange SA"
-            self.declarations.identityAdresse = "Siège social : 111, quai du Président Roosevelt, CS 70222, 91130 Issy-les-Moulineaux CEDEX"
-            self.declarations.referentialName = "WCAG " + declarations.referentialVersion + " " + declarations.referentialLevel
+
+            declarations.identityName = "Orange SA"
+            declarations.identityAdresse = "Siège social : 111, quai du Président Roosevelt, CS 70222, 91130 Issy-les-Moulineaux CEDEX"
+            declarations.referentialName = "WCAG " + declarations.referentialVersion + " " + declarations.referentialLevel
         }
     }
 
-    func parserDidEndDocument(_ parser: XMLParser) {
+    func parserDidEndDocument(_: XMLParser) {
         Log.log("XML statement parsing completed.")
         declarationDataUpdated()
     }
 
-    func parser(_ parser: XMLParser, parseErrorOccurred parseError: Error) {
+    func parser(_: XMLParser, parseErrorOccurred parseError: Error) {
         Log.error("Error occured while processing XML: '\(parseError.localizedDescription)'")
-
     }
-    
-    func parser(_ parser: XMLParser, didEndElement elementName: String, namespaceURI: String?, qualifiedName qName: String?) {
+
+    func parser(_: XMLParser, didEndElement elementName: String, namespaceURI _: String?, qualifiedName _: String?) {
         if elementName == "result" {
             foundTotalResult = false
             currentData = ""
@@ -91,17 +90,17 @@ class DeclarationDataParser: NSObject, XMLParserDelegate {
     func declarationDataUpdated() {
         NotificationCenter.default.post(name: Notification.Name("DeclarationDataDidUpdate"), object: nil, userInfo: ["declarationData": declarations])
     }
-    
-    public func dateToFrench(inputDate: String) -> String {
+
+    func dateToFrench(inputDate: String) -> String {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd"
 
         let language = Bundle.main.preferredLocalizations.first! as NSString
         let languageString = (language as String)
-        
+
         guard let date = dateFormatter.date(from: inputDate) else { return "" }
-            dateFormatter.locale = Locale(identifier: languageString)
-            dateFormatter.dateFormat = DateFormatter.dateFormat(fromTemplate: "dd-MMM-yyyy", options: 0, locale: dateFormatter.locale)
+        dateFormatter.locale = Locale(identifier: languageString)
+        dateFormatter.dateFormat = DateFormatter.dateFormat(fromTemplate: "dd-MMM-yyyy", options: 0, locale: dateFormatter.locale)
         let LocalDate = dateFormatter.string(from: date)
         return LocalDate
     }

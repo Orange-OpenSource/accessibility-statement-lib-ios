@@ -1,32 +1,27 @@
-/*
-* Software Name: accessibility-statement-lib-ios
-* SPDX-FileCopyrightText: Copyright (c) 2021-2023 Orange SA
-* SPDX-License-Identifier: Apache-2.0
-*
-* This software is distributed under the Apache License 2.0.
-*/
+// Software Name: accessibility-statement-lib-ios
+// SPDX-FileCopyrightText: Copyright (c) Orange SA
+// SPDX-License-Identifier: Apache-2.0
+//
+// This software is distributed under the Apache 2.0 license,
+// the text of which is available at https://opensource.org/license/apache-2-0
+// or see the "LICENSE" file for more details.
 
 import Foundation
 
 struct Declaration {
-    
-    // =======================
-    // MARK: Stored Properties
-    // =======================
-    
-    public var title : String = String()
-    public var lang: String = String()
-    public var status: String = String()
-    public var auditDate: String = String()
-    public var conformity: String = String()
-    public var conformityAverage: CGFloat = CGFloat()
-    public var conformityAverageDisplay: String = String ()
-    public var referentialName: String = String()
-    public var referentialVersion: String = String()
-    public var referentialLevel: String = String()
-    public var technologies: String = String()
-    public var detailUrl: String = String()
-    public var identityAdresse: String = String()
-    public var identityName: String = String()
-    public var useWebView: Bool = Bool()
+    var title: String = .init()
+    var lang: String = .init()
+    var status: String = .init()
+    var auditDate: String = .init()
+    var conformity: String = .init()
+    var conformityAverage: CGFloat = .init()
+    var conformityAverageDisplay: String = .init()
+    var referentialName: String = .init()
+    var referentialVersion: String = .init()
+    var referentialLevel: String = .init()
+    var technologies: String = .init()
+    var detailUrl: String = .init()
+    var identityAdresse: String = .init()
+    var identityName: String = .init()
+    var useWebView: Bool = .init()
 }

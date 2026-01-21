@@ -1,15 +1,14 @@
-/*
-* Software Name: accessibility-statement-lib-ios
-* SPDX-FileCopyrightText: Copyright (c) 2021-2023 Orange SA
-* SPDX-License-Identifier: Apache-2.0
-*
-* This software is distributed under the Apache License 2.0.
-*/
+// Software Name: accessibility-statement-lib-ios
+// SPDX-FileCopyrightText: Copyright (c) Orange SA
+// SPDX-License-Identifier: Apache-2.0
+//
+// This software is distributed under the Apache 2.0 license,
+// the text of which is available at https://opensource.org/license/apache-2-0
+// or see the "LICENSE" file for more details.
 
 import SwiftUI
 
 public struct InformationView: View {
-
     // MARK: Properties
 
     var declarations: Declaration
@@ -40,8 +39,7 @@ public struct InformationView: View {
                                 .background(selectedTheme.buttonColor)
                                 .foregroundColor(selectedTheme.foregroundColor)
                                 .font(.title3)
-                        }
-                    )
+                        })
                 } else {
                     Button(action: {
                         if let url = URL(string: declarations.detailUrl) {
@@ -80,7 +78,7 @@ public struct GroupView: View {
                 .frame(maxWidth: .infinity, alignment: .leading)
             Text(subTitle)
                 .font(.body)
-            if let text = text {
+            if let text {
                 Text(text)
                     .font(.body)
             }
@@ -91,7 +89,7 @@ public struct GroupView: View {
 
 struct WebViewPage: View {
     var url: String
-    
+
     var body: some View {
         EASEWebView(from: URL(string: url)!)
             .navigationTitle("Details")
@@ -110,8 +108,7 @@ struct InformationView_Previews: PreviewProvider {
             technologies: "Test Technologies",
             detailUrl: "https://example.com",
             identityAdresse: "Test Identity Adresse",
-            identityName: "Test Identity Name"
-        ), selectedTheme: .orange)
-        .environment(\.locale,.init(identifier: "fr"))
+            identityName: "Test Identity Name"), selectedTheme: .orange)
+            .environment(\.locale, .init(identifier: "fr"))
     }
 }

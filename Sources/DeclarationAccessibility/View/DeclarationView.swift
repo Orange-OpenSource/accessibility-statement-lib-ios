@@ -1,15 +1,14 @@
-/*
-* Software Name: accessibility-statement-lib-ios
-* SPDX-FileCopyrightText: Copyright (c) 2021-2023 Orange SA
-* SPDX-License-Identifier: Apache-2.0
-*
-* This software is distributed under the Apache License 2.0.
-*/
+// Software Name: accessibility-statement-lib-ios
+// SPDX-FileCopyrightText: Copyright (c) Orange SA
+// SPDX-License-Identifier: Apache-2.0
+//
+// This software is distributed under the Apache 2.0 license,
+// the text of which is available at https://opensource.org/license/apache-2-0
+// or see the "LICENSE" file for more details.
 
 import SwiftUI
 
 public struct DeclarationView: View {
-
     // MARK: Properties
 
     var declarations: Declaration
@@ -20,18 +19,18 @@ public struct DeclarationView: View {
     public init(xmlFileName: String, selectedTheme: Theme, url: String, useWebView: Bool = false) {
         let parser = DeclarationDataParser()
         parser.parseXML(fileName: xmlFileName)
-        self.declarations = parser.declarations
+        declarations = parser.declarations
         self.selectedTheme = selectedTheme
-        self.declarations.detailUrl = url
-        self.declarations.useWebView = useWebView
+        declarations.detailUrl = url
+        declarations.useWebView = useWebView
     }
-    
+
     public var body: some View {
         ScrollView {
             VStack {
                 CircularProgressView(declarations: declarations, selectedTheme: selectedTheme)
                     .frame(maxWidth: .infinity)
-                
+
                 InformationView(declarations: declarations, selectedTheme: selectedTheme)
                     .frame(maxWidth: .infinity)
             }
