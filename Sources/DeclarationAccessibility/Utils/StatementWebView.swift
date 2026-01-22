@@ -9,17 +9,17 @@
 import SwiftUI
 import WebKit
 
-struct EASEWebView: UIViewRepresentable {
+/// A custom `UIViewRepresentable` providing a `WebView` to display the accessibility statement
+struct StatementWebView: UIViewRepresentable {
+
     enum ContentSource {
         case url(URL)
         case html(String)
     }
 
-    // MARK: Stored properties
-
     let source: ContentSource
 
-    // MARK: Initializer
+    // MARK: - Initializers
 
     init(from url: URL) {
         source = .url(url)
@@ -29,7 +29,7 @@ struct EASEWebView: UIViewRepresentable {
         source = .html(htmlContent)
     }
 
-    // MARK: UIViewRepresentable
+    // MARK: - UIViewRepresentable
 
     @MainActor
     func makeUIView(context _: Context) -> WKWebView {

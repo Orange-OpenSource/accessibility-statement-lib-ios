@@ -8,15 +8,18 @@
 
 import SwiftUI
 
+/// A `View` to define a circle which can be empty, a bit empty or not
 struct CircularProgressView: View {
-    var declarations: Declaration
-    let circleSize: CGFloat = 200
-    var selectedTheme: Theme
+
+    var statement: Statement
+    var theme: Theme
+
+    private let circleSize: CGFloat = 200
 
     var body: some View {
         VStack {
             ZStack {
-                /// Background for the progress bar
+                // Background for the progress bar
                 Circle()
                     .stroke(lineWidth: 15)
                     .opacity(0.3)
@@ -30,20 +33,20 @@ struct CircularProgressView: View {
                         bundle: .module,
                         value: "",
                         comment: "")
-                        .replacingOccurrences(of: "@", with: declarations.conformityAverageDisplay)
+                        .replacingOccurrences(of: "@", with: statement.conformityAverageDisplay)
                 )
                 .font(.body)
                 .multilineTextAlignment(.center)
                 .frame(width: 150, height: 150)
                 .accessibilityHidden(true)
 
-                /// Foreground or the actual progress bar
+                // Foreground for the actual progress bar
                 Circle()
-                    .trim(from: 0.0, to: min(declarations.conformityAverage, 1.0))
+                    .trim(from: 0.0, to: min(statement.conformityAverage, 1.0))
                     .stroke(style: StrokeStyle(lineWidth: 15, lineCap: .round, lineJoin: .round))
-                    .foregroundColor(selectedTheme.color)
+                    .foregroundColor(theme.color)
                     .rotationEffect(Angle(degrees: 270.0))
-                    .animation(.linear, value: declarations.conformityAverage)
+                    .animation(.linear, value: statement.conformityAverage)
                     .frame(width: circleSize, height: circleSize)
             }
 
@@ -54,7 +57,7 @@ struct CircularProgressView: View {
                     bundle: .module,
                     value: "",
                     comment: "")
-                    .replacingOccurrences(of: "@", with: declarations.conformityAverageDisplay)
+                    .replacingOccurrences(of: "@", with: statement.conformityAverageDisplay)
             )
             .font(.body)
             .multilineTextAlignment(.center)
@@ -66,13 +69,15 @@ struct CircularProgressView: View {
     }
 }
 
+// MARK: - Xcode Preview
+
 struct CircularProgressView_Previews: PreviewProvider {
     static var previews: some View {
         CircularProgressView(
-            declarations: Declaration(
+            statement: Statement(
                 conformityAverage: 0.75,
                 conformityAverageDisplay: "75"),
-            selectedTheme: .sosh)
+            theme: .sosh)
             .environment(\.locale, .init(identifier: "fr"))
     }
 }

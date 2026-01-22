@@ -8,11 +8,26 @@
 
 import Foundation
 
-class DeclarationDataParser: NSObject, XMLParserDelegate {
-    var declarations: Declaration = .init()
-    private var currentElement = ""
-    private var currentData = ""
-    var foundTotalResult: Bool = false
+/// XML parser which will process an accessibility stateement file in XML format to then populate a Swift object ``Declaration`
+final class StatementDataParser: NSObject, XMLParserDelegate {
+
+    private var currentElement: String
+    private var currentData: String
+
+    var statement: Statement
+    var foundTotalResult: Bool
+
+    override init() {
+        currentElement = ""
+        currentData = ""
+        statement = Statement()
+        foundTotalResult = false
+        super.init()
+    }
+
+    deinit {}
+
+    // MARK: - XML processing
 
     func parseXML(fileName: String) {
         if let url = Bundle.main.url(forResource: fileName, withExtension: "xml") {
@@ -44,36 +59,36 @@ class DeclarationDataParser: NSObject, XMLParserDelegate {
         if !data.isEmpty {
             switch currentElement {
             case "title_app":
-                declarations.title += " \(data)"
+                statement.title += " \(data)"
             case "audit_date":
-                declarations.auditDate += " \(data)"
-                declarations.auditDate = dateToFrench(inputDate: declarations.auditDate)
+                statement.auditDate += " \(data)"
+                statement.auditDate = dateToFrench(inputDate: statement.auditDate)
             case "conformity":
                 if foundTotalResult {
                     if let conformity = Float(string) {
-                        declarations.conformityAverage = CGFloat(conformity / 100)
-                        declarations.conformityAverageDisplay = String(Int(conformity.rounded()))
+                        statement.conformityAverage = CGFloat(conformity / 100)
+                        statement.conformityAverageDisplay = String(Int(conformity.rounded()))
                     }
                 }
             case "technology":
-                declarations.technologies += "\(data)"
+                statement.technologies += "\(data)"
             case "version":
-                declarations.referentialVersion += " \(data)"
+                statement.referentialVersion += " \(data)"
             case "level":
-                declarations.referentialLevel += data
+                statement.referentialLevel += data
             default:
                 break
             }
 
-            declarations.identityName = "Orange SA"
-            declarations.identityAdresse = "Siège social : 111, quai du Président Roosevelt, CS 70222, 91130 Issy-les-Moulineaux CEDEX"
-            declarations.referentialName = "WCAG " + declarations.referentialVersion + " " + declarations.referentialLevel
+            statement.identityName = Constants.Orange.identityName
+            statement.identityAddress = Constants.Orange.identityAddress
+            statement.referentialName = "WCAG " + statement.referentialVersion + " " + statement.referentialLevel
         }
     }
 
     func parserDidEndDocument(_: XMLParser) {
         Log.log("XML statement parsing completed.")
-        declarationDataUpdated()
+        statementDataUpdated()
     }
 
     func parser(_: XMLParser, parseErrorOccurred parseError: Error) {
@@ -87,21 +102,28 @@ class DeclarationDataParser: NSObject, XMLParserDelegate {
         }
     }
 
-    func declarationDataUpdated() {
-        NotificationCenter.default.post(name: Notification.Name("DeclarationDataDidUpdate"), object: nil, userInfo: ["declarationData": declarations])
+    // MARK: - Helpers
+
+    private func statementDataUpdated() {
+        NotificationCenter.default.post(name: Notification.Name("DeclarationDataDidUpdate"), object: nil, userInfo: ["declarationData": statement])
     }
 
-    func dateToFrench(inputDate: String) -> String {
+    private func dateToFrench(inputDate: String) -> String {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd"
 
-        let language = Bundle.main.preferredLocalizations.first! as NSString
-        let languageString = (language as String)
+        var languageString = ""
+        if let language = Bundle.main.preferredLocalizations.first {
+            let languageAsNSString = language as NSString
+            languageString = (languageAsNSString as String)
+        } else {
+            languageString = "fr_FR"
+        }
 
         guard let date = dateFormatter.date(from: inputDate) else { return "" }
         dateFormatter.locale = Locale(identifier: languageString)
         dateFormatter.dateFormat = DateFormatter.dateFormat(fromTemplate: "dd-MMM-yyyy", options: 0, locale: dateFormatter.locale)
-        let LocalDate = dateFormatter.string(from: date)
-        return LocalDate
+        let localDate = dateFormatter.string(from: date)
+        return localDate
     }
 }

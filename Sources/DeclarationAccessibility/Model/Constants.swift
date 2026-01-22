@@ -6,19 +6,13 @@
 // the text of which is available at https://opensource.org/license/apache-2-0
 // or see the "LICENSE" file for more details.
 
-import Foundation
+/// Wraps some constants
+enum Constants {
 
-extension Bundle {
-    public static var ease: Bundle {
-        #if SWIFT_PACKAGE
-        return Bundle.module
-        #else
-        return Bundle(for: EASEBundleResource.self)
-        #endif
+    /// Orange company details
+    enum Orange {
+
+        static let identityName = "Orange SA"
+        static let identityAddress = "Siège social : 111, quai du Président Roosevelt, CS 70222, 91130 Issy-les-Moulineaux CEDEX"
     }
 }
-
-#if SWIFT_PACKAGE
-#else
-class EASEBundleResource {}
-#endif

@@ -8,68 +8,71 @@
 
 import SwiftUI
 
-public struct InformationView: View {
-    // MARK: Properties
+// MARK: - Information View
 
-    var declarations: Declaration
-    public var selectedTheme: Theme
+/// A `View` displaying details of the accessiiblity statement
+struct InformationView: View {
 
-    // MARK: Body
+    var statement: Statement
+    var theme: Theme
 
-    public var body: some View {
+    var body: some View {
         ScrollView {
             VStack(spacing: -20) {
-                GroupView(title: "date_title", subTitle: declarations.auditDate)
+                GroupView(title: "date_title", subTitle: statement.auditDate)
                     .accessibilityElement(children: .combine)
-                GroupView(title: "identity_title", subTitle: declarations.identityName, text: declarations.identityAdresse)
+                GroupView(title: "identity_title", subTitle: statement.identityName, text: statement.identityAddress)
                     .accessibilityElement(children: .combine)
-                GroupView(title: "referential_title", subTitle: declarations.referentialName)
+                GroupView(title: "referential_title", subTitle: statement.referentialName)
                     .accessibilityElement(children: .combine)
-                GroupView(title: "technology_title", subTitle: declarations.technologies)
+                GroupView(title: "technology_title", subTitle: statement.technologies)
                     .accessibilityElement(children: .combine)
             }
 
             HStack {
-                if declarations.useWebView {
+                if statement.mustUseWebView {
                     NavigationLink(
-                        destination: WebViewPage(url: declarations.detailUrl),
+                        destination: WebViewPage(url: statement.detailUrl),
                         label: {
                             Text("detail_button", bundle: .module)
                                 .padding()
-                                .background(selectedTheme.buttonColor)
-                                .foregroundColor(selectedTheme.foregroundColor)
+                                .background(theme.buttonColor)
+                                .foregroundColor(theme.foregroundColor)
                                 .font(.title3)
                         })
                 } else {
                     Button(action: {
-                        if let url = URL(string: declarations.detailUrl) {
+                        if let url = URL(string: statement.detailUrl) {
                             UIApplication.shared.open(url)
                         }
-                    }) {
+                    }, label: {
                         Text("detail_button", bundle: .module)
                             .padding()
-                            .background(selectedTheme.buttonColor)
-                            .foregroundColor(selectedTheme.foregroundColor)
+                            .background(theme.buttonColor)
+                            .foregroundColor(theme.foregroundColor)
                             .font(.title3)
-                    }
+                    })
                 }
             }
         }
     }
 }
 
-public struct GroupView: View {
+// MARK: - Group View
+
+private struct GroupView: View {
+
     let title: LocalizedStringKey
     let subTitle: String
     let text: String?
 
-    public init(title: LocalizedStringKey, subTitle: String, text: String? = nil) {
+    init(title: LocalizedStringKey, subTitle: String, text: String? = nil) {
         self.title = title
         self.subTitle = subTitle
         self.text = text
     }
 
-    public var body: some View {
+    var body: some View {
         VStack(alignment: .leading, spacing: 5) {
             Text(title, bundle: .module)
                 .font(.title3)
@@ -87,28 +90,33 @@ public struct GroupView: View {
     }
 }
 
-struct WebViewPage: View {
+// MARK: - Web View Page
+
+private struct WebViewPage: View {
     var url: String
 
+    // swiftlint:disable force_unwrapping
     var body: some View {
-        EASEWebView(from: URL(string: url)!)
-            .navigationTitle("Details")
+        StatementWebView(from: URL(string: url)!) // TODO: Manage this error case
+            .navigationTitle("Details") // TODO: Hard-coded not localized wording
     }
+    // swiftlint:enable force_unwrapping
 }
 
-// MARK: Preview
+// MARK: - Xcode Preview
 
 struct InformationView_Previews: PreviewProvider {
     static var previews: some View {
-        InformationView(declarations: Declaration(
+        InformationView(statement: Statement(
             auditDate: "Test Audit Date",
             referentialName: "Test Referential Name",
             referentialVersion: "Test Referential Version",
             referentialLevel: "Test Referential Level",
             technologies: "Test Technologies",
             detailUrl: "https://example.com",
-            identityAdresse: "Test Identity Adresse",
-            identityName: "Test Identity Name"), selectedTheme: .orange)
+            identityAddress: "Test Identity Address",
+            identityName: "Test Identity Name"),
+        theme: .orange)
             .environment(\.locale, .init(identifier: "fr"))
     }
 }

@@ -9,41 +9,48 @@
 import Foundation
 import SwiftUI
 
+/// A theme to apply to accessibility statement
 public enum Theme: String {
+
+    /// For the Orange Innovation Cup
     case innovation
+
+    /// For the Orange brand products
     case orange
+
+    /// For the Sosh brand products
     case sosh
 
     public var color: Color {
         switch self {
         case .innovation:
-            return Color("Innovation", bundle: Bundle.ease)
+            return Color("Innovation", bundle: Bundle.a11yStatementLib)
         case .orange:
-            return Color("Orange", bundle: Bundle.ease)
+            return Color("Orange", bundle: Bundle.a11yStatementLib)
         case .sosh:
-            return Color("Sosh", bundle: Bundle.ease)
+            return Color("Sosh", bundle: Bundle.a11yStatementLib)
         }
     }
 
     public var buttonColor: Color {
         switch self {
         case .innovation:
-            return Color("btn_innovation", bundle: Bundle.ease)
+            return Color("btn_innovation", bundle: Bundle.a11yStatementLib)
         case .orange:
-            return Color("btn_orange", bundle: Bundle.ease)
+            return Color("btn_orange", bundle: Bundle.a11yStatementLib)
         case .sosh:
-            return Color("btn_sosh", bundle: Bundle.ease)
+            return Color("btn_sosh", bundle: Bundle.a11yStatementLib)
         }
     }
 
     public var foregroundColor: Color {
         switch self {
         case .innovation:
-            return Color("fdg_innovation", bundle: Bundle.ease)
+            return Color("fdg_innovation", bundle: Bundle.a11yStatementLib)
         case .orange:
-            return Color("fdg_orange", bundle: Bundle.ease)
+            return Color("fdg_orange", bundle: Bundle.a11yStatementLib)
         case .sosh:
-            return Color("fdg_sosh", bundle: Bundle.ease)
+            return Color("fdg_sosh", bundle: Bundle.a11yStatementLib)
         }
     }
 }
