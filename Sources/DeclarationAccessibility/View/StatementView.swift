@@ -94,6 +94,14 @@ public struct StatementView: View {
         statement.mustUseWebView = useWebView
     }
 
+    #if DEBUG
+    /// Initializer dedicated to the Xcode Preview
+    init(_ statement: Statement, theme: Theme) {
+        self.statement = statement
+        self.theme = theme
+    }
+    #endif
+
     // MARK: - Body
 
     public var body: some View {
@@ -112,17 +120,6 @@ public struct StatementView: View {
 
 // MARK: - Xcode Preview
 
-#if DEBUG
-
-extension StatementView {
-
-    /// Initializer dedicated to the Xcode Preview
-    init(_ statement: Statement, theme: Theme) {
-        self.statement = statement
-        self.theme = theme
-    }
-}
-
 #Preview {
     StatementView(
         Statement(
@@ -137,6 +134,4 @@ extension StatementView {
             identityName: Constants.Orange.identityName),
         theme: .orange)
 }
-#endif
-
 #endif
