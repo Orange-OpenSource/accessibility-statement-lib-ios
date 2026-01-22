@@ -110,4 +110,33 @@ public struct StatementView: View {
     }
 }
 
+// MARK: - Xcode Preview
+
+#if DEBUG
+
+extension StatementView {
+
+    /// Initializer dedicated to the Xcode Preview
+    init(_ statement: Statement, theme: Theme) {
+        self.statement = statement
+        self.theme = theme
+    }
+}
+
+#Preview {
+    StatementView(
+        Statement(
+            title: "Accessibility Statement",
+            lang: "EN",
+            auditDate: "22 janv. 2026",
+            conformityAverage: 0.75,
+            conformityAverageDisplay: "75",
+            referentialName: "WCAG 2.2 AA",
+            technologies: "Swift, SwiftUI",
+            identityAddress: Constants.Orange.identityAddress,
+            identityName: Constants.Orange.identityName),
+        theme: .orange)
+}
+#endif
+
 #endif
