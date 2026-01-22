@@ -8,17 +8,15 @@
 # or see the "LICENSE" file for more details.
 #
 # Authors: See CONTRIBUTORS.txt
-# Software description: A SwiftUI components library with code examples for Orange Design System
+# Software description: A SwiftUI components library with code examples for Orange Unified Design System
 #
 
-# About runners: https://docs.github.com/en/actions/using-github-hosted-runners/using-github-hosted-runners/about-github-hosted-runners
-# Runners details: https://github.com/actions/runner-images/tree/main/images/macos
-
-name: Scan for leaks with Gitleaks
+name: Lint code
 
 # Rules for this GitHub Actions workflow
 # - workflow can be triggered manually if needed (workflow_dispatch)
-# - is for all branches except main as secrets leaks will be found and fixed earlier in the flow in previous branches
+# - use "almost" frozen version of macOS
+# - is for all branches except main as linter will be run earlier in the flow on previous branches
 # - automatically triggered when pull request is opened and has new commits (synchronize)
 # But beware, triggered on commit push, so do not be a push-machine-gun!
 
@@ -32,9 +30,9 @@ on:
   pull_request:
     types:
       - opened
-      - synchronize 
+      - synchronize
     branches-ignore:
-      - master      
+      - master            
 
 permissions:
   contents: read
@@ -45,15 +43,13 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  scan:
-    name: gitleaks
-    runs-on: ubuntu-latest
+  SwiftLint:
+    runs-on: macos-26
     timeout-minutes: 30
     steps:
       - uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
-        with:
-          fetch-depth: 0
-      - uses: gitleaks/gitleaks-action@ff98106e4c7b2bc287b24eaf42907196329070c7 # v2.3.9, https://github.com/gitleaks/gitleaks-action
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GITLEAKS_LICENSE: ${{ secrets.GITLEAKS_LICENSE }}
+  
+      - name: Run linting script
+        run: 
+        - brew install swiftlint
+        - cd scripts && ./run-lint.sh

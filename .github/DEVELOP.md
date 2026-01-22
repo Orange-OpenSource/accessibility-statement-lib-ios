@@ -212,7 +212,7 @@ You must run _SwiftLint_ in CLI or using _Xcode_ to be sure you don't keep and s
 We provide a command to run _SwiftLint_:
 ```shell
 cd scripts
-./lint.sh
+./run-lint.sh
 ```
 
 ## Formater
@@ -222,7 +222,7 @@ You can run *SwiftFormat* in CLI:
 
 ```shell
 cd scripts
-./format.sh
+./run-format.sh
 ```
 
 A *Git pre-commit hook* is also defined in the project. It will run *SwifFormat* before the commit so as to be sure the sources will be well formatted before being pushed.
@@ -241,7 +241,7 @@ We use `Periphery` to look for dead code and help developers to track it and rem
 
 ```shell
 cd scripts
-./dead-code.sh
+./check-dead-code.sh
 ```
 
 ## Software Bill of Materials
@@ -255,11 +255,6 @@ cd scripts
 ./update-sbom.sh
 ```
 
-You may need to udpate *grype* before so as to use an updated database for vulnerabilities checks:
-```shell
-brew install grype
-```
-
 ## CI/CD
 
 ### GitHub Action
@@ -267,9 +262,11 @@ brew install grype
 We use *GitHub Actions* so as to define several workflows with some actions to build, test, check, documentation and audit the library.
 
 Workflows are the following:
-- [Check translations](https://github.com/Orange-OpenSource/accessibility-statement-lib-ios/blob/master/.github/workflows/check-wordings.yml) to check if there are localizations troubles
-- [Run SwiftLint](https://github.com/Orange-OpenSource/accessibility-statement-lib-ios/blob/master/.github/workflows/swiftlint.yml) to check if sources are clean
+- [Check translations](https://github.com/Orange-OpenSource/accessibility-statement-lib-ios/blob/master/.github/workflows/wordings.yml) to check if there are localizations troubles
+- [Run Linter](https://github.com/Orange-OpenSource/accessibility-statement-lib-ios/blob/master/.github/workflows/lint.yml) to check if sources are clean
 - [Gitleaks](https://github.com/Orange-OpenSource/accessibility-statement-lib-ios/blob/master/.github/workflows/gitleaks.yml) to look for secrets leaks
+- [Run tests](https://github.com/Orange-OpenSource/accessibility-statement-lib-ios/blob/master/.github/workflows/tests.yml) to look for secrets leaks
+- [Check dead code](https://github.com/Orange-OpenSource/accessibility-statement-lib-ios/blob/master/.github/workflows/deadcode.yml) to look for dead code
 
 ## Use of GenAI
 

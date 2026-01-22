@@ -23,7 +23,7 @@ name: Lint code
 on:
   push:
     branches-ignore:
-      - main      
+      - master      
 
   workflow_dispatch: 
 
@@ -32,7 +32,7 @@ on:
       - opened
       - synchronize
     branches-ignore:
-      - main            
+      - master            
 
 permissions:
   contents: read
@@ -50,4 +50,4 @@ jobs:
       - uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
   
       - name: Run linting script
-        run: cd ../.. ; cd scripts ; ./run-tests.sh
+        run: cd scripts && ./run-tests.sh
