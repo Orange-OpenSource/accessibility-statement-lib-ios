@@ -1,21 +1,48 @@
-# DeclarationAccessibility
+<h1 align="center">Accessibility Statement Lib iOS</h1>
 
-Accessibility Statement Library contains a view showing the WCAG compliance status for its iOS application.
+<p align="center">
+  Accessibility Statement Lib iOS contains a view showing the WCAG compliance status for a given iOS application.
+  <br>
+  <a href="https://github.com/Orange-OpenSource/accessibility-statement-lib-ios/issues/new?template=bug_report.yml" title="Open an issue on GitHub">Report bug</a>
+  ·
+  <a href="https://github.com/Orange-OpenSource/accessibility-statement-lib-ios/issues/new?template=feature_request.yml" title="Open an issue on GitHub">Request feature</a>
+</p>
 
-To use it, you need the XML accessibility result file from the [Orange va11ydette](https://la-va11ydette.orange.com/)
+<p align="center">
+<a href="https://github.com/Orange-OpenSource/accessibility-statement-lib-ios/actions/workflows/gitleaks.yml" title="Gitleaks status"><img src="https://github.com/Orange-OpenSource/accessibility-statement-lib-ios/actions/workflows/gitleaks.yml/badge.svg" alt="Gitleaks status"></a>
+&nbsp;
+<a href="https://github.com/Orange-OpenSource/accessibility-statement-lib-ios/actions/workflows/lint.yml" title="SwiftLint status"><img src="https://github.com/Orange-OpenSource/accessibility-statement-lib-ios/actions/workflows/lint.yml/badge.svg" alt="SwiftLint status"></a>
+&nbsp;
+<a href="https://github.com/Orange-OpenSource/accessibility-statement-lib-ios/actions/workflows/wordings.yml" title="SwiftPolyglot status"><img src="https://github.com/Orange-OpenSource/accessibility-statement-lib-ios/actions/workflows/wordings.yml/badge.svg" alt="SwiftPolyglot status"></a>
+&nbsp;
+<a href="https://github.com/Orange-OpenSource/accessibility-statement-lib-ios/actions/workflows/tests.yml" title="Tests status"><img src="https://github.com/Orange-OpenSource/accessibility-statement-lib-ios/actions/workflows/tests.yml/badge.svg" alt="Tests status"></a>
+</p>
 
-![Accessibility statement screen](preview_accessibility_statement.png)
+## ⚙️ Status
 
+[![Apache 2.0 license](https://img.shields.io/github/license/Orange-OpenSource/accessibility-statement-lib-ios?style=for-the-badge)](https://github.com/Orange-OpenSource/accessibility-statement-lib-ios/blob/master/LICENSE)
 
-Import Accessibility Statement lib in your project
-------
+[![Versions](https://img.shields.io/github/v/release/Orange-OpenSource/accessibility-statement-lib-ios?label=Last%20version&style=for-the-badge)](https://github.com/Orange-OpenSource/accessibility-statement-lib-ios/releases)
+[![Still maintained](https://img.shields.io/maintenance/yes/2026?style=for-the-badge)](https://github.com/Orange-OpenSource/accessibility-statement-lib-ios/issues?q=is%3Aissue+is%3Aclosed)
 
-1. To integrate DeclarationAccessibility into your Xcode project using _Swift Package Manager_, declare a new dependency:
+[![Code size](https://img.shields.io/github/languages/code-size/Orange-OpenSource/accessibility-statement-lib-ios?style=for-the-badge)](https://github.com/Orange-OpenSource/accessibility-statement-lib-ios)
+[![Opened issues](https://img.shields.io/github/issues-raw/Orange-OpenSource/accessibility-statement-lib-ios?style=for-the-badge)](https://github.com/Orange-OpenSource/accessibility-statement-lib-ios/issues)
+
+![iOS 15](https://img.shields.io/badge/iOS-15-FF1AB2?style=for-the-badge)
+
+> [!CAUTION]
+> To use it, you need the XML accessibility result file from the [Orange Va11ydette](https://la-va11ydette.orange.com/)
+
+<p align="center">
+<img src=".github/images/preview_accessibility_statement.png" alt="Xcode preview of the Statement View" height="500">
+</p>
+
+## 🚀 Import Accessibility Statement lib in your project
+
+1. To integrate the `DeclarationAccessibility` module into your Xcode project using _Swift Package Manager_, declare a new dependency:
 
 ```swift
-// Add in the dependencies of your Package.swift
-.package(url: "https://github.com/Orange-OpenSource/accessibility-statement-lib-ios.git", .exact("1.0.0"))
-
+.package(url: "https://github.com/Orange-OpenSource/accessibility-statement-lib-ios.git", .exact("2.0.0"))
 ```
 
 2. Then add the dependency product in the target you want:
@@ -29,73 +56,48 @@ Import Accessibility Statement lib in your project
 )
 ```
 
+> [!TIP]
+> You can of course refer to it in your Xcode project settings.
 
-Usage
------
+## 🚀 Usage
 
-```swift
-DeclarationView(xmlFileName: "accessibility_result", selectedTheme: .orange, url: "https://a11y-guidelines.orange.com/fr/")
-```
+Import the module from the Swift Package:
 
-* Add the results XML file from the va11ydette in racine folder of your project and rename it "accessibility_result.xml"
-* Add xmlFileName, selectedTheme (orange, sosh, or innnovation) and url to DeclarationView
-* By default, the URL will open in Safari. If you wish to open the details page in a WebView, you need to set the 'useWebView: true' parameter, with the HTML page loaded locally
-
-Example with Safari
------
-
-1. To integrate DeclarationView
-```swift
-import SwiftUI
-import DeclarationAccessibility
-
-// MARK: Body
-
-struct SwiftUIView: View {
-    var body: some View {
-        VStack {
-            DeclarationView(xmlFileName: "accessibility_result", selectedTheme: .orange, url: "https://a11y-guidelines.orange.com/fr/")
-        }
-    }
-}
-
-struct SwiftUIView_Previews: PreviewProvider {
-    static var previews: some View {
-        SwiftUIView()
-    }
-}
-```
-
-Example with a WebView
------
-
-1. To integrate DeclarationView
 ```swift
 import DeclarationAccessibility
-import SwiftUI
-
-struct SwiftUIView: View {
-
-    // MARK: Stored properties
-
-    let detailsPageURL: URL
-
-    // MARK: Initializer
-
-    init() {
-        guard let detailsPageURL = Bundle.main.url(forResource: "accessibility_detail", withExtension: "html") else {
-            fatalError("Unable to find accessibility_detail.html in resources")
-        }
-
-        self.detailsPageURL = detailsPageURL
-    }
-
-    // MARK: Body
-
-    var body: some View {
-        VStack {
-            DeclarationView(xmlFileName: "accessibility_result", selectedTheme: .orange, url: detailsPageURL.absoluteString, useWebView: true)
-        }
-    }
-}
 ```
+
+Then, given an XML file generated by [La Va11ydette](https://la-va11ydette.orange.com/) named `accessibility_result` in your app bundle:
+
+- Display the statement with additional details in local HTML file
+```swift
+StatementView(xmlFile: "accessibility_result", theme: .orange, localUrl: absoluteStringUrlToLocalFile)
+```
+
+- Or use a detailed page available outside the app, e.g. in web site, to display in webview or not (by default not)
+```swift
+StatementView(xmlFile: "accessibility_result", theme: .orange, remoteUrl:  "https://a11y-guidelines.orange.com/fr/", useWebView: true)
+```
+
+## 🪲 Bugs, feature requests and discussions
+
+Have a bug or a feature request? Please first search for existing and closed issues. If your problem or idea is not addressed yet, [please open a new issue](https://github.com/Orange-OpenSource/accessibility-statement-lib-ios/issues/new/choose).
+
+If you want to share ideas or discuss about API, features, components or other topics, you should first open a new discussion.
+[Q&A](https://github.com/Orange-OpenSource/oaccessibility-statement-lib-ios/discussions/categories/q-a) is more dedicated for help, otherwise feel free to open or update a topic in [Ideas](https://github.com/Orange-OpenSource/accessibility-statement-lib-ios/discussions/categories/ideas).
+Keep in mind internal or sensitive discussions must be in internal tools, not public ones.
+
+## 🤝 Contributing
+
+Please read through our [contributing guidelines](https://github.com/Orange-OpenSource/accessibility-statement-lib-ios/blob/master/.github/CONTRIBUTING.md). Included are directions for opening issues, coding standards, and notes on development. More technical details are available also in the [DEVELOP](https://github.com/Orange-OpenSource/accessibility-statement-lib-ios/blob/master/.github/DEVELOP.md) file.
+
+## 🔒 Data and privacy
+
+The Accessibility Statement Lib is a Software Development Kit (SDK) that allows developpers display accessibility statement.
+As such:
+- this SDK does not handle any personnal data
+- this SDK does not require any device permission to work
+
+## ⚖️ Copyright and license
+
+Code released under the [Apache 2.0 License](https://github.com/Orange-OpenSource/accessibility-statement-lib-ios/blob/master/LICENSE).
