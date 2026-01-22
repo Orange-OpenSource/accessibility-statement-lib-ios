@@ -1,4 +1,4 @@
-# Contributing to OUDS iOS
+# Contributing to Accessibility Statement Lib iOS
 
 - [Using the Issue Tracker](#using-the-issue-tracker)
 - [Using the Discussion Tracker](#using-the-issue-tracker)
@@ -114,7 +114,7 @@ Adhering to the following process is the best way to get your work included in t
    # Clone your fork of the repo into the current directory (use either SSH or HTTPS)
    git clone https://github.com/<your-username>/accessibility-statement-lib-ios.git
    # Navigate to the newly cloned directory
-   cd ouds-ios
+   cd accessibility-statement-lib-ios
    # Assign the original repo to a remote called "upstream" (use either SSH or HTTPS)
    git remote add upstream https://github.com/Orange-OpenSource/accessibility-statement-lib-ios.git
    ```
