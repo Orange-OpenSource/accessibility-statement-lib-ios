@@ -8,7 +8,7 @@
 - [Linter](#linter)
 - [Formater](#formater)
 - [Dead code](#dead-code)
-- [Update of dependencies](#update-of-dependencies)
+- [Software Bill of Materials](#software-bill-of-materials)
 - [CI/CD](#cicd)
 - [Use of GenAI](#use-of-genai)
 - [Use of robots](#use-of-robots)
@@ -55,6 +55,13 @@ brew install periphery
 
 # For git-cliff (at least 2.8.0)
 brew install git-cliff
+
+# For Syft (at least 1.26.1)
+brew install syft
+
+# For Grype (at least 0.96.0)
+brew tap anchore/grype
+brew install grype
 ```
 
 Ensure you have the suitable _Ruby_ version. We recommend the use of [rbenv](https://github.com/rbenv/rbenv) to load the suitable version of ruby.
@@ -235,6 +242,22 @@ We use `Periphery` to look for dead code and help developers to track it and rem
 ```shell
 cd scripts
 ./dead-code.sh
+```
+
+## Software Bill of Materials
+
+For software quality reasons, intellectual property compliance, users trust and legal oblgitations with Cyber Resilience Act (CRA) and NIS2, it it interesing or mandatory to keep updated a Software Nill Of Materials (SBOM). And with such file listing dependencies in several levels we are able to make scans of them and check if there are known vulnerabilities.
+To do these operations, we use [Syft](https://github.com/anchore/syft) to generate a SBOM in SPDX JSON format, which will processed by [Grype](https://github.com/anchore/grype) to check if there are known vulnerabilities.
+
+These operations, triggered in CLI, are wrapped in a Fastlane command:
+```shell
+cd scripts
+./update-sbom.sh
+```
+
+You may need to udpate *grype* before so as to use an updated database for vulnerabilities checks:
+```shell
+brew install grype
 ```
 
 ## CI/CD
