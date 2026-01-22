@@ -6,6 +6,7 @@
 // the text of which is available at https://opensource.org/license/apache-2-0
 // or see the "LICENSE" file for more details.
 
+#if os(iOS)
 import SwiftUI
 
 /// A `View` to define a circle which can be empty, a bit empty or not
@@ -81,3 +82,5 @@ struct CircularProgressView_Previews: PreviewProvider {
             .environment(\.locale, .init(identifier: "fr"))
     }
 }
+
+#endif

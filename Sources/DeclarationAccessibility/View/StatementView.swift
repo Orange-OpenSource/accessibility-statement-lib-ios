@@ -6,6 +6,8 @@
 // the text of which is available at https://opensource.org/license/apache-2-0
 // or see the "LICENSE" file for more details.
 
+#if os(iOS)
+
 import SwiftUI
 
 /// A `View` which will display the accessibility statement for a given theme.
@@ -107,3 +109,5 @@ public struct StatementView: View {
         }
     }
 }
+
+#endif

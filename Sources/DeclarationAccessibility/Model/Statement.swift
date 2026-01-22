@@ -10,6 +10,9 @@ import Foundation
 
 /// Defines what an accessibility statement must be.
 struct Statement {
+
+    // MARK: - Properties
+
     var title: String
     var lang: String
     var status: String
@@ -25,6 +28,8 @@ struct Statement {
     var identityAddress: String
     var identityName: String
     var mustUseWebView: Bool
+
+    // MARK: - Initializer
 
     init(
         title: String = "",

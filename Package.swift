@@ -6,7 +6,10 @@ import PackageDescription
 let package = Package(
     name: "DeclarationAccessibility",
     defaultLocalization: "en",
-    platforms: [.iOS(.v15)],
+    platforms: [
+        .iOS(.v15),
+        .macOS(.v13), // Not offically supported, but for build and test of Swift package
+    ],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(

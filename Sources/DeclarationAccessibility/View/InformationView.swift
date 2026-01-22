@@ -6,6 +6,7 @@
 // the text of which is available at https://opensource.org/license/apache-2-0
 // or see the "LICENSE" file for more details.
 
+#if os(iOS)
 import SwiftUI
 
 // MARK: - Information View
@@ -120,3 +121,5 @@ struct InformationView_Previews: PreviewProvider {
             .environment(\.locale, .init(identifier: "fr"))
     }
 }
+
+#endif
