@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- AGENTS.md file
 - New API to init the `StatementView` without side effects
 
 ### Changed
