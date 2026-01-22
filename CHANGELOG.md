@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
+- Use templates for issues and pull requests (Orange-OpenSource/accessibility-statement-lib-ios#35)
 - Use of .gitignore (Orange-OpenSource/accessibility-statement-lib-ios#41)
 - Update test suite (Orange-OpenSource/accessibility-statement-lib-ios#40)
 - **BREAKING**: Rename of types, parameters and API (Orange-OpenSource/accessibility-statement-lib-ios#39)

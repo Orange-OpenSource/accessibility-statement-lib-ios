@@ -1,0 +1,92 @@
+name: Report a bug
+description: Tell us about a bug or issue you may have identified
+title: "When / For / In / On ... "
+labels: ["bug"]
+assignees: ["pya35", "pylapp"]
+body:
+  - type: checkboxes
+    attributes:
+      label: Prerequisites
+      description: Take a couple minutes to help our maintainers work faster.
+      options:
+        - label: I have [searched the backlog](https://github.com/Orange-OpenSource/accessibility-statement-lib-ios/issues) for duplicate or closed feature requests
+          required: true
+  - type: input
+    id: device-model
+    attributes:
+      label: Your test device
+      description: 
+      placeholder: iPhone 17 pro
+    validations:
+      required: true
+  - type: input
+    id: device-os-version
+    attributes:
+      label: Device OS version
+      description: 
+      placeholder: iOS 26.2
+    validations:
+      required: true
+  - type: input
+    id: lib-version
+    attributes:
+      label: Library version
+      placeholder: "2.0.0"
+    validations:
+      required: true
+  - type: input
+    id: app-orientation
+    attributes:
+      label: App orientation
+      placeholder: Portrait and / or landscape
+    validations:
+      required: false
+  - type: input
+    id: app-language
+    attributes:
+      label: DApp language
+      placeholder: English
+    validations:
+      required: false   
+  - type: input
+    id: device-language
+    attributes:
+      label: Device language
+      placeholder: English
+    validations:
+      required: false   
+  - type: input
+    id: xcode-version
+    attributes:
+      label: Xcode version
+      placeholder: "Add 'xcodebuild -version' command outputs"
+    validations:
+      required: false
+  - type: input
+    id: swift-version
+    attributes:
+      label: Swift version
+      placeholder: "Add 'swift --version' command outputs"
+    validations:
+      required: false
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: Describe the issue
+      description: Provide a summary of the issue, including specific steps to reproduce with as much detail as possible. Do not forget to hide sensitive or personal data (phone numbers, accounts, messages, emails etc).
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: Provide a description of what you expected to happen.
+    validations:
+      required: true
+  - type: textarea
+    id: a11y-settings
+    attributes:
+      label: Accessibility settings
+      description: Provide a description about the accessibility settings you have (vocalization with Voice Over, increased text sizes, keyboard navigation, high contrast, etc.)
+    validations:
+      required: true
