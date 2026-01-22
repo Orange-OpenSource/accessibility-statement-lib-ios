@@ -21,9 +21,12 @@ import SwiftUI
 ///
 /// ```swift
 ///     // Where:
-///     // "fileName" is the name of the XML file containing the results of the accessibilit audits
-///     // "someURL" can be an absolute URL of an HTML file displaying a detailed page, or of a local resource
-///     StatementView(xmlFileName: fileName, theme: .orange, detailURL: someURL, useWebView: true)
+///     // - "fileName" is the name of the XML file containing the results of the accessibilit audits
+///     // - "someURL" can be an absolute URL of an HTML file displaying a detailed page defined in app buundle
+///     StatementView(xmlFileName: fileName, theme: .orange, localURL: someURL)
+///
+///     // Or using an external HTML page, with a webview or not (by default no)
+///     StatementView(xmlFileName: fileName, theme: .orange, remoteUrl: someURL, useWebView: true)
 /// ```
 ///
 /// - Since: 2.0.0
@@ -35,6 +38,8 @@ public struct StatementView: View {
     /// The theme to apply
     private var theme: Theme
 
+    // MARK: - Initializers
+
     /// Defines the view for the accessibility statement.
     ///
     /// **Warning**: If `detailURL` points to an internal HTML page, `useWebView` must be set to *true*.
@@ -44,6 +49,7 @@ public struct StatementView: View {
     ///    - theme: The theme to apply
     ///    - detailUrl: The URL to use to go to more detailed statement web page
     ///    - useWebView: Flag saying ig a web view must be used or not, default set to `false`. Set to `true` if local HTML page is used.
+    @available(*, deprecated, message: "Use StatementView(xmlFile:theme:localUrl:) or StatementView(xmlFile:theme:remoteUrl:useWebView:) instead")
     public init(xmlFileName: String, theme: Theme, detailUrl: String, useWebView: Bool = false) {
         let parser = StatementDataParser()
         parser.parseXML(fileName: xmlFileName)
@@ -52,6 +58,41 @@ public struct StatementView: View {
         statement.detailUrl = detailUrl
         statement.mustUseWebView = useWebView
     }
+
+    /// Defines the view for the accessibility statement using a local HTML file for details.
+    /// If the detailed HTML page must be loaded externaly, prefer instead ``init(xmlFile:theme:remoteUrl:useWebView:)``.
+    ///
+    /// - Parameters:
+    ///    - xmlFile: The name of the accessibilty statement XML file to process, must be local in app bundle
+    ///    - theme: The theme to apply
+    ///    - localUrl: The URL to use to go to more detailed statement web page, must be a local HTML file
+    public init(xmlFile: String, theme: Theme, localUrl: String) {
+        let parser = StatementDataParser()
+        parser.parseXML(fileName: xmlFile)
+        statement = parser.statement
+        self.theme = theme
+        statement.detailUrl = localUrl
+        statement.mustUseWebView = true
+    }
+
+    /// Defines the view for the accessibility statement.
+    /// If the detailed HTML page must be loaded internaly from app, prefer instead ``init(xmlFile:theme:localUrl:)``.
+    ///
+    /// - Parameters:
+    ///    - xmlFile: The name of the accessibilty statement XML file to process, must be local in app bundle
+    ///    - theme: The theme to apply
+    ///    - remoteUrl: The URL to use to go to more detailed statement web page, supposed to be external HTML page
+    ///    - useWebView: If the external HTML page msut be displayed in web view or not, default set to `false`
+    public init(xmlFile: String, theme: Theme, remoteUrl: String, useWebView: Bool = false) {
+        let parser = StatementDataParser()
+        parser.parseXML(fileName: xmlFile)
+        statement = parser.statement
+        self.theme = theme
+        statement.detailUrl = remoteUrl
+        statement.mustUseWebView = useWebView
+    }
+
+    // MARK: - Body
 
     public var body: some View {
         ScrollView {

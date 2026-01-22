@@ -20,13 +20,19 @@ This is a library, exposed as a Swift Package, which will help you to display a 
 
 You can integrate the dedicated `View` in your app, e.g. in about pages:
 
+with local HTML file:
 ```swift
-StatementView(xmlFileName: fileName, theme: .orange, detailURL: someURL, useWebView: true)
+StatementView(xmlFileName: fileName, theme: .orange, localURL: someURL)
+```
+
+or loading external HTML page:
+```swift
+StatementView(xmlFileName: fileName, theme: .orange, remoteUrl: someURL, useWebView: true)
 ```
 
 where:
-- *fileName* is the name of the XML file containing the results of the accessibilit audits
-- *someURL* can be an absolute URL of an HTML file displaying a detailed page
+- *fileName* is the name of the XML file containing the results of the accessibility audits
+- *someURL* can be an absolute URL of an HTML file displaying a detailed page, or an external HTML page
 
 > Tip: Note you can use La Va11ydette to generate such XML file (https://la-va11ydette.orange.com/)
 
@@ -49,8 +55,7 @@ struct AccessibilityStatementPage: View {
         VStack {
             // Supposed to have "accessibility_result" XML file in app bundle
             // Here load a local HTML page ("accessibility_detail" HTML file in app bundle), forced to be in webview
-            // Otherwise just use instead a String URL pointing to an external web page
-            StatementView(xmlFileName: "accessibility_result", theme: .orange, detailURL: detailsPageURL.absoluteString, useWebView: true)
+            StatementView(xmlFileName: "accessibility_result", theme: .orange, localURL: detailsPageURL.absoluteString)
         }
     }
 }
