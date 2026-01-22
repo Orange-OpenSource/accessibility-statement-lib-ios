@@ -52,6 +52,9 @@ brew install swiftlint
 # For Periphery (https://github.com/peripheryapp/periphery) for dead code hunt (at least 3.1.0)
 # If you used Periphery V2 before, follow their migration guide: https://github.com/peripheryapp/periphery/wiki/3.0-Migration-Guide
 brew install periphery
+
+# For git-cliff (at least 2.8.0)
+brew install git-cliff
 ```
 
 Ensure you have the suitable _Ruby_ version. We recommend the use of [rbenv](https://github.com/rbenv/rbenv) to load the suitable version of ruby.
@@ -186,6 +189,13 @@ In few words, if the commit was signed with the committer's verified signature, 
 ### About release note and changelog
 
 We try also to apply [keep a changelog](https://keepachangelog.com/en/1.0.0/), and [semantic versioning](https://semver.org/spec/v2.0.0.html) both with [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/).
+
+We can generate a `RELEASE_NOTE.md` file using the Git history and [git cliff](https://git-cliff.org/) tool.
+
+To generate a release note:
+```shell
+git-cliff --config .github/cliff.toml --output RELEASE_NOTE.md X..Y
+```
 
 ## Linter
 
