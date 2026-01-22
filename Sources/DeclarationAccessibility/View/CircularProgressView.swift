@@ -8,12 +8,14 @@
 
 #if os(iOS)
 import SwiftUI
+import OUDSSwiftUI
+import OUDSTokensRaw
 
 /// A `View` to define a circle which can be empty, a bit empty or not
 struct CircularProgressView: View {
 
     var statement: Statement
-    var theme: Theme
+    @Environment(\.theme) private var theme
 
     private let circleSize: CGFloat = 200
 
@@ -22,9 +24,9 @@ struct CircularProgressView: View {
             ZStack {
                 // Background for the progress bar
                 Circle()
-                    .stroke(lineWidth: 15)
-                    .opacity(0.3)
-                    .foregroundColor(Color(UIColor.systemGray))
+                    .stroke(lineWidth: BorderRawTokens.width200)
+                    .opacity(OpacityRawTokens._320)
+                    .oudsForegroundColor(theme.colors.bgSecondary)
                     .frame(width: circleSize, height: circleSize)
 
                 Text(
@@ -36,7 +38,7 @@ struct CircularProgressView: View {
                         comment: "")
                         .replacingOccurrences(of: "@", with: statement.conformityAverageDisplay)
                 )
-                .font(.body)
+                .bodyDefaultLarge(theme)
                 .multilineTextAlignment(.center)
                 .frame(width: 150, height: 150)
                 .accessibilityHidden(true)
@@ -44,8 +46,8 @@ struct CircularProgressView: View {
                 // Foreground for the actual progress bar
                 Circle()
                     .trim(from: 0.0, to: min(statement.conformityAverage, 1.0))
-                    .stroke(style: StrokeStyle(lineWidth: 15, lineCap: .round, lineJoin: .round))
-                    .foregroundColor(theme.color)
+                    .stroke(style: StrokeStyle(lineWidth: BorderRawTokens.width200, lineCap: .round, lineJoin: .round))
+                    .oudsForegroundColor(theme.colors.contentBrandPrimary)
                     .rotationEffect(Angle(degrees: 270.0))
                     .animation(.linear, value: statement.conformityAverage)
                     .frame(width: circleSize, height: circleSize)
@@ -60,12 +62,12 @@ struct CircularProgressView: View {
                     comment: "")
                     .replacingOccurrences(of: "@", with: statement.conformityAverageDisplay)
             )
-            .font(.body)
+            .bodyDefaultLarge(theme)
             .multilineTextAlignment(.center)
-            .padding(.top, 10)
-            .padding([.leading, .trailing], 30)
+            .padding(.top, theme.spaces.fixedSmall)
+            .padding([.leading, .trailing], theme.spaces.fixedXlarge)
 
-            Divider()
+            OUDSDivider(color: .default)
         }
     }
 }
@@ -74,12 +76,13 @@ struct CircularProgressView: View {
 
 struct CircularProgressView_Previews: PreviewProvider {
     static var previews: some View {
-        CircularProgressView(
-            statement: Statement(
-                conformityAverage: 0.75,
-                conformityAverageDisplay: "75"),
-            theme: .sosh)
-            .environment(\.locale, .init(identifier: "fr"))
+        OUDSThemeableView(theme: SoshTheme()) {
+            CircularProgressView(
+                statement: Statement(
+                    conformityAverage: 0.75,
+                    conformityAverageDisplay: "75"))
+                .environment(\.locale, .init(identifier: "fr"))
+        }
     }
 }
 

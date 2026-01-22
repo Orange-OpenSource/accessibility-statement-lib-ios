@@ -9,6 +9,7 @@
 #if os(iOS)
 
 import SwiftUI
+import OUDSSwiftUI
 
 /// A `View` which will display the accessibility statement for a given theme.
 ///
@@ -105,15 +106,17 @@ public struct StatementView: View {
     // MARK: - Body
 
     public var body: some View {
-        ScrollView {
-            VStack {
-                CircularProgressView(statement: statement, theme: theme)
-                    .frame(maxWidth: .infinity)
+        OUDSThemeableView(theme: theme.oudsTheme) {
+            ScrollView {
+                VStack {
+                    CircularProgressView(statement: statement)
+                        .frame(maxWidth: .infinity)
 
-                InformationView(statement: statement, theme: theme)
-                    .frame(maxWidth: .infinity)
+                    InformationView(statement: statement)
+                        .frame(maxWidth: .infinity)
+                }
+                .padding(.top, 15)
             }
-            .padding(.top, 15)
         }
     }
 }

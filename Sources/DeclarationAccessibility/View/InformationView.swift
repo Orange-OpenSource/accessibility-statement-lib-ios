@@ -8,6 +8,7 @@
 
 #if os(iOS)
 import SwiftUI
+import OUDSSwiftUI
 
 // MARK: - Information View
 
@@ -15,7 +16,7 @@ import SwiftUI
 struct InformationView: View {
 
     var statement: Statement
-    var theme: Theme
+    @Environment(\.theme) private var theme
 
     var body: some View {
         ScrollView {
@@ -35,24 +36,16 @@ struct InformationView: View {
                     NavigationLink(
                         destination: WebViewPage(url: statement.detailUrl),
                         label: {
-                            Text("detail_button", bundle: .module)
-                                .padding()
-                                .background(theme.buttonColor)
-                                .foregroundColor(theme.foregroundColor)
-                                .font(.title3)
+                            OUDSButton(text: NSLocalizedString("detail_button", bundle: .module, comment: ""), appearance: .strong) {
+                                // Navigation is handled by NavigationLink
+                            }
                         })
                 } else {
-                    Button(action: {
+                    OUDSButton(text: NSLocalizedString("detail_button", bundle: .module, comment: ""), appearance: .strong) {
                         if let url = URL(string: statement.detailUrl) {
                             UIApplication.shared.open(url)
                         }
-                    }, label: {
-                        Text("detail_button", bundle: .module)
-                            .padding()
-                            .background(theme.buttonColor)
-                            .foregroundColor(theme.foregroundColor)
-                            .font(.title3)
-                    })
+                    }
                 }
             }
         }
@@ -66,6 +59,7 @@ private struct GroupView: View {
     let title: LocalizedStringKey
     let subTitle: String
     let text: String?
+    @Environment(\.theme) private var theme
 
     init(title: LocalizedStringKey, subTitle: String, text: String? = nil) {
         self.title = title
@@ -76,18 +70,17 @@ private struct GroupView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 5) {
             Text(title, bundle: .module)
-                .font(.title3)
-                .bold()
+                .headingMedium(theme)
                 .multilineTextAlignment(.leading)
                 .frame(maxWidth: .infinity, alignment: .leading)
             Text(subTitle)
-                .font(.body)
+                .bodyDefaultLarge(theme)
             if let text {
                 Text(text)
-                    .font(.body)
+                    .bodyDefaultLarge(theme)
             }
         }
-        .padding()
+        .padding(theme.spaces.fixedSmall)
     }
 }
 
@@ -108,17 +101,18 @@ private struct WebViewPage: View {
 
 struct InformationView_Previews: PreviewProvider {
     static var previews: some View {
-        InformationView(statement: Statement(
-            auditDate: "Test Audit Date",
-            referentialName: "Test Referential Name",
-            referentialVersion: "Test Referential Version",
-            referentialLevel: "Test Referential Level",
-            technologies: "Test Technologies",
-            detailUrl: "https://example.com",
-            identityAddress: "Test Identity Address",
-            identityName: "Test Identity Name"),
-        theme: .orange)
-            .environment(\.locale, .init(identifier: "fr"))
+        OUDSThemeableView(theme: OrangeTheme()) {
+            InformationView(statement: Statement(
+                auditDate: "Test Audit Date",
+                referentialName: "Test Referential Name",
+                referentialVersion: "Test Referential Version",
+                referentialLevel: "Test Referential Level",
+                technologies: "Test Technologies",
+                detailUrl: "https://example.com",
+                identityAddress: "Test Identity Address",
+                identityName: "Test Identity Name"))
+                .environment(\.locale, .init(identifier: "fr"))
+        }
     }
 }
 

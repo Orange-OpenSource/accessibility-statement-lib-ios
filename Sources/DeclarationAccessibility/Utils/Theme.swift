@@ -8,6 +8,10 @@
 
 import Foundation
 import SwiftUI
+import OUDSThemesContract
+import OUDSThemesOrange
+import OUDSThemesSosh
+import OUDSThemesWireframe
 
 /// A theme to apply to accessibility statement
 ///
@@ -15,6 +19,7 @@ import SwiftUI
 public enum Theme: String {
 
     /// For the Orange Innovation Cup
+    @available(*, deprecated, message: "Use wireframe theme instead")
     case innovation
 
     /// For the Orange brand products
@@ -22,6 +27,25 @@ public enum Theme: String {
 
     /// For the Sosh brand products
     case sosh
+
+    /// For wireframe / prototyping
+    case wireframe
+
+    /// Returns the corresponding OUDS theme instance
+    ///
+    /// - Returns: An OUDS theme object conforming to OUDSTheme protocol
+    public var oudsTheme: any OUDSTheme {
+        switch self {
+        case .innovation:
+            return WireframeTheme()
+        case .orange:
+            return OrangeTheme()
+        case .sosh:
+            return SoshTheme()
+        case .wireframe:
+            return WireframeTheme()
+        }
+    }
 
     public var color: Color {
         switch self {
@@ -31,6 +55,8 @@ public enum Theme: String {
             return Color("Orange", bundle: Bundle.a11yStatementLib)
         case .sosh:
             return Color("Sosh", bundle: Bundle.a11yStatementLib)
+        case .wireframe:
+            return Color("Innovation", bundle: Bundle.a11yStatementLib)
         }
     }
 
@@ -42,6 +68,8 @@ public enum Theme: String {
             return Color("btn_orange", bundle: Bundle.a11yStatementLib)
         case .sosh:
             return Color("btn_sosh", bundle: Bundle.a11yStatementLib)
+        case .wireframe:
+            return Color("btn_innovation", bundle: Bundle.a11yStatementLib)
         }
     }
 
@@ -53,6 +81,8 @@ public enum Theme: String {
             return Color("fdg_orange", bundle: Bundle.a11yStatementLib)
         case .sosh:
             return Color("fdg_sosh", bundle: Bundle.a11yStatementLib)
+        case .wireframe:
+            return Color("fdg_innovation", bundle: Bundle.a11yStatementLib)
         }
     }
 }

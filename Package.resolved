@@ -1,6 +1,15 @@
 {
   "pins" : [
     {
+      "identity" : "ouds-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Orange-OpenSource/ouds-ios",
+      "state" : {
+        "revision" : "ae1b40319468cf10d3d556516bb141f8d6da71f5",
+        "version" : "1.0.0"
+      }
+    },
+    {
       "identity" : "swift-docc-plugin",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/swiftlang/swift-docc-plugin",
