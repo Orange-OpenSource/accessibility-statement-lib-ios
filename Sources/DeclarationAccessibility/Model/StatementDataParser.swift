@@ -12,14 +12,12 @@ import Foundation
 final class StatementDataParser: NSObject, XMLParserDelegate {
 
     private var currentElement: String
-    private var currentData: String
 
     var statement: Statement
     var foundTotalResult: Bool
 
     override init() {
         currentElement = ""
-        currentData = ""
         statement = Statement()
         foundTotalResult = false
         super.init()
@@ -98,7 +96,6 @@ final class StatementDataParser: NSObject, XMLParserDelegate {
     func parser(_: XMLParser, didEndElement elementName: String, namespaceURI _: String?, qualifiedName _: String?) {
         if elementName == "result" {
             foundTotalResult = false
-            currentData = ""
         }
     }
 
