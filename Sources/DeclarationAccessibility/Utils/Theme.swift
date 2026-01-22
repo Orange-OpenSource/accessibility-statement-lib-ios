@@ -10,6 +10,8 @@ import Foundation
 import SwiftUI
 
 /// A theme to apply to accessibility statement
+///
+/// - Since: 1.0.0
 public enum Theme: String {
 
     /// For the Orange Innovation Cup
