@@ -1,0 +1,22 @@
+- [Overview](#overview)
+- [Current Maintainers](#current-maintainers)
+- [Emeritus](#emeritus)
+
+## Overview
+
+This document contains a list of maintainers in this repo. See [RESPONSIBILITIES.md](https://github.com/Orange-OpenSource/accessibility-statement-lib-ios/blob/master/.github/RESPONSIBILITIES.md#maintainer-responsibilities) that explains what the role of maintainer means, what maintainers do in this repository, and how they should be doing it. If you're interested in contributing, and becoming a maintainer, see [CONTRIBUTING](https://github.com/Orange-OpenSource/accessibility-statement-lib-ios/blob/master/.github/CONTRIBUTING.md).
+
+## Current Maintainers
+
+<!-- Sort by alphabetic order, last name in upper case -->
+
+| Maintainer               | GitHub ID    | Email                                | Affiliation    |
+| ------------------------ | ------------ | ------------------------------------ | -------------- |
+| Pierre-Yves AYOUL        | pya35        | pierre-yves.ayoul@orange.com         | Orange SA      |
+| Pierre-Yves LAPERSONNE   | pylapp       | pierreyves.lapersonne@orange.com     | Orange SA      |
+
+## Emeritus
+
+| Maintainer               | GitHub ID    | Email                                | Affiliation     |
+| ------------------------ | ------------ | ------------------------------------ | --------------- |
+| Tayeb SEDRAIA            | Tayebsed93   | tayeb.sedraia@orange.com             | Orange Business |

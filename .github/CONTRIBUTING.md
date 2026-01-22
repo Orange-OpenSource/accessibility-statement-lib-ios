@@ -1,0 +1,274 @@
+# Contributing to OUDS iOS
+
+- [Using the Issue Tracker](#using-the-issue-tracker)
+- [Using the Discussion Tracker](#using-the-issue-tracker)
+- [Issues and Labels](#issues-and-labels)
+- [Bug Reports](#bug-reports)
+- [Feature Requests](#feature-requests)
+- [Pull Requests](#pull-requests)
+- [Code Guidelines](#code-guidelines)
+- [Commits Style](#commits-style)
+- [Developer Certificate of Origin](#developer-certificate-of-origin)
+- [Review Workflow](#review-workflow)
+- [LLMs, GitHub bot accounts, and AI agents](#llms-github-bot-accounts-and-ai-agents)
+- [License](#license)
+
+Looking to contribute something to this library? **Here's how you can help.**
+
+> [!TIP]
+> Please take a moment to review this document in order to make the contribution process easy for everyone involved.
+
+> [!IMPORTANT]
+> Following these guidelines helps to communicate that you respect the time of the developers managing and developing this Open Source project.
+> In return, they should reciprocate that respect in addressing your issue or assessing patches and features.
+
+These is also a [Code of Conduct](https://github.com/Orange-OpenSource/accessibility-statement-lib-ios//blob/master/.github/CODE_OF_CONDUCT.md) which defines how we should interact together.
+
+## Using the Issue Tracker
+
+The [issue tracker](https://github.com/Orange-OpenSource/accessibility-statement-lib-ios/issues) is the preferred channel for [bug reports](#bug-reports), [feature requests](#feature-requests) and [submitting pull requests](#pull-requests), but please respect the following restrictions:
+
+- Please **do not** use the issue tracker for personal support requests. [GitHub Discussions](https://github.com/Orange-OpenSource/accessibility-statement-lib-ios/discussions/categories/q-a) or our internal Orange communication tools are better places to get help.
+
+- Please **do not** derail or troll issues. Keep the discussion on topic and respect the opinions of others.
+
+- Please **do not** post comments consisting solely of "+1" or ":thumbsup:". Use [GitHub's "reactions" feature](https://blog.github.com/2016-03-10-add-reactions-to-pull-requests-issues-and-comments/) instead. We reserve the right to delete comments which violate this rule.
+
+## Using the Discussion Tracker
+
+The GitHub project provides a [discussion tracker](https://github.com/Orange-OpenSource/accessibility-statement-lib-ios/discussions) with several sections.
+
+You may need to refer to the [Q&A section](https://github.com/Orange-OpenSource/accessibility-statement-lib-ios/discussions/categories/q-a) if you have questions in mind, or to [Ideas section](https://github.com/Orange-OpenSource/accessibility-statement-lib-ios/discussions/categories/ideas) for discussions about technical things.
+
+If you found a discussion which interests you or fills your needs, feel free to use [GitHub's "reactions" feature](https://blog.github.com/2016-03-10-add-reactions-to-pull-requests-issues-and-comments/) and bring useful comments. We reserve the right to delete comments which violate this rule.
+
+> [!IMPORTANT]
+> Keep in mind internal or sensitive discussions must be in internal tools, not public ones.
+
+## Issues and Labels
+
+Our bug tracker utilizes several labels to help organize and identify issues. Here's what they represent and how we use them:
+
+- `feature` - Issues asking for a new feature to be added, or an existing one to be extended or modified. New features require a minor version bump (e.g., `v1.0.0` to `v1.1.0`) or a major version bump if public API broken (e.g., `v1.0.0` to `v2.0.0`)
+- `help wanted` - Issues we need or would love help from the community to resolve.
+
+> [!TIP]
+> For a complete look at our labels, see the [project labels page](https://github.com/Orange-OpenSource/accessibility-statement-lib-ios/labels).
+
+## Bug Reports
+
+A bug is a _demonstrable problem_ that is caused by the code in the repository. Good bug reports are extremely helpful, so thanks!
+
+Guidelines for bug reports:
+
+1. **Use the GitHub issue search** &mdash; check if the issue has already been reported.
+
+2. **Check if the issue has been fixed** &mdash; try to reproduce it using the latest `develop` in the repository.
+
+3. **Isolate the problem** &mdash; ideally create a reduced reproducible test case.
+
+A good bug report shouldn't leave others needing to chase you up for more information. Please try to be as detailed as possible in your report. What is your environment? What steps will reproduce the issue? What device(s) and OS experience the problem? Do other devices show the bug differently? What would you expect to be the outcome? All these details will help people to fix any potential bugs.
+
+Example:
+
+> Short and descriptive example bug report title
+>
+> A summary of the issue and the browser/OS environment in which it occurs. If
+> suitable, include the steps required to reproduce the bug.
+>
+> 1. This is the first step
+> 2. This is the second step
+> 3. Further steps, etc.
+>
+> `<url>` - a link to the reduced test case
+>
+> Any other information you want to share that is relevant to the issue being
+> reported. This might include the lines of code that you have identified as
+> causing the bug, and potential solutions (and your opinions on their
+> merits).
+
+## Feature Requests
+
+Feature requests are welcome. But take a moment to find out whether your idea fits with the scope and aims of the project. It's up to _you_ to make a strong case to convince the project's developers of the merits of this feature. Please provide as much detail and context as possible.
+
+## Pull Requests
+
+> [!IMPORTANT]
+> Be sure you have an iOS-ready environment, i.e. macOS and Xcode. 
+> Please refer to DEVELOP file for more details.
+
+Good pull requests (patches, improvements, new features) are a fantastic help. They should remain focused in scope and avoid containing unrelated commits.
+
+**Please ask first** before embarking on any **significant** pull request (e.g. implementing features, refactoring code, porting to a different language), otherwise you risk spending a lot of time working on something that the project's developers might not want to merge into the project. For trivial things, or things that don't require a lot of your time, you can go ahead and make a PR.
+
+Please adhere to the [coding guidelines](#code-guidelines) used throughout the project (indentation, accurate comments, etc.) and any other requirements (such as test coverage).
+
+Adhering to the following process is the best way to get your work included in the project:
+
+> [!TIP]
+> Of course you can use GUI tools if your are not used to CLI
+
+1. [Fork](https://help.github.com/articles/fork-a-repo/) the project, clone your fork, and configure the remotes:
+
+   ```bash
+   # Clone your fork of the repo into the current directory (use either SSH or HTTPS)
+   git clone https://github.com/<your-username>/accessibility-statement-lib-ios.git
+   # Navigate to the newly cloned directory
+   cd ouds-ios
+   # Assign the original repo to a remote called "upstream" (use either SSH or HTTPS)
+   git remote add upstream https://github.com/Orange-OpenSource/accessibility-statement-lib-ios.git
+   ```
+
+2. If you cloned a while ago, get the latest changes from upstream:
+
+   ```bash
+   git checkout develop
+   git pull upstream develop
+   ```
+
+3. Create a new topic branch (off the `develop` project development branch) to contain your feature, change, or fix:
+
+   ```bash
+   git checkout -b <topic-branch-name> develop
+   ```
+
+4. Commit your changes in logical chunks. Use Git's [interactive rebase](https://help.github.com/articles/about-git-rebase/) feature to tidy up your commits before making them public. Refer also to [commits style](#commits-style).
+
+5. Locally merge (or rebase) the upstream development branch into your topic branch:
+
+   ```bash
+   git pull [--rebase] upstream develop
+   # Or use also 'git rebase' command
+   ```
+
+6. Push your topic branch up to your fork:
+
+   ```bash
+   git push origin <topic-branch-name>
+   ```
+
+7. [Open a Pull Request](https://help.github.com/articles/about-pull-requests/) with a clear title and description against the `develop` branch.
+
+**IMPORTANT**: By submitting a patch, you agree to allow the project owners to license your work under the terms of the [Apache 2.0 License](https://github.com/Orange-OpenSource/accessibility-statement-lib-ios/blob/master/LICENSE).
+
+## Code Guidelines
+
+Format your code before committing to ensure your changes follow our coding standards.
+Linters and formatters are configured for the project.
+Keep documentation and tests updated.
+
+## Commits Style
+
+Try as best as possible to apply [conventional commits rules](https://www.conventionalcommits.org/en/v1.0.0/).
+Keep in mind to have your commits well prefixed, and with the issue number between parenthesis at the end.
+If your commits embed contributions for other people, do not forget to [add them as co-authors](https://docs.github.com/fr/pull-requests/committing-changes-to-your-project/creating-and-editing-commits/creating-a-commit-with-multiple-authors).
+
+For example, given a commit to fix the issue n°43, the commit should be like:
+
+```text
+fix: title of your commit (#43)
+
+Some details about the fix you propose
+
+Co-authored-by: Author firstname and lastname <author email>
+Signed-off-by: Author firstname and lastname <first author email>
+```
+
+If the commut embeds work of several authors, use the *Co-authored-by* tag (in use in GitHub):
+
+```text
+fix: title of your commit (#43)
+
+Some details about the fix you propose
+
+Co-authored-by: First author firstname and lastname <first author email>
+Co-authored-by: Second author firstname and lastname <second author email>
+Signed-off-by: First author firstname and lastname <first author email>
+Signed-off-by: Second author firstname and lastname <second author email>
+```
+
+If the feature has been reviewed by the product owner, the designers and the accessibility experts, you can mention them in the commit message using the appropriate
+[*Tested-by*](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/Documentation/process/submitting-patches.rst#n525) tag.
+It can help to find who reviewed, in alpha builds, the evolutions. Thus, the message for the merge commit should be like:
+
+```text
+fix: title of your commit (#43)
+
+Some details about the fix you propose
+
+Tested-by: Tester firstname and lastname <tester email>
+Co-authored-by: First author firstname and lastname <first author email>
+Co-authored-by: Second author firstname and lastname <second author email>
+Signed-off-by: First author firstname and lastname <first author email>
+Signed-off-by: Second author firstname and lastname <second author email>
+```
+
+Do not forget also to add, in the merge commit, who reviewed the source code evolutions using the [*Reviewed-by*](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/Documentation/process/submitting-patches.rst#n525) tag, like:
+
+```text
+fix: title of your commit (#43)
+
+Some details about the fix you propose
+
+Reviewed-by: Reviewer firstname and lastname <reviewer email>
+Signed-off-by: Author firstname and lastname <first author email>
+```
+
+For example, for issue n°123 and its pull request n°456, tested by Foo, reviewed by Bar, authored by Wizz and Wazz, acked by John and suggested by Jane, precise it with their first name, last name and emails:
+```text
+refactor: improve code architecture (#123) (#456)
+
+Some things have been refactored to make incredible things.
+
+Suggested-by: Jane <jane@orange.com>
+Tested-by: Foo <foo@orange.com>
+Acked-by: John <john@orange.com>
+Reviewed-by: Bar <bar@orange.com>
+Co-authored-by: Wizz <wizz@orange.com>
+Co-authored-by: Wazz <wazz@orange.com>
+```
+
+Finaly, if you want to note somewhere you used *generative AI* tool, you can add the field "Assisted-by" in your commit with the model in use and in parenthesis some commercial name.
+
+```text
+feat: add thousands of tokens (#666)
+
+Add thousands of tokens and hundreds of tests.
+
+Assisted-by: GPT-4o-mini (Orange Dinootoo)
+```
+
+If bot accounts reviewed your pull requests or add code in your commits, add this information, for example depending to your case:
+```text
+Co-authored-by: boosted-bot <boosted-bot@users.noreply.github.com>
+Reviewed-by: Copilot <198982749+Copilot@users.noreply.github.com>
+Signed-off-by: StepSecurity Bot <bot@stepsecurity.io>
+```
+
+## Developer Certificate of Origin
+
+You may notice in the previous section the commits are signed-off.
+For external contributors the DCO (i.e. [Developer Certificate of Origin of Linux Foundation in its version 1.1](https://developercertificate.org/)) is required.
+For Orange contributors it is highly recommended and will be mandatory soon.
+You can refer to the documentation about [-s / --signoff](https://git-scm.com/docs/git-commit) options for your Git commands.
+
+## LLMs, GitHub bot accounts, and AI agents
+
+This project does not accept contributions from bot GitHub accounts. All pull requests that appear to come from such an account will be closed.
+
+Patches created by LLMs and AI agents are also viewed with suspicion unless a human has reviewed them.
+All LLM generated patches MUST have text in the git log and in the pull request description that indicates the patch was created using an LLM with the pattern below
+
+```text
+Assisted-by: MODEL (SERVICE)
+```
+
+For example, if you use GPT-4o-mini LLM with GitHub Copilot:
+```text
+Assisted-by: GPT-4o-mini (GitHub Copilot)
+```
+
+## License
+
+> [!IMPORTANT]
+> By contributing your code, you agree to license your contribution under the [Apache 2.0 License](../LICENSE).
