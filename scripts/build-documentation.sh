@@ -228,6 +228,8 @@ if [[ $use_git -eq 1 ]]; then
     git add "$DOCS_DIRECTORY/*.jpg"
     git add "$DOCS_DIRECTORY/*.json"
     git add "$DOCS_DIRECTORY/*.html"
+    git add "$DOCS_DIRECTORY/*.ico"
+    git add "$DOCS_DIRECTORY/*.svg"
     
     _ "🔨 Committing things (be ready if passwords / passphrases are asked)"
     commit_message=$(printf "docs: update DocC documentation for version v%s (%s)\n\nUpdate documentation for GitHub pages of version v%s of accessibility-statement-lib-ios library (build timestamp %s)\n\nWARNING: This is an automatic commit 🤖" "$lib_version" "$timestamp" "$lib_version" "$timestamp")
