@@ -59,7 +59,7 @@ StatementView(xmlFileName: String, theme: Theme, remoteUrl: String, useWebView: 
 
 - **Backward Compatibility**: No
 - **v1.3.0 Support**: Use dedicated Git branch **release/1.x**
-- **End of Support**: Q2 2026
+- **End of Support**: 2nd half of 2026
 
 ## Support
 

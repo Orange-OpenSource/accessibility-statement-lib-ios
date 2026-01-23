@@ -1,22 +1,26 @@
 # ``DeclarationAccessibility``
 
 @Metadata {
-    @DisplayName("Welcome to the DeclarationAccessibility library", style: symbol)
+    @DisplayName("Welcome to the Accessibility Statement Library for iOS", style: symbol)
     @TitleHeading("Swift Package")
 }
-<!-- 
-Do not add @PageImage(purpose: card) because not managed for landing page of online doc.
-See https://github.com/swiftlang/swift-docc/issues/1283
--->
-
 
 ## Overview
 
 This is a library, exposed as a Swift Package, which will help you to display a legal accessibility statement for your application.
+This library use XML report which can be generated from [La va11ydette](https://la-va11ydette.orange.com/?lang=en).
 
 > Tip: Feel free to submit pull requests if you can improve the support of any platforms!
 
+> Important: You used until now the version 1? Have [a look on the migration guide for v2](https://github.com/Orange-OpenSource/accessibility-statement-lib-ios/blob/develop/MIGRATION.md)
+
 ## How to use the library
+
+When you get the dependency, import from the Swift Package the dedicated product:
+
+```swift
+import DeclarationAccessibility
+```
 
 You can integrate the dedicated `View` in your app, e.g. in about pages:
 
@@ -39,6 +43,8 @@ where:
 More complete sample:
 
 ```swift
+import DeclarationAccessibility
+
 struct AccessibilityStatementPage: View {
 
     let detailsPageURL: URL
@@ -63,7 +69,7 @@ struct AccessibilityStatementPage: View {
 
 ## Data and privacy
 
-The *DeclarationAccessibility* library is a Software Development Kit (SDK) that allows developpers to display accessibility statement on mobile applications.
+The *accessibility-statement-lib-ios* library is a Software Development Kit (SDK) that allows developpers to display accessibility statement on mobile applications.
 As such:
 - this SDK does not handle any personnal data
 - this SDK does not require any device permission to work
