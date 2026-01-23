@@ -1,0 +1,201 @@
+{
+  "": {
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/master.swiftdeps"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Tokens/RawTokens/Sources/Composites/ElevationCompositeRawToken.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/ElevationCompositeRawToken.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/ElevationCompositeRawToken.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/ElevationCompositeRawToken~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/ElevationCompositeRawToken.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/ElevationCompositeRawToken.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Tokens/RawTokens/Sources/Declarations/BorderRawTokens.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/BorderRawTokens.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/BorderRawTokens.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/BorderRawTokens~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/BorderRawTokens.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/BorderRawTokens.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Tokens/RawTokens/Sources/Declarations/ColorModeRawTokens.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/ColorModeRawTokens.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/ColorModeRawTokens.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/ColorModeRawTokens~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/ColorModeRawTokens.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/ColorModeRawTokens.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Tokens/RawTokens/Sources/Declarations/ColorRawTokens.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/ColorRawTokens.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/ColorRawTokens.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/ColorRawTokens~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/ColorRawTokens.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/ColorRawTokens.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Tokens/RawTokens/Sources/Declarations/DimensionRawTokens.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/DimensionRawTokens.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/DimensionRawTokens.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/DimensionRawTokens~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/DimensionRawTokens.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/DimensionRawTokens.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Tokens/RawTokens/Sources/Declarations/EffectRawTokens.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/EffectRawTokens.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/EffectRawTokens.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/EffectRawTokens~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/EffectRawTokens.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/EffectRawTokens.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Tokens/RawTokens/Sources/Declarations/ElevationRawTokens.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/ElevationRawTokens.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/ElevationRawTokens.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/ElevationRawTokens~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/ElevationRawTokens.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/ElevationRawTokens.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Tokens/RawTokens/Sources/Declarations/FontRawTokens.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/FontRawTokens.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/FontRawTokens.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/FontRawTokens~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/FontRawTokens.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/FontRawTokens.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Tokens/RawTokens/Sources/Declarations/GridRawTokens.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/GridRawTokens.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/GridRawTokens.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/GridRawTokens~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/GridRawTokens.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/GridRawTokens.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Tokens/RawTokens/Sources/Declarations/OpacityRawTokens.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/OpacityRawTokens.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/OpacityRawTokens.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/OpacityRawTokens~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/OpacityRawTokens.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/OpacityRawTokens.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Tokens/RawTokens/Sources/TypeAliases/BorderRawTokens+Aliases.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/BorderRawTokens+Aliases.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/BorderRawTokens+Aliases.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/BorderRawTokens+Aliases~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/BorderRawTokens+Aliases.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/BorderRawTokens+Aliases.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Tokens/RawTokens/Sources/TypeAliases/ColorModeRawTokens+Aliases.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/ColorModeRawTokens+Aliases.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/ColorModeRawTokens+Aliases.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/ColorModeRawTokens+Aliases~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/ColorModeRawTokens+Aliases.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/ColorModeRawTokens+Aliases.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Tokens/RawTokens/Sources/TypeAliases/ColorRawTokens+Aliases.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/ColorRawTokens+Aliases.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/ColorRawTokens+Aliases.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/ColorRawTokens+Aliases~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/ColorRawTokens+Aliases.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/ColorRawTokens+Aliases.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Tokens/RawTokens/Sources/TypeAliases/DimensionRawTokens+Aliases.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/DimensionRawTokens+Aliases.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/DimensionRawTokens+Aliases.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/DimensionRawTokens+Aliases~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/DimensionRawTokens+Aliases.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/DimensionRawTokens+Aliases.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Tokens/RawTokens/Sources/TypeAliases/EffectRawTokens+Aliases.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/EffectRawTokens+Aliases.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/EffectRawTokens+Aliases.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/EffectRawTokens+Aliases~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/EffectRawTokens+Aliases.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/EffectRawTokens+Aliases.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Tokens/RawTokens/Sources/TypeAliases/ElevationRawTokens+Aliases.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/ElevationRawTokens+Aliases.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/ElevationRawTokens+Aliases.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/ElevationRawTokens+Aliases~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/ElevationRawTokens+Aliases.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/ElevationRawTokens+Aliases.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Tokens/RawTokens/Sources/TypeAliases/FontRawTokens+Aliases.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/FontRawTokens+Aliases.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/FontRawTokens+Aliases.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/FontRawTokens+Aliases~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/FontRawTokens+Aliases.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/FontRawTokens+Aliases.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Tokens/RawTokens/Sources/TypeAliases/GridRawTokens+Aliases.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/GridRawTokens+Aliases.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/GridRawTokens+Aliases.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/GridRawTokens+Aliases~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/GridRawTokens+Aliases.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/GridRawTokens+Aliases.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Tokens/RawTokens/Sources/TypeAliases/OpacityRawTokens+Aliases.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/OpacityRawTokens+Aliases.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/OpacityRawTokens+Aliases.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/OpacityRawTokens+Aliases~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/OpacityRawTokens+Aliases.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/OpacityRawTokens+Aliases.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Tokens/RawTokens/Sources/Values/BorderRawTokens+Values.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/BorderRawTokens+Values.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/BorderRawTokens+Values.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/BorderRawTokens+Values~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/BorderRawTokens+Values.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/BorderRawTokens+Values.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Tokens/RawTokens/Sources/Values/ColorModeRawTokens+Values.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/ColorModeRawTokens+Values.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/ColorModeRawTokens+Values.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/ColorModeRawTokens+Values~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/ColorModeRawTokens+Values.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/ColorModeRawTokens+Values.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Tokens/RawTokens/Sources/Values/ColorRawTokens+Values.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/ColorRawTokens+Values.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/ColorRawTokens+Values.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/ColorRawTokens+Values~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/ColorRawTokens+Values.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/ColorRawTokens+Values.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Tokens/RawTokens/Sources/Values/DimensionRawTokens+Values.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/DimensionRawTokens+Values.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/DimensionRawTokens+Values.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/DimensionRawTokens+Values~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/DimensionRawTokens+Values.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/DimensionRawTokens+Values.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Tokens/RawTokens/Sources/Values/EffectRawTokens+Values.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/EffectRawTokens+Values.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/EffectRawTokens+Values.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/EffectRawTokens+Values~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/EffectRawTokens+Values.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/EffectRawTokens+Values.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Tokens/RawTokens/Sources/Values/ElevationRawTokens+Values.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/ElevationRawTokens+Values.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/ElevationRawTokens+Values.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/ElevationRawTokens+Values~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/ElevationRawTokens+Values.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/ElevationRawTokens+Values.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Tokens/RawTokens/Sources/Values/FontRawTokens+Values.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/FontRawTokens+Values.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/FontRawTokens+Values.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/FontRawTokens+Values~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/FontRawTokens+Values.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/FontRawTokens+Values.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Tokens/RawTokens/Sources/Values/GridRawTokens+Values.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/GridRawTokens+Values.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/GridRawTokens+Values.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/GridRawTokens+Values~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/GridRawTokens+Values.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/GridRawTokens+Values.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Tokens/RawTokens/Sources/Values/OpacityRawTokens+Values.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/OpacityRawTokens+Values.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/OpacityRawTokens+Values.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/OpacityRawTokens+Values~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/OpacityRawTokens+Values.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSTokensRaw.build/OpacityRawTokens+Values.dia"
+  }
+}

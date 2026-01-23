@@ -1,0 +1,586 @@
+{
+  "": {
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/master.swiftdeps"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Themes/Wireframe/Sources/Declarations/WirefameBrandColorRawTokens.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WirefameBrandColorRawTokens.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WirefameBrandColorRawTokens.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WirefameBrandColorRawTokens~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WirefameBrandColorRawTokens.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WirefameBrandColorRawTokens.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Themes/Wireframe/Sources/Declarations/WirefameBrandFontRawTokens.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WirefameBrandFontRawTokens.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WirefameBrandFontRawTokens.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WirefameBrandFontRawTokens~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WirefameBrandFontRawTokens.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WirefameBrandFontRawTokens.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Themes/Wireframe/Sources/Providers/ComponentTokens/WireframeThemeBadgeComponentTokensProvider.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeBadgeComponentTokensProvider.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeBadgeComponentTokensProvider.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeBadgeComponentTokensProvider~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeBadgeComponentTokensProvider.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeBadgeComponentTokensProvider.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Themes/Wireframe/Sources/Providers/ComponentTokens/WireframeThemeBarComponentTokensProvider.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeBarComponentTokensProvider.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeBarComponentTokensProvider.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeBarComponentTokensProvider~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeBarComponentTokensProvider.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeBarComponentTokensProvider.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Themes/Wireframe/Sources/Providers/ComponentTokens/WireframeThemeBulletListComponentTokensProvider.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeBulletListComponentTokensProvider.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeBulletListComponentTokensProvider.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeBulletListComponentTokensProvider~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeBulletListComponentTokensProvider.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeBulletListComponentTokensProvider.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Themes/Wireframe/Sources/Providers/ComponentTokens/WireframeThemeButtonComponentTokensProvider.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeButtonComponentTokensProvider.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeButtonComponentTokensProvider.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeButtonComponentTokensProvider~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeButtonComponentTokensProvider.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeButtonComponentTokensProvider.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Themes/Wireframe/Sources/Providers/ComponentTokens/WireframeThemeCheckboxComponentTokensProvider.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeCheckboxComponentTokensProvider.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeCheckboxComponentTokensProvider.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeCheckboxComponentTokensProvider~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeCheckboxComponentTokensProvider.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeCheckboxComponentTokensProvider.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Themes/Wireframe/Sources/Providers/ComponentTokens/WireframeThemeChipComponentTokensProvider.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeChipComponentTokensProvider.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeChipComponentTokensProvider.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeChipComponentTokensProvider~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeChipComponentTokensProvider.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeChipComponentTokensProvider.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Themes/Wireframe/Sources/Providers/ComponentTokens/WireframeThemeControlItemComponentTokensProvider.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeControlItemComponentTokensProvider.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeControlItemComponentTokensProvider.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeControlItemComponentTokensProvider~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeControlItemComponentTokensProvider.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeControlItemComponentTokensProvider.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Themes/Wireframe/Sources/Providers/ComponentTokens/WireframeThemeDividerComponentTokensProvider.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeDividerComponentTokensProvider.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeDividerComponentTokensProvider.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeDividerComponentTokensProvider~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeDividerComponentTokensProvider.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeDividerComponentTokensProvider.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Themes/Wireframe/Sources/Providers/ComponentTokens/WireframeThemeIconComponentTokensProvider.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeIconComponentTokensProvider.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeIconComponentTokensProvider.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeIconComponentTokensProvider~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeIconComponentTokensProvider.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeIconComponentTokensProvider.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Themes/Wireframe/Sources/Providers/ComponentTokens/WireframeThemeInputTagComponentTokensProvider.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeInputTagComponentTokensProvider.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeInputTagComponentTokensProvider.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeInputTagComponentTokensProvider~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeInputTagComponentTokensProvider.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeInputTagComponentTokensProvider.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Themes/Wireframe/Sources/Providers/ComponentTokens/WireframeThemeInputTextComponentTokensProvider.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeInputTextComponentTokensProvider.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeInputTextComponentTokensProvider.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeInputTextComponentTokensProvider~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeInputTextComponentTokensProvider.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeInputTextComponentTokensProvider.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Themes/Wireframe/Sources/Providers/ComponentTokens/WireframeThemeLinkComponentTokensProvider.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeLinkComponentTokensProvider.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeLinkComponentTokensProvider.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeLinkComponentTokensProvider~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeLinkComponentTokensProvider.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeLinkComponentTokensProvider.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Themes/Wireframe/Sources/Providers/ComponentTokens/WireframeThemePinCodeInputComponentTokensProvider.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemePinCodeInputComponentTokensProvider.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemePinCodeInputComponentTokensProvider.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemePinCodeInputComponentTokensProvider~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemePinCodeInputComponentTokensProvider.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemePinCodeInputComponentTokensProvider.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Themes/Wireframe/Sources/Providers/ComponentTokens/WireframeThemeQuantityInputComponentTokensProvider.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeQuantityInputComponentTokensProvider.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeQuantityInputComponentTokensProvider.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeQuantityInputComponentTokensProvider~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeQuantityInputComponentTokensProvider.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeQuantityInputComponentTokensProvider.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Themes/Wireframe/Sources/Providers/ComponentTokens/WireframeThemeRadioButtonComponentTokensProvider.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeRadioButtonComponentTokensProvider.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeRadioButtonComponentTokensProvider.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeRadioButtonComponentTokensProvider~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeRadioButtonComponentTokensProvider.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeRadioButtonComponentTokensProvider.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Themes/Wireframe/Sources/Providers/ComponentTokens/WireframeThemeSelectInputComponentTokensProvider.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeSelectInputComponentTokensProvider.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeSelectInputComponentTokensProvider.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeSelectInputComponentTokensProvider~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeSelectInputComponentTokensProvider.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeSelectInputComponentTokensProvider.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Themes/Wireframe/Sources/Providers/ComponentTokens/WireframeThemeSkeletonComponentTokensProvider.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeSkeletonComponentTokensProvider.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeSkeletonComponentTokensProvider.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeSkeletonComponentTokensProvider~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeSkeletonComponentTokensProvider.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeSkeletonComponentTokensProvider.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Themes/Wireframe/Sources/Providers/ComponentTokens/WireframeThemeSwitchComponentTokensProvider.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeSwitchComponentTokensProvider.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeSwitchComponentTokensProvider.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeSwitchComponentTokensProvider~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeSwitchComponentTokensProvider.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeSwitchComponentTokensProvider.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Themes/Wireframe/Sources/Providers/ComponentTokens/WireframeThemeTagComponentTokensProvider.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeTagComponentTokensProvider.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeTagComponentTokensProvider.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeTagComponentTokensProvider~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeTagComponentTokensProvider.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeTagComponentTokensProvider.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Themes/Wireframe/Sources/Providers/ComponentTokens/WireframeThemeTextAreaComponentTokensProvider.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeTextAreaComponentTokensProvider.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeTextAreaComponentTokensProvider.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeTextAreaComponentTokensProvider~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeTextAreaComponentTokensProvider.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeTextAreaComponentTokensProvider.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Themes/Wireframe/Sources/Providers/SemanticTokens/WireframeThemeBorderSemanticTokensProvider.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeBorderSemanticTokensProvider.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeBorderSemanticTokensProvider.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeBorderSemanticTokensProvider~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeBorderSemanticTokensProvider.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeBorderSemanticTokensProvider.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Themes/Wireframe/Sources/Providers/SemanticTokens/WireframeThemeColorModeSemanticTokensProvider.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeColorModeSemanticTokensProvider.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeColorModeSemanticTokensProvider.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeColorModeSemanticTokensProvider~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeColorModeSemanticTokensProvider.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeColorModeSemanticTokensProvider.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Themes/Wireframe/Sources/Providers/SemanticTokens/WireframeThemeColorSemanticTokensProvider.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeColorSemanticTokensProvider.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeColorSemanticTokensProvider.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeColorSemanticTokensProvider~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeColorSemanticTokensProvider.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeColorSemanticTokensProvider.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Themes/Wireframe/Sources/Providers/SemanticTokens/WireframeThemeDimensionSemanticTokensProvider.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeDimensionSemanticTokensProvider.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeDimensionSemanticTokensProvider.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeDimensionSemanticTokensProvider~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeDimensionSemanticTokensProvider.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeDimensionSemanticTokensProvider.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Themes/Wireframe/Sources/Providers/SemanticTokens/WireframeThemeEffectSemanticTokensProvider.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeEffectSemanticTokensProvider.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeEffectSemanticTokensProvider.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeEffectSemanticTokensProvider~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeEffectSemanticTokensProvider.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeEffectSemanticTokensProvider.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Themes/Wireframe/Sources/Providers/SemanticTokens/WireframeThemeElevationSemanticTokensProvider.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeElevationSemanticTokensProvider.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeElevationSemanticTokensProvider.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeElevationSemanticTokensProvider~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeElevationSemanticTokensProvider.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeElevationSemanticTokensProvider.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Themes/Wireframe/Sources/Providers/SemanticTokens/WireframeThemeFontSemanticTokensProvider.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeFontSemanticTokensProvider.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeFontSemanticTokensProvider.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeFontSemanticTokensProvider~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeFontSemanticTokensProvider.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeFontSemanticTokensProvider.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Themes/Wireframe/Sources/Providers/SemanticTokens/WireframeThemeGridSemanticTokensProvider.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeGridSemanticTokensProvider.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeGridSemanticTokensProvider.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeGridSemanticTokensProvider~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeGridSemanticTokensProvider.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeGridSemanticTokensProvider.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Themes/Wireframe/Sources/Providers/SemanticTokens/WireframeThemeOpacitySemanticTokensProvider.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeOpacitySemanticTokensProvider.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeOpacitySemanticTokensProvider.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeOpacitySemanticTokensProvider~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeOpacitySemanticTokensProvider.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeOpacitySemanticTokensProvider.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Themes/Wireframe/Sources/Providers/SemanticTokens/WireframeThemeSizeSemanticTokensProvider.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeSizeSemanticTokensProvider.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeSizeSemanticTokensProvider.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeSizeSemanticTokensProvider~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeSizeSemanticTokensProvider.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeSizeSemanticTokensProvider.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Themes/Wireframe/Sources/Providers/SemanticTokens/WireframeThemeSpaceSemanticTokensProvider.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeSpaceSemanticTokensProvider.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeSpaceSemanticTokensProvider.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeSpaceSemanticTokensProvider~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeSpaceSemanticTokensProvider.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeThemeSpaceSemanticTokensProvider.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Themes/Wireframe/Sources/TypeAliases/SoshBrandFontRawTokens+Aliases.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/SoshBrandFontRawTokens+Aliases.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/SoshBrandFontRawTokens+Aliases.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/SoshBrandFontRawTokens+Aliases~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/SoshBrandFontRawTokens+Aliases.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/SoshBrandFontRawTokens+Aliases.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Themes/Wireframe/Sources/TypeAliases/WireframeBrandColorRawTokens+Aliases.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeBrandColorRawTokens+Aliases.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeBrandColorRawTokens+Aliases.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeBrandColorRawTokens+Aliases~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeBrandColorRawTokens+Aliases.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeBrandColorRawTokens+Aliases.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Themes/Wireframe/Sources/Values/ComponentTokens/WireframeTheme+BadgeComponentTokens.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+BadgeComponentTokens.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+BadgeComponentTokens.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+BadgeComponentTokens~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+BadgeComponentTokens.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+BadgeComponentTokens.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Themes/Wireframe/Sources/Values/ComponentTokens/WireframeTheme+BarComponentTokens.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+BarComponentTokens.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+BarComponentTokens.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+BarComponentTokens~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+BarComponentTokens.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+BarComponentTokens.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Themes/Wireframe/Sources/Values/ComponentTokens/WireframeTheme+BulletListComponentTokens.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+BulletListComponentTokens.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+BulletListComponentTokens.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+BulletListComponentTokens~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+BulletListComponentTokens.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+BulletListComponentTokens.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Themes/Wireframe/Sources/Values/ComponentTokens/WireframeTheme+ButtonComponentTokens.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+ButtonComponentTokens.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+ButtonComponentTokens.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+ButtonComponentTokens~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+ButtonComponentTokens.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+ButtonComponentTokens.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Themes/Wireframe/Sources/Values/ComponentTokens/WireframeTheme+ButtonMonoComponentTokens.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+ButtonMonoComponentTokens.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+ButtonMonoComponentTokens.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+ButtonMonoComponentTokens~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+ButtonMonoComponentTokens.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+ButtonMonoComponentTokens.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Themes/Wireframe/Sources/Values/ComponentTokens/WireframeTheme+CheckboxComponentTokens.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+CheckboxComponentTokens.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+CheckboxComponentTokens.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+CheckboxComponentTokens~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+CheckboxComponentTokens.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+CheckboxComponentTokens.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Themes/Wireframe/Sources/Values/ComponentTokens/WireframeTheme+ChipComponentTokens.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+ChipComponentTokens.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+ChipComponentTokens.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+ChipComponentTokens~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+ChipComponentTokens.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+ChipComponentTokens.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Themes/Wireframe/Sources/Values/ComponentTokens/WireframeTheme+ControlItemComponentTokens.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+ControlItemComponentTokens.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+ControlItemComponentTokens.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+ControlItemComponentTokens~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+ControlItemComponentTokens.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+ControlItemComponentTokens.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Themes/Wireframe/Sources/Values/ComponentTokens/WireframeTheme+DividerComponentTokens.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+DividerComponentTokens.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+DividerComponentTokens.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+DividerComponentTokens~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+DividerComponentTokens.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+DividerComponentTokens.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Themes/Wireframe/Sources/Values/ComponentTokens/WireframeTheme+ExpandLinkComponentTokens.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+ExpandLinkComponentTokens.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+ExpandLinkComponentTokens.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+ExpandLinkComponentTokens~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+ExpandLinkComponentTokens.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+ExpandLinkComponentTokens.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Themes/Wireframe/Sources/Values/ComponentTokens/WireframeTheme+IconComponentTokens.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+IconComponentTokens.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+IconComponentTokens.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+IconComponentTokens~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+IconComponentTokens.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+IconComponentTokens.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Themes/Wireframe/Sources/Values/ComponentTokens/WireframeTheme+InputTagComponentTokens.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+InputTagComponentTokens.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+InputTagComponentTokens.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+InputTagComponentTokens~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+InputTagComponentTokens.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+InputTagComponentTokens.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Themes/Wireframe/Sources/Values/ComponentTokens/WireframeTheme+LinkComponentTokens.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+LinkComponentTokens.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+LinkComponentTokens.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+LinkComponentTokens~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+LinkComponentTokens.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+LinkComponentTokens.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Themes/Wireframe/Sources/Values/ComponentTokens/WireframeTheme+LinkMonoComponentTokens.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+LinkMonoComponentTokens.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+LinkMonoComponentTokens.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+LinkMonoComponentTokens~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+LinkMonoComponentTokens.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+LinkMonoComponentTokens.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Themes/Wireframe/Sources/Values/ComponentTokens/WireframeTheme+PinCodeInputComponentTokens.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+PinCodeInputComponentTokens.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+PinCodeInputComponentTokens.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+PinCodeInputComponentTokens~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+PinCodeInputComponentTokens.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+PinCodeInputComponentTokens.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Themes/Wireframe/Sources/Values/ComponentTokens/WireframeTheme+QuantityInputComponentTokens.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+QuantityInputComponentTokens.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+QuantityInputComponentTokens.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+QuantityInputComponentTokens~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+QuantityInputComponentTokens.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+QuantityInputComponentTokens.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Themes/Wireframe/Sources/Values/ComponentTokens/WireframeTheme+RadioButtonComponentTokens.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+RadioButtonComponentTokens.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+RadioButtonComponentTokens.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+RadioButtonComponentTokens~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+RadioButtonComponentTokens.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+RadioButtonComponentTokens.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Themes/Wireframe/Sources/Values/ComponentTokens/WireframeTheme+SelectInputComponentTokens.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+SelectInputComponentTokens.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+SelectInputComponentTokens.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+SelectInputComponentTokens~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+SelectInputComponentTokens.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+SelectInputComponentTokens.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Themes/Wireframe/Sources/Values/ComponentTokens/WireframeTheme+SkeletonComponentTokens.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+SkeletonComponentTokens.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+SkeletonComponentTokens.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+SkeletonComponentTokens~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+SkeletonComponentTokens.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+SkeletonComponentTokens.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Themes/Wireframe/Sources/Values/ComponentTokens/WireframeTheme+SwitchComponentTokens.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+SwitchComponentTokens.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+SwitchComponentTokens.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+SwitchComponentTokens~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+SwitchComponentTokens.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+SwitchComponentTokens.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Themes/Wireframe/Sources/Values/ComponentTokens/WireframeTheme+TagComponentTokens.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+TagComponentTokens.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+TagComponentTokens.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+TagComponentTokens~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+TagComponentTokens.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+TagComponentTokens.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Themes/Wireframe/Sources/Values/ComponentTokens/WireframeTheme+TextAreaComponentTokens.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+TextAreaComponentTokens.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+TextAreaComponentTokens.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+TextAreaComponentTokens~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+TextAreaComponentTokens.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+TextAreaComponentTokens.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Themes/Wireframe/Sources/Values/ComponentTokens/WireframeTheme+TextInputComponentTokens.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+TextInputComponentTokens.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+TextInputComponentTokens.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+TextInputComponentTokens~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+TextInputComponentTokens.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+TextInputComponentTokens.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Themes/Wireframe/Sources/Values/RawTokens/WireframeBrandColorRawTokens+Values.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeBrandColorRawTokens+Values.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeBrandColorRawTokens+Values.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeBrandColorRawTokens+Values~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeBrandColorRawTokens+Values.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeBrandColorRawTokens+Values.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Themes/Wireframe/Sources/Values/RawTokens/WireframeBrandFontRawTokens+Values.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeBrandFontRawTokens+Values.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeBrandFontRawTokens+Values.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeBrandFontRawTokens+Values~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeBrandFontRawTokens+Values.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeBrandFontRawTokens+Values.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Themes/Wireframe/Sources/Values/SemanticTokens/WireframeTheme+BorderSemanticTokens.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+BorderSemanticTokens.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+BorderSemanticTokens.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+BorderSemanticTokens~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+BorderSemanticTokens.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+BorderSemanticTokens.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Themes/Wireframe/Sources/Values/SemanticTokens/WireframeTheme+ColorModeMultipleSemanticTokens.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+ColorModeMultipleSemanticTokens.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+ColorModeMultipleSemanticTokens.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+ColorModeMultipleSemanticTokens~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+ColorModeMultipleSemanticTokens.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+ColorModeMultipleSemanticTokens.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Themes/Wireframe/Sources/Values/SemanticTokens/WireframeTheme+ColorModeSemanticTokens.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+ColorModeSemanticTokens.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+ColorModeSemanticTokens.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+ColorModeSemanticTokens~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+ColorModeSemanticTokens.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+ColorModeSemanticTokens.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Themes/Wireframe/Sources/Values/SemanticTokens/WireframeTheme+ColorMultipleSemanticTokens.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+ColorMultipleSemanticTokens.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+ColorMultipleSemanticTokens.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+ColorMultipleSemanticTokens~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+ColorMultipleSemanticTokens.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+ColorMultipleSemanticTokens.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Themes/Wireframe/Sources/Values/SemanticTokens/WireframeTheme+ColorSemanticTokens.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+ColorSemanticTokens.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+ColorSemanticTokens.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+ColorSemanticTokens~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+ColorSemanticTokens.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+ColorSemanticTokens.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Themes/Wireframe/Sources/Values/SemanticTokens/WireframeTheme+DimensionSemanticTokens.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+DimensionSemanticTokens.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+DimensionSemanticTokens.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+DimensionSemanticTokens~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+DimensionSemanticTokens.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+DimensionSemanticTokens.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Themes/Wireframe/Sources/Values/SemanticTokens/WireframeTheme+EffectSemanticTokens.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+EffectSemanticTokens.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+EffectSemanticTokens.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+EffectSemanticTokens~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+EffectSemanticTokens.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+EffectSemanticTokens.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Themes/Wireframe/Sources/Values/SemanticTokens/WireframeTheme+ElevationCompositeSemanticTokens.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+ElevationCompositeSemanticTokens.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+ElevationCompositeSemanticTokens.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+ElevationCompositeSemanticTokens~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+ElevationCompositeSemanticTokens.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+ElevationCompositeSemanticTokens.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Themes/Wireframe/Sources/Values/SemanticTokens/WireframeTheme+ElevationMultipleSemanticTokens.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+ElevationMultipleSemanticTokens.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+ElevationMultipleSemanticTokens.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+ElevationMultipleSemanticTokens~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+ElevationMultipleSemanticTokens.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+ElevationMultipleSemanticTokens.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Themes/Wireframe/Sources/Values/SemanticTokens/WireframeTheme+ElevationSemanticTokens.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+ElevationSemanticTokens.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+ElevationSemanticTokens.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+ElevationSemanticTokens~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+ElevationSemanticTokens.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+ElevationSemanticTokens.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Themes/Wireframe/Sources/Values/SemanticTokens/WireframeTheme+FontCompositeSemanticTokens.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+FontCompositeSemanticTokens.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+FontCompositeSemanticTokens.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+FontCompositeSemanticTokens~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+FontCompositeSemanticTokens.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+FontCompositeSemanticTokens.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Themes/Wireframe/Sources/Values/SemanticTokens/WireframeTheme+FontMultipleSemanticTokens.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+FontMultipleSemanticTokens.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+FontMultipleSemanticTokens.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+FontMultipleSemanticTokens~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+FontMultipleSemanticTokens.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+FontMultipleSemanticTokens.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Themes/Wireframe/Sources/Values/SemanticTokens/WireframeTheme+FontSemanticTokens.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+FontSemanticTokens.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+FontSemanticTokens.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+FontSemanticTokens~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+FontSemanticTokens.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+FontSemanticTokens.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Themes/Wireframe/Sources/Values/SemanticTokens/WireframeTheme+GridSemanticTokens.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+GridSemanticTokens.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+GridSemanticTokens.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+GridSemanticTokens~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+GridSemanticTokens.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+GridSemanticTokens.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Themes/Wireframe/Sources/Values/SemanticTokens/WireframeTheme+OpacitySemanticTokens.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+OpacitySemanticTokens.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+OpacitySemanticTokens.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+OpacitySemanticTokens~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+OpacitySemanticTokens.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+OpacitySemanticTokens.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Themes/Wireframe/Sources/Values/SemanticTokens/WireframeTheme+SizeMultipleSemanticTokens.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+SizeMultipleSemanticTokens.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+SizeMultipleSemanticTokens.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+SizeMultipleSemanticTokens~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+SizeMultipleSemanticTokens.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+SizeMultipleSemanticTokens.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Themes/Wireframe/Sources/Values/SemanticTokens/WireframeTheme+SizeSemanticTokens.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+SizeSemanticTokens.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+SizeSemanticTokens.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+SizeSemanticTokens~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+SizeSemanticTokens.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+SizeSemanticTokens.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Themes/Wireframe/Sources/Values/SemanticTokens/WireframeTheme+SpaceMultipleSemanticTokens.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+SpaceMultipleSemanticTokens.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+SpaceMultipleSemanticTokens.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+SpaceMultipleSemanticTokens~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+SpaceMultipleSemanticTokens.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+SpaceMultipleSemanticTokens.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Themes/Wireframe/Sources/Values/SemanticTokens/WireframeTheme+SpaceSemanticTokens.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+SpaceSemanticTokens.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+SpaceSemanticTokens.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+SpaceSemanticTokens~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+SpaceSemanticTokens.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+SpaceSemanticTokens.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Themes/Wireframe/Sources/WireframeTheme+Bundle.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+Bundle.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+Bundle.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+Bundle~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+Bundle.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+Bundle.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Themes/Wireframe/Sources/WireframeTheme+Preview.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+Preview.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+Preview.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+Preview~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+Preview.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme+Preview.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/checkouts/ouds-ios/OUDS/Core/Themes/Wireframe/Sources/WireframeTheme.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/WireframeTheme.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/DerivedSources/resource_bundle_accessor.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/resource_bundle_accessor.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/resource_bundle_accessor.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/resource_bundle_accessor~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/resource_bundle_accessor.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/OUDSThemesWireframe.build/resource_bundle_accessor.dia"
+  }
+}
