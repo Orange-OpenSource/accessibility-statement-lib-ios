@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased](https://github.com/Orange-OpenSource/accessibility-statement-lib-ios/compare/2.0.0....develop)
 
+### Added
+
+- Integration OUDS library (Orange-OpenSource/accessibility-statement-lib-ios#38)
+
 ### Changed
 
 - Update README with Swift Package Index badge (Orange-OpenSource/accessibility-statement-lib-ios#47)

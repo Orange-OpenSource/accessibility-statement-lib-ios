@@ -22,9 +22,7 @@ struct Log {
     }
 
     static func log(_ message: String) {
-        #if DEBUG
         logger.log("\(prefix) \(message)")
-        #endif
     }
 
     static func info(_ message: String) {

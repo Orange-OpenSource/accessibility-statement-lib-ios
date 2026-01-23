@@ -29,9 +29,19 @@ with local HTML file:
 StatementView(xmlFileName: fileName, theme: .orange, localURL: someURL)
 ```
 
-or loading external HTML page:
+or if you use [OUDS](https://github.com/Orange-OpenSource/ouds-ios) library, prefer instead:
+```swift
+StatementView(xmlFileName: fileName, localURL: someURL, theme: theme)
+```
+
+You can also load an external HTML page for details:
 ```swift
 StatementView(xmlFileName: fileName, theme: .orange, remoteUrl: someURL, useWebView: true)
+```
+
+or if you use [OUDS](https://github.com/Orange-OpenSource/ouds-ios) library, prefer instead:
+```swift
+StatementView(xmlFileName: fileName, remoteUrl: someURL, useWebView: true, theme: theme)
 ```
 
 where:
@@ -40,7 +50,7 @@ where:
 
 > Tip: Note you can use La Va11ydette to generate such XML file (https://la-va11ydette.orange.com/)
 
-More complete sample:
+More complete sample with OUDS library:
 
 ```swift
 import DeclarationAccessibility
@@ -48,6 +58,7 @@ import DeclarationAccessibility
 struct AccessibilityStatementPage: View {
 
     let detailsPageURL: URL
+    @Environment(\.theme) var theme // Supposed the theme has been initialized
 
     init() {
         guard let detailsPageURL = Bundle.main.url(forResource: "accessibility_detail", withExtension: "html") else {
@@ -61,7 +72,7 @@ struct AccessibilityStatementPage: View {
         VStack {
             // Supposed to have "accessibility_result" XML file in app bundle
             // Here load a local HTML page ("accessibility_detail" HTML file in app bundle), forced to be in webview
-            StatementView(xmlFileName: "accessibility_result", theme: .orange, localURL: detailsPageURL.absoluteString)
+            StatementView(xmlFileName: "accessibility_result", localURL: detailsPageURL.absoluteString, theme: theme)
         }
     }
 }

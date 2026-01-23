@@ -8,7 +8,7 @@
 
 import Foundation
 
-/// XML parser which will process an accessibility stateement file in XML format to then populate a Swift object ``Declaration`
+/// XML parser which will process an accessibility statement file in XML format to then populate a Swift object ``Statement``
 final class StatementDataParser: NSObject, XMLParserDelegate {
 
     private var currentElement: String
