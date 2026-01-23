@@ -13,6 +13,7 @@ enum Constants {
     enum Orange {
 
         static let identityName = "Orange SA"
+        // FIXME: "Siège social :" should be localized
         static let identityAddress = "Siège social : 111, quai du Président Roosevelt, CS 70222, 91130 Issy-les-Moulineaux CEDEX"
     }
 }

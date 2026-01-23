@@ -7,30 +7,31 @@
 // or see the "LICENSE" file for more details.
 
 #if os(iOS)
-import SwiftUI
 import OUDSSwiftUI
-import OUDSTokensRaw
+import SwiftUI
 
 /// A `View` to define a circle which can be empty, a bit empty or not
 struct CircularProgressView: View {
 
     var statement: Statement
-    @Environment(\.theme) private var theme
+    var theme: OUDSTheme
 
-    private let circleSize: CGFloat = 200
+    private static let circleSize: CGFloat = 200
+    private static let titleFrameDimension: CGFloat = 150
+    private static let rotationEffect: CGFloat = 270.0
 
     var body: some View {
         VStack {
             ZStack {
-                // Background for the progress bar
+                // Background for the progress bar, full circle
                 Circle()
                     .stroke(lineWidth: BorderRawTokens.width200)
                     .opacity(OpacityRawTokens._320)
-                    .oudsForegroundColor(theme.colors.bgSecondary)
-                    .frame(width: circleSize, height: circleSize)
+                    .oudsForegroundColor(theme.colors.contentDisabled)
+                    .frame(width: Self.circleSize, height: Self.circleSize)
 
                 Text(
-                    NSLocalizedString(
+                    NSLocalizedString( // FIXME: Change API
                         "average_title_label",
                         tableName: nil,
                         bundle: .module,
@@ -40,21 +41,21 @@ struct CircularProgressView: View {
                 )
                 .bodyDefaultLarge(theme)
                 .multilineTextAlignment(.center)
-                .frame(width: 150, height: 150)
+                .frame(width: Self.titleFrameDimension, height: Self.titleFrameDimension)
                 .accessibilityHidden(true)
 
-                // Foreground for the actual progress bar
+                // Foreground for the progress bar, maybe partial circle
                 Circle()
                     .trim(from: 0.0, to: min(statement.conformityAverage, 1.0))
                     .stroke(style: StrokeStyle(lineWidth: BorderRawTokens.width200, lineCap: .round, lineJoin: .round))
                     .oudsForegroundColor(theme.colors.contentBrandPrimary)
-                    .rotationEffect(Angle(degrees: 270.0))
+                    .rotationEffect(Angle(degrees: Self.rotationEffect))
                     .animation(.linear, value: statement.conformityAverage)
-                    .frame(width: circleSize, height: circleSize)
+                    .frame(width: Self.circleSize, height: Self.circleSize)
             }
 
             Text(
-                NSLocalizedString(
+                NSLocalizedString( // FIXME: Change API
                     "result_declaration_subtitle",
                     tableName: nil,
                     bundle: .module,
@@ -67,7 +68,7 @@ struct CircularProgressView: View {
             .padding(.top, theme.spaces.fixedSmall)
             .padding([.leading, .trailing], theme.spaces.fixedXlarge)
 
-            OUDSDivider(color: .default)
+            OUDSHorizontalDivider(color: .default)
         }
     }
 }
@@ -76,13 +77,12 @@ struct CircularProgressView: View {
 
 struct CircularProgressView_Previews: PreviewProvider {
     static var previews: some View {
-        OUDSThemeableView(theme: SoshTheme()) {
-            CircularProgressView(
-                statement: Statement(
-                    conformityAverage: 0.75,
-                    conformityAverageDisplay: "75"))
-                .environment(\.locale, .init(identifier: "fr"))
-        }
+        CircularProgressView(
+            statement: Statement(
+                conformityAverage: 0.75,
+                conformityAverageDisplay: "75"),
+            theme: OrangeTheme())
+            .environment(\.locale, .init(identifier: "fr"))
     }
 }
 

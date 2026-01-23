@@ -7,11 +7,8 @@
 // or see the "LICENSE" file for more details.
 
 import Foundation
+import OUDSSwiftUI
 import SwiftUI
-import OUDSThemesContract
-import OUDSThemesOrange
-import OUDSThemesSosh
-import OUDSThemesWireframe
 
 /// A theme to apply to accessibility statement
 ///
@@ -25,64 +22,12 @@ public enum Theme: String {
     /// For the Orange brand products
     case orange
 
+    /// For the Orange brand products with contraintes of spaces and sizes
+    case orangeBusinessTools
+
     /// For the Sosh brand products
     case sosh
 
     /// For wireframe / prototyping
     case wireframe
-
-    /// Returns the corresponding OUDS theme instance
-    ///
-    /// - Returns: An OUDS theme object conforming to OUDSTheme protocol
-    public var oudsTheme: any OUDSTheme {
-        switch self {
-        case .innovation:
-            return WireframeTheme()
-        case .orange:
-            return OrangeTheme()
-        case .sosh:
-            return SoshTheme()
-        case .wireframe:
-            return WireframeTheme()
-        }
-    }
-
-    public var color: Color {
-        switch self {
-        case .innovation:
-            return Color("Innovation", bundle: Bundle.a11yStatementLib)
-        case .orange:
-            return Color("Orange", bundle: Bundle.a11yStatementLib)
-        case .sosh:
-            return Color("Sosh", bundle: Bundle.a11yStatementLib)
-        case .wireframe:
-            return Color("Innovation", bundle: Bundle.a11yStatementLib)
-        }
-    }
-
-    public var buttonColor: Color {
-        switch self {
-        case .innovation:
-            return Color("btn_innovation", bundle: Bundle.a11yStatementLib)
-        case .orange:
-            return Color("btn_orange", bundle: Bundle.a11yStatementLib)
-        case .sosh:
-            return Color("btn_sosh", bundle: Bundle.a11yStatementLib)
-        case .wireframe:
-            return Color("btn_innovation", bundle: Bundle.a11yStatementLib)
-        }
-    }
-
-    public var foregroundColor: Color {
-        switch self {
-        case .innovation:
-            return Color("fdg_innovation", bundle: Bundle.a11yStatementLib)
-        case .orange:
-            return Color("fdg_orange", bundle: Bundle.a11yStatementLib)
-        case .sosh:
-            return Color("fdg_sosh", bundle: Bundle.a11yStatementLib)
-        case .wireframe:
-            return Color("fdg_innovation", bundle: Bundle.a11yStatementLib)
-        }
-    }
 }

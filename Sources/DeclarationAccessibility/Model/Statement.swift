@@ -8,7 +8,7 @@
 
 import Foundation
 
-/// Defines what an accessibility statement must be.
+/// Defines what an accessibility statement or declaration must be.
 struct Statement {
 
     // MARK: - Properties

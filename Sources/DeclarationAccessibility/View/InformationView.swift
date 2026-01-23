@@ -7,8 +7,8 @@
 // or see the "LICENSE" file for more details.
 
 #if os(iOS)
-import SwiftUI
 import OUDSSwiftUI
+import SwiftUI
 
 // MARK: - Information View
 
@@ -16,11 +16,13 @@ import OUDSSwiftUI
 struct InformationView: View {
 
     var statement: Statement
-    @Environment(\.theme) private var theme
+    var theme: OUDSTheme
+
+    @State private var showWebView = false
 
     var body: some View {
         ScrollView {
-            VStack(spacing: -20) {
+            VStack(spacing: -10) {
                 GroupView(title: "date_title", subTitle: statement.auditDate)
                     .accessibilityElement(children: .combine)
                 GroupView(title: "identity_title", subTitle: statement.identityName, text: statement.identityAddress)
@@ -35,13 +37,21 @@ struct InformationView: View {
                 if statement.mustUseWebView {
                     NavigationLink(
                         destination: WebViewPage(url: statement.detailUrl),
-                        label: {
-                            OUDSButton(text: NSLocalizedString("detail_button", bundle: .module, comment: ""), appearance: .strong) {
-                                // Navigation is handled by NavigationLink
-                            }
-                        })
+                        isActive: $showWebView)
+                    {
+                        EmptyView()
+                    }
+                    .hidden()
+
+                    OUDSButton(text: NSLocalizedString("detail_button", bundle: .module, comment: ""),
+                               appearance: .strong)
+                    {
+                        showWebView = true
+                    }
                 } else {
-                    OUDSButton(text: NSLocalizedString("detail_button", bundle: .module, comment: ""), appearance: .strong) {
+                    OUDSButton(text: NSLocalizedString("detail_button", bundle: .module, comment: ""),
+                               appearance: .strong)
+                    {
                         if let url = URL(string: statement.detailUrl) {
                             UIApplication.shared.open(url)
                         }
@@ -59,6 +69,7 @@ private struct GroupView: View {
     let title: LocalizedStringKey
     let subTitle: String
     let text: String?
+
     @Environment(\.theme) private var theme
 
     init(title: LocalizedStringKey, subTitle: String, text: String? = nil) {
@@ -68,7 +79,7 @@ private struct GroupView: View {
     }
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 5) {
+        VStack(alignment: .leading, spacing: theme.spaces.fixedXsmall) {
             Text(title, bundle: .module)
                 .headingMedium(theme)
                 .multilineTextAlignment(.leading)
@@ -91,8 +102,8 @@ private struct WebViewPage: View {
 
     // swiftlint:disable force_unwrapping
     var body: some View {
-        StatementWebView(from: URL(string: url)!) // TODO: Manage this error case
-            .navigationTitle("Details") // TODO: Hard-coded not localized wording
+        StatementWebView(from: URL(string: url)!) // FIXME: Manage this error case
+            .navigationTitle("Details") // FIXME: Hard-coded not localized wording
     }
     // swiftlint:enable force_unwrapping
 }
@@ -101,18 +112,17 @@ private struct WebViewPage: View {
 
 struct InformationView_Previews: PreviewProvider {
     static var previews: some View {
-        OUDSThemeableView(theme: OrangeTheme()) {
-            InformationView(statement: Statement(
-                auditDate: "Test Audit Date",
-                referentialName: "Test Referential Name",
-                referentialVersion: "Test Referential Version",
-                referentialLevel: "Test Referential Level",
-                technologies: "Test Technologies",
-                detailUrl: "https://example.com",
-                identityAddress: "Test Identity Address",
-                identityName: "Test Identity Name"))
-                .environment(\.locale, .init(identifier: "fr"))
-        }
+        InformationView(statement: Statement(
+            auditDate: "Test Audit Date",
+            referentialName: "Test Referential Name",
+            referentialVersion: "Test Referential Version",
+            referentialLevel: "Test Referential Level",
+            technologies: "Test Technologies",
+            detailUrl: "https://example.com",
+            identityAddress: "Test Identity Address",
+            identityName: "Test Identity Name"),
+        theme: OrangeTheme())
+            .environment(\.locale, .init(identifier: "fr"))
     }
 }
 
