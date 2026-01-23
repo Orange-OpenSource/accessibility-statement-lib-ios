@@ -28,7 +28,7 @@
 [![Code size](https://img.shields.io/github/languages/code-size/Orange-OpenSource/accessibility-statement-lib-ios?style=for-the-badge)](https://github.com/Orange-OpenSource/accessibility-statement-lib-ios)
 [![Opened issues](https://img.shields.io/github/issues-raw/Orange-OpenSource/accessibility-statement-lib-ios?style=for-the-badge)](https://github.com/Orange-OpenSource/accessibility-statement-lib-ios/issues)
 
-![iOS 15](https://img.shields.io/badge/iOS-15-FF1AB2?style=for-the-badge)
+[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2FOrange-OpenSource%2Faccessibility-statement-lib-ios%2Fbadge%3Ftype%3Dswift-versions)](https://swiftpackageindex.com/Orange-OpenSource/accessibility-statement-lib-ios)
 
 > [!CAUTION]
 > To use it, you need the XML accessibility result file from the [Orange Va11ydette](https://la-va11ydette.orange.com/)
