@@ -1,0 +1,82 @@
+{
+  "": {
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/DeclarationAccessibility.build/master.swiftdeps"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/Sources/DeclarationAccessibility/Model/Constants.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/DeclarationAccessibility.build/Constants.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/DeclarationAccessibility.build/Constants.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/DeclarationAccessibility.build/Constants~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/DeclarationAccessibility.build/Constants.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/DeclarationAccessibility.build/Constants.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/Sources/DeclarationAccessibility/Model/Statement.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/DeclarationAccessibility.build/Statement.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/DeclarationAccessibility.build/Statement.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/DeclarationAccessibility.build/Statement~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/DeclarationAccessibility.build/Statement.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/DeclarationAccessibility.build/Statement.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/Sources/DeclarationAccessibility/Model/StatementDataParser.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/DeclarationAccessibility.build/StatementDataParser.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/DeclarationAccessibility.build/StatementDataParser.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/DeclarationAccessibility.build/StatementDataParser~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/DeclarationAccessibility.build/StatementDataParser.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/DeclarationAccessibility.build/StatementDataParser.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/Sources/DeclarationAccessibility/Utils/Bundle+extension.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/DeclarationAccessibility.build/Bundle+extension.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/DeclarationAccessibility.build/Bundle+extension.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/DeclarationAccessibility.build/Bundle+extension~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/DeclarationAccessibility.build/Bundle+extension.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/DeclarationAccessibility.build/Bundle+extension.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/Sources/DeclarationAccessibility/Utils/Log.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/DeclarationAccessibility.build/Log.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/DeclarationAccessibility.build/Log.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/DeclarationAccessibility.build/Log~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/DeclarationAccessibility.build/Log.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/DeclarationAccessibility.build/Log.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/Sources/DeclarationAccessibility/Utils/StatementWebView.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/DeclarationAccessibility.build/StatementWebView.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/DeclarationAccessibility.build/StatementWebView.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/DeclarationAccessibility.build/StatementWebView~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/DeclarationAccessibility.build/StatementWebView.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/DeclarationAccessibility.build/StatementWebView.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/Sources/DeclarationAccessibility/Utils/Theme.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/DeclarationAccessibility.build/Theme.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/DeclarationAccessibility.build/Theme.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/DeclarationAccessibility.build/Theme~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/DeclarationAccessibility.build/Theme.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/DeclarationAccessibility.build/Theme.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/Sources/DeclarationAccessibility/View/CircularProgressView.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/DeclarationAccessibility.build/CircularProgressView.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/DeclarationAccessibility.build/CircularProgressView.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/DeclarationAccessibility.build/CircularProgressView~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/DeclarationAccessibility.build/CircularProgressView.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/DeclarationAccessibility.build/CircularProgressView.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/Sources/DeclarationAccessibility/View/InformationView.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/DeclarationAccessibility.build/InformationView.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/DeclarationAccessibility.build/InformationView.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/DeclarationAccessibility.build/InformationView~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/DeclarationAccessibility.build/InformationView.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/DeclarationAccessibility.build/InformationView.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/Sources/DeclarationAccessibility/View/StatementView.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/DeclarationAccessibility.build/StatementView.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/DeclarationAccessibility.build/StatementView.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/DeclarationAccessibility.build/StatementView~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/DeclarationAccessibility.build/StatementView.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/DeclarationAccessibility.build/StatementView.dia"
+  },
+  "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/DeclarationAccessibility.build/DerivedSources/resource_bundle_accessor.swift": {
+    "dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/DeclarationAccessibility.build/resource_bundle_accessor.d",
+    "object": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/DeclarationAccessibility.build/resource_bundle_accessor.swift.o",
+    "swiftmodule": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/DeclarationAccessibility.build/resource_bundle_accessor~partial.swiftmodule",
+    "swift-dependencies": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/DeclarationAccessibility.build/resource_bundle_accessor.swiftdeps",
+    "diagnostics": "/Users/pylapersonne/Documents/5_Projects/16-A11Y_statement/accessibility-statement-lib-ios/.build/arm64-apple-macosx/debug/DeclarationAccessibility.build/resource_bundle_accessor.dia"
+  }
+}
