@@ -11,12 +11,17 @@ import Foundation
 /// Defines what an accessibility statement or declaration must be.
 struct Statement {
 
+    // MARK: - Type alias
+
+    /// Modelizes a date of audit to display in the statement and to vocalize with Voice Over
+    typealias AuditDate = (toDisplay: String, toVocalize: String)
+
     // MARK: - Properties
 
     var title: String
     var lang: String
     var status: String
-    var auditDate: String
+    var auditDate: AuditDate?
     var conformity: String
     var conformityAverage: CGFloat
     var conformityAverageDisplay: String
@@ -35,7 +40,7 @@ struct Statement {
         title: String = "",
         lang: String = "",
         status: String = "",
-        auditDate: String = "",
+        auditDate: AuditDate? = nil,
         conformity: String = "",
         conformityAverage: CGFloat = 0.0,
         conformityAverageDisplay: String = "",

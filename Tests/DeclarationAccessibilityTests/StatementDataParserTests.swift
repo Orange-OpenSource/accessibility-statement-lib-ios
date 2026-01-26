@@ -29,10 +29,10 @@ struct StatementDataParserTests {
         #expect(statement.status.isEmpty)
     }
 
-    @Test("By default a Statement has empty audit date")
-    func statementDefaultHasEmptyAuditDate() {
+    @Test("By default a Statement does not have audit date")
+    func statementDefaultHasNilAuditDate() {
         let statement = Statement()
-        #expect(statement.auditDate.isEmpty)
+        #expect(statement.auditDate == nil)
     }
 
     @Test("By default a Statement has empty audit conformity")

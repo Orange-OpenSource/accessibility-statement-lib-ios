@@ -24,7 +24,7 @@ struct StatementTests {
         #expect(statement.title.isEmpty)
         #expect(statement.lang.isEmpty)
         #expect(statement.status.isEmpty)
-        #expect(statement.auditDate.isEmpty)
+        #expect(statement.auditDate == nil)
         #expect(statement.conformityAverage == 0.0)
         #expect(statement.conformityAverageDisplay.isEmpty)
         #expect(statement.referentialName.isEmpty)
