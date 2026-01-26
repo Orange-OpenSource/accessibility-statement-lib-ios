@@ -1,0 +1,16 @@
+// Software Name: accessibility-statement-lib-ios
+// SPDX-FileCopyrightText: Copyright (c) Orange SA
+// SPDX-License-Identifier: Apache-2.0
+//
+// This software is distributed under the Apache 2.0 license,
+// the text of which is available at https://opensource.org/license/apache-2-0
+// or see the "LICENSE" file for more details.
+
+"declaration_title" = "Informacje";
+"average_title_label" = "zgodność z @%";
+"result_declaration_subtitle" = "Ta aplikacja jest zgodna z wytycznymi WCAG @%";
+"date_title" = "Data audytu";
+"identity_title" = "Tożsamość zgłaszającego";
+"referential_title" = "Zastosowany standard";
+"technology_title" = "Specyfikacja techniczna";
+"detail_button" = "Zobacz szczegóły";
