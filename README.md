@@ -30,6 +30,8 @@
 
 [![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2FOrange-OpenSource%2Faccessibility-statement-lib-ios%2Fbadge%3Ftype%3Dswift-versions)](https://swiftpackageindex.com/Orange-OpenSource/accessibility-statement-lib-ios)
 
+[![Open Hub](https://img.shields.io/badge/open%20hub-5A2A82?style=for-the-badge)](https://openhub.net/p/accessibility-statement-lib-ios)
+
 > [!CAUTION]
 > To use it, you need the XML accessibility result file from the [Orange Va11ydette](https://la-va11ydette.orange.com/)
 
