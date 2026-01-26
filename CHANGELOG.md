@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
+- Add XCTestPlan for unit tests
 - Update README with Swift Package Index badge (Orange-OpenSource/accessibility-statement-lib-ios#47)
 - Generation of documentation and upload for GitHub Pages (Orange-OpenSource/accessibility-statement-lib-ios#50)
 
