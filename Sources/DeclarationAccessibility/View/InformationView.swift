@@ -26,7 +26,9 @@ struct InformationView: View {
                 if let auditDate = statement.auditDate {
                     GroupView(title: "date_title", subTitle: auditDate.toDisplay)
                         .accessibilityElement(children: .combine)
-                        .accessibilityLabel(auditDate.toVocalize)
+                        .accessibilityValue(auditDate.toVocalize.isEmpty
+                            ? auditDate.toDisplay
+                            : auditDate.toVocalize)
                 }
                 GroupView(title: "identity_title", subTitle: statement.identityName, text: statement.identityAddress)
                     .accessibilityElement(children: .combine)

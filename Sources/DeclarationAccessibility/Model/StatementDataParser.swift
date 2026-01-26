@@ -51,6 +51,7 @@ final class StatementDataParser: NSObject, XMLParserDelegate {
         }
     }
 
+    // TODO: Refactor the parsing
     func parser(_: XMLParser, foundCharacters string: String) {
         let data = string.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
 
@@ -113,7 +114,7 @@ final class StatementDataParser: NSObject, XMLParserDelegate {
             let languageAsNSString = language as NSString
             languageString = (languageAsNSString as String)
         } else {
-            languageString = "en_EN"
+            languageString = "en_US"
         }
 
         // TODO: Use Cache to store DateFormatter and results to prevent costly computing of such values
