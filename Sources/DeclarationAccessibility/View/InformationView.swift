@@ -94,7 +94,10 @@ struct WebViewPage: View {
     
     var body: some View {
         EASEWebView(from: URL(string: url)!)
-            .navigationTitle("Details")
+            .navigationTitle(NSLocalizedString( // FIXME: Change API
+                "declaration_title",
+                bundle: .module,
+                comment: ""))
     }
 }
 

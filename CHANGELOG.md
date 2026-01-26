@@ -11,3 +11,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Support of locales ca, es, nl, pl, ro, ru, sk (Orange-OpenSource/accessibility-statement-lib-ios#46)
 
+### Fixed
+
+- Hard-coded "Details" word instead of localized resource in webview title (Orange-OpenSource/accessibility-statement-lib-ios#53)
