@@ -18,6 +18,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Update README with Swift Package Index badge (Orange-OpenSource/accessibility-statement-lib-ios#47)
 - Generation of documentation and upload for GitHub Pages (Orange-OpenSource/accessibility-statement-lib-ios#50)
 
+### Fixed
+
+- Hard-coded "Details" word instead of localized resource in webview title (Orange-OpenSource/accessibility-statement-lib-ios#53)
+
 ## [2.0.0](https://github.com/Orange-OpenSource/accessibility-statement-lib-ios/compare/1.3.0...2.0.0) - 2026-01-22
 
 ### Added
