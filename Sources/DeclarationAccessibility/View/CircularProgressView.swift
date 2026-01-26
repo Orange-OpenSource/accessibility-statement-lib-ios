@@ -81,8 +81,9 @@ struct CircularProgressView_Previews: PreviewProvider {
             statement: Statement(
                 conformityAverage: 0.75,
                 conformityAverageDisplay: "75"),
-            theme: OrangeTheme())
+            theme: WireframeTheme())
             .environment(\.locale, .init(identifier: "fr"))
+            .wireframePreview()
     }
 }
 

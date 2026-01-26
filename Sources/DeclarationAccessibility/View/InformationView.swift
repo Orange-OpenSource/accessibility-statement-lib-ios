@@ -121,8 +121,9 @@ struct InformationView_Previews: PreviewProvider {
             detailUrl: "https://example.com",
             identityAddress: "Test Identity Address",
             identityName: "Test Identity Name"),
-        theme: OrangeTheme())
+        theme: WireframeTheme())
             .environment(\.locale, .init(identifier: "fr"))
+            .wireframePreview()
     }
 }
 
