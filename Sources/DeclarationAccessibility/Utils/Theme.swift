@@ -13,6 +13,7 @@ import SwiftUI
 /// A theme to apply to accessibility statement
 ///
 /// - Since: 1.0.0
+@available(*, deprecated, message: "Use OUDS library for theming (github.com/Orange-OpenSource/ouds-ios)")
 public enum Theme: String {
 
     /// For the Orange Innovation Cup
