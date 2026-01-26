@@ -103,7 +103,10 @@ private struct WebViewPage: View {
     // swiftlint:disable force_unwrapping
     var body: some View {
         StatementWebView(from: URL(string: url)!) // FIXME: Manage this error case
-            .navigationTitle("Details") // FIXME: Hard-coded not localized wording
+            .navigationTitle(NSLocalizedString( // FIXME: Change API
+                "declaration_title",
+                bundle: .module,
+                comment: ""))
     }
     // swiftlint:enable force_unwrapping
 }
