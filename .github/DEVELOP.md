@@ -1,6 +1,7 @@
 # Developer guide
 
 - [Technical preconditions](#technical-preconditions)
+- [Debugging](#debugging)
 - [Developer Certificate of Origin](#developer-certificate-of-origin)
 - [Commits, changelog, release note, versioning](#commits-changelog-release-note-versioning)
   * [About commits](#about-commits)
@@ -93,6 +94,13 @@ source ~/.zshrc
 # Check Ruby version
 ruby --version
 ```
+
+## Debugging
+
+To debug the library, you can use for example an empty application or the [OUDS Design System Toolbox app](https://github.com/Orange-OpenSource/ouds-ios-design-system-toolbox).
+This app already uses the library.
+To improve and test the library, you can clone the app, open it with Xcode, and drag-and-drop the folder of this library (Package.swift at root).
+Then the app project will use the local version of the lib and not the one defined in the project's settings.
 
 ## Developer Certificate of Origin
 
