@@ -20,6 +20,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
+- When use of Voice Over, moth of audit date is shortened and not well vocalizeed (Orange-OpenSource/accessibility-statement-lib-ios#54)
 - Hard-coded "Details" word instead of localized resource in webview title (Orange-OpenSource/accessibility-statement-lib-ios#53)
 
 ## [2.0.0](https://github.com/Orange-OpenSource/accessibility-statement-lib-ios/compare/1.3.0...2.0.0) - 2026-01-22

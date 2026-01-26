@@ -23,8 +23,11 @@ struct InformationView: View {
     var body: some View {
         ScrollView {
             VStack(spacing: -10) {
-                GroupView(title: "date_title", subTitle: statement.auditDate)
-                    .accessibilityElement(children: .combine)
+                if let auditDate = statement.auditDate {
+                    GroupView(title: "date_title", subTitle: auditDate.toDisplay)
+                        .accessibilityElement(children: .combine)
+                        .accessibilityLabel(auditDate.toVocalize)
+                }
                 GroupView(title: "identity_title", subTitle: statement.identityName, text: statement.identityAddress)
                     .accessibilityElement(children: .combine)
                 GroupView(title: "referential_title", subTitle: statement.referentialName)
@@ -116,7 +119,7 @@ private struct WebViewPage: View {
 struct InformationView_Previews: PreviewProvider {
     static var previews: some View {
         InformationView(statement: Statement(
-            auditDate: "Test Audit Date",
+            auditDate: (toDisplay: "Test Audit Date", toVocalize: ""),
             referentialName: "Test Referential Name",
             referentialVersion: "Test Referential Version",
             referentialLevel: "Test Referential Level",

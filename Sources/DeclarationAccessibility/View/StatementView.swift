@@ -214,7 +214,7 @@ extension Theme {
         Statement(
             title: "Accessibility Statement",
             lang: "EN",
-            auditDate: "22 janv. 2026",
+            auditDate: (toDisplay: "22 janv. 2026", toVocalize: ""),
             conformityAverage: 0.75,
             conformityAverageDisplay: "75",
             referentialName: "WCAG 2.2 AA",
