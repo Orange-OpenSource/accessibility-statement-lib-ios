@@ -10,6 +10,12 @@ import Foundation
 
 struct Declaration {
     
+    // ================
+    // MARK: Type Alias
+    // ======================
+    
+    typealias AuditDate = (toDisplay: String, toVocalize: String)
+    
     // =======================
     // MARK: Stored Properties
     // =======================
@@ -17,7 +23,7 @@ struct Declaration {
     public var title : String = String()
     public var lang: String = String()
     public var status: String = String()
-    public var auditDate: String = String()
+    public var auditDate: AuditDate? = nil
     public var conformity: String = String()
     public var conformityAverage: CGFloat = CGFloat()
     public var conformityAverageDisplay: String = String ()

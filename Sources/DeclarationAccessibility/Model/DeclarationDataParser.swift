@@ -46,8 +46,7 @@ class DeclarationDataParser: NSObject, XMLParserDelegate {
             case "title_app":
                 self.declarations.title += " \(data)"
             case "audit_date":
-                self.declarations.auditDate += " \(data)"
-                self.declarations.auditDate = self.dateToFrench(inputDate: self.declarations.auditDate)
+                self.declarations.auditDate = localizedDates(inputDate: " \(data)")
             case "conformity":
                 if foundTotalResult {
                     if let conformity = Float(string) {
@@ -92,17 +91,30 @@ class DeclarationDataParser: NSObject, XMLParserDelegate {
         NotificationCenter.default.post(name: Notification.Name("DeclarationDataDidUpdate"), object: nil, userInfo: ["declarationData": declarations])
     }
     
-    public func dateToFrench(inputDate: String) -> String {
+    public func localizedDates(inputDate: String) -> (toDisplay: String, toVocalize: String)? {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd"
 
-        let language = Bundle.main.preferredLocalizations.first! as NSString
-        let languageString = (language as String)
-        
-        guard let date = dateFormatter.date(from: inputDate) else { return "" }
-            dateFormatter.locale = Locale(identifier: languageString)
-            dateFormatter.dateFormat = DateFormatter.dateFormat(fromTemplate: "dd-MMM-yyyy", options: 0, locale: dateFormatter.locale)
-        let LocalDate = dateFormatter.string(from: date)
-        return LocalDate
+        var languageString = ""
+        if let language = Bundle.main.preferredLocalizations.first {
+            let languageAsNSString = language as NSString
+            languageString = (languageAsNSString as String)
+        } else {
+            languageString = "en_US"
+        }
+
+        // TODO: Use Cache to store DateFormatter and results to prevent costly computing of such values
+        guard let date = dateFormatter.date(from: inputDate) else { return nil }
+        dateFormatter.locale = Locale(identifier: languageString)
+
+        let dateFormatForDisplay = DateFormatter.dateFormat(fromTemplate: "dd-MMM-yyyy", options: 0, locale: dateFormatter.locale)
+        dateFormatter.dateFormat = dateFormatForDisplay
+        let localDate = dateFormatter.string(from: date)
+
+        let dateFormatForVocalization = DateFormatter.dateFormat(fromTemplate: "dd-MMMM-yyyy", options: 0, locale: dateFormatter.locale)
+        dateFormatter.dateFormat = dateFormatForVocalization
+        let toVocalize = dateFormatter.string(from: date)
+
+        return (toDisplay: localDate, toVocalize: toVocalize)
     }
 }

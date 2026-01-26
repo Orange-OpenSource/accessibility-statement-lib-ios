@@ -13,4 +13,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
+- When using VoiceOver, the audit date month was abbreviated and not vocalized correctly (Orange-OpenSource/accessibility-statement-lib-ios#54)
 - Hard-coded "Details" word instead of localized resource in webview title (Orange-OpenSource/accessibility-statement-lib-ios#53)

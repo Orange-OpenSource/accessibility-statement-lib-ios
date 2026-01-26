@@ -20,8 +20,13 @@ public struct InformationView: View {
     public var body: some View {
         ScrollView {
             VStack(spacing: -20) {
-                GroupView(title: "date_title", subTitle: declarations.auditDate)
-                    .accessibilityElement(children: .combine)
+                if let auditDate = declarations.auditDate {
+                    GroupView(title: "date_title", subTitle: auditDate.toDisplay)
+                        .accessibilityElement(children: .combine)
+                        .accessibilityLabel(auditDate.toVocalize.isEmpty
+                                                 ? auditDate.toDisplay
+                                                 : "\(NSLocalizedString("date_title", bundle: .module, comment: "")), \(auditDate.toVocalize)")
+                }
                 GroupView(title: "identity_title", subTitle: declarations.identityName, text: declarations.identityAdresse)
                     .accessibilityElement(children: .combine)
                 GroupView(title: "referential_title", subTitle: declarations.referentialName)
@@ -106,7 +111,7 @@ struct WebViewPage: View {
 struct InformationView_Previews: PreviewProvider {
     static var previews: some View {
         InformationView(declarations: Declaration(
-            auditDate: "Test Audit Date",
+            auditDate: (toDisplay: "Test Audit Date", toVocalize: ""),
             referentialName: "Test Referential Name",
             referentialVersion: "Test Referential Version",
             referentialLevel: "Test Referential Level",
