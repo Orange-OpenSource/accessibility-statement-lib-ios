@@ -162,10 +162,10 @@ public struct StatementView: View {
 
     #if DEBUG
     /// Initializer dedicated to the Xcode Preview
-    init(_ statement: Statement, theme: Theme) {
+    init(_ statement: Statement, theme: OUDSTheme) {
         self.statement = statement
-        self.theme = theme
-        oudsTheme = nil
+        self.theme = nil
+        oudsTheme = theme
     }
     #endif
 
@@ -221,6 +221,7 @@ extension Theme {
             technologies: "Swift, SwiftUI",
             identityAddress: Constants.Orange.identityAddress,
             identityName: Constants.Orange.identityName),
-        theme: .orange)
+        theme: WireframeTheme())
+        .wireframePreview()
 }
 #endif
