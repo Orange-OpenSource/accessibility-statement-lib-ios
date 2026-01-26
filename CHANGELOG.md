@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Support of locales ca, es, nl, pl, ro, ru, sk (Orange-OpenSource/accessibility-statement-lib-ios#46)
 - Integration OUDS library (Orange-OpenSource/accessibility-statement-lib-ios#38)
 
 ### Changed
