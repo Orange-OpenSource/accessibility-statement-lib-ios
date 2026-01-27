@@ -5,12 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased](https://github.com/Orange-OpenSource/accessibility-statement-lib-ios/compare/2.0.0....develop)
+## [2.1.0](https://github.com/Orange-OpenSource/accessibility-statement-lib-ios/compare/2.0.0...2.1.0) - 2026-01-27
 
 ### Added
 
 - Support of locales ca, es, nl, pl, ro, ru, sk (Orange-OpenSource/accessibility-statement-lib-ios#46)
-- Integration OUDS library (Orange-OpenSource/accessibility-statement-lib-ios#38)
+- Integration of OUDS library (version 1.1.0-rc.1) (Orange-OpenSource/accessibility-statement-lib-ios#38)
 
 ### Changed
 
