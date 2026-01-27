@@ -7,52 +7,28 @@
 // or see the "LICENSE" file for more details.
 
 import Foundation
+import OUDSSwiftUI
 import SwiftUI
 
 /// A theme to apply to accessibility statement
 ///
 /// - Since: 1.0.0
+@available(*, deprecated, message: "Use OUDS library for theming (github.com/Orange-OpenSource/ouds-ios)")
 public enum Theme: String {
 
     /// For the Orange Innovation Cup
+    @available(*, deprecated, message: "Use wireframe theme instead")
     case innovation
 
     /// For the Orange brand products
     case orange
 
+    /// For the Orange brand products with contraintes of spaces and sizes
+    case orangeBusinessTools
+
     /// For the Sosh brand products
     case sosh
 
-    public var color: Color {
-        switch self {
-        case .innovation:
-            return Color("Innovation", bundle: Bundle.a11yStatementLib)
-        case .orange:
-            return Color("Orange", bundle: Bundle.a11yStatementLib)
-        case .sosh:
-            return Color("Sosh", bundle: Bundle.a11yStatementLib)
-        }
-    }
-
-    public var buttonColor: Color {
-        switch self {
-        case .innovation:
-            return Color("btn_innovation", bundle: Bundle.a11yStatementLib)
-        case .orange:
-            return Color("btn_orange", bundle: Bundle.a11yStatementLib)
-        case .sosh:
-            return Color("btn_sosh", bundle: Bundle.a11yStatementLib)
-        }
-    }
-
-    public var foregroundColor: Color {
-        switch self {
-        case .innovation:
-            return Color("fdg_innovation", bundle: Bundle.a11yStatementLib)
-        case .orange:
-            return Color("fdg_orange", bundle: Bundle.a11yStatementLib)
-        case .sosh:
-            return Color("fdg_sosh", bundle: Bundle.a11yStatementLib)
-        }
-    }
+    /// For wireframe / prototyping
+    case wireframe
 }

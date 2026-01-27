@@ -8,7 +8,7 @@
 
 import Foundation
 
-/// XML parser which will process an accessibility stateement file in XML format to then populate a Swift object ``Declaration`
+/// XML parser which will process an accessibility statement file in XML format to then populate a Swift object ``Statement``
 final class StatementDataParser: NSObject, XMLParserDelegate {
 
     private var currentElement: String
@@ -51,6 +51,7 @@ final class StatementDataParser: NSObject, XMLParserDelegate {
         }
     }
 
+    // TODO: Refactor the parsing
     func parser(_: XMLParser, foundCharacters string: String) {
         let data = string.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
 
@@ -59,8 +60,7 @@ final class StatementDataParser: NSObject, XMLParserDelegate {
             case "title_app":
                 statement.title += " \(data)"
             case "audit_date":
-                statement.auditDate += " \(data)"
-                statement.auditDate = dateToFrench(inputDate: statement.auditDate)
+                statement.auditDate = localizedDates(inputDate: " \(data)")
             case "conformity":
                 if foundTotalResult {
                     if let conformity = Float(string) {
@@ -105,7 +105,7 @@ final class StatementDataParser: NSObject, XMLParserDelegate {
         NotificationCenter.default.post(name: Notification.Name("DeclarationDataDidUpdate"), object: nil, userInfo: ["declarationData": statement])
     }
 
-    private func dateToFrench(inputDate: String) -> String {
+    private func localizedDates(inputDate: String) -> (toDisplay: String, toVocalize: String)? {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd"
 
@@ -114,13 +114,21 @@ final class StatementDataParser: NSObject, XMLParserDelegate {
             let languageAsNSString = language as NSString
             languageString = (languageAsNSString as String)
         } else {
-            languageString = "fr_FR"
+            languageString = "en_US"
         }
 
-        guard let date = dateFormatter.date(from: inputDate) else { return "" }
+        // TODO: Use Cache to store DateFormatter and results to prevent costly computing of such values
+        guard let date = dateFormatter.date(from: inputDate) else { return nil }
         dateFormatter.locale = Locale(identifier: languageString)
-        dateFormatter.dateFormat = DateFormatter.dateFormat(fromTemplate: "dd-MMM-yyyy", options: 0, locale: dateFormatter.locale)
+
+        let dateFormatForDisplay = DateFormatter.dateFormat(fromTemplate: "dd-MMM-yyyy", options: 0, locale: dateFormatter.locale)
+        dateFormatter.dateFormat = dateFormatForDisplay
         let localDate = dateFormatter.string(from: date)
-        return localDate
+
+        let dateFormatForVocalization = DateFormatter.dateFormat(fromTemplate: "dd-MMMM-yyyy", options: 0, locale: dateFormatter.locale)
+        dateFormatter.dateFormat = dateFormatForVocalization
+        let toVocalize = dateFormatter.string(from: date)
+
+        return (toDisplay: localDate, toVocalize: toVocalize)
     }
 }

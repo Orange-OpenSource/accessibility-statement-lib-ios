@@ -7,28 +7,31 @@
 // or see the "LICENSE" file for more details.
 
 #if os(iOS)
+import OUDSSwiftUI
 import SwiftUI
 
 /// A `View` to define a circle which can be empty, a bit empty or not
 struct CircularProgressView: View {
 
     var statement: Statement
-    var theme: Theme
+    var theme: OUDSTheme
 
-    private let circleSize: CGFloat = 200
+    private static let circleSize: CGFloat = 200
+    private static let titleFrameDimension: CGFloat = 150
+    private static let rotationEffect: CGFloat = 270.0
 
     var body: some View {
         VStack {
             ZStack {
-                // Background for the progress bar
+                // Background for the progress bar, full circle
                 Circle()
-                    .stroke(lineWidth: 15)
-                    .opacity(0.3)
-                    .foregroundColor(Color(UIColor.systemGray))
-                    .frame(width: circleSize, height: circleSize)
+                    .stroke(lineWidth: BorderRawTokens.width200)
+                    .opacity(OpacityRawTokens._320)
+                    .oudsForegroundColor(theme.colors.contentDisabled)
+                    .frame(width: Self.circleSize, height: Self.circleSize)
 
                 Text(
-                    NSLocalizedString(
+                    NSLocalizedString( // FIXME: Change API
                         "average_title_label",
                         tableName: nil,
                         bundle: .module,
@@ -36,23 +39,23 @@ struct CircularProgressView: View {
                         comment: "")
                         .replacingOccurrences(of: "@", with: statement.conformityAverageDisplay)
                 )
-                .font(.body)
+                .bodyDefaultLarge(theme)
                 .multilineTextAlignment(.center)
-                .frame(width: 150, height: 150)
+                .frame(width: Self.titleFrameDimension, height: Self.titleFrameDimension)
                 .accessibilityHidden(true)
 
-                // Foreground for the actual progress bar
+                // Foreground for the progress bar, maybe partial circle
                 Circle()
                     .trim(from: 0.0, to: min(statement.conformityAverage, 1.0))
-                    .stroke(style: StrokeStyle(lineWidth: 15, lineCap: .round, lineJoin: .round))
-                    .foregroundColor(theme.color)
-                    .rotationEffect(Angle(degrees: 270.0))
+                    .stroke(style: StrokeStyle(lineWidth: BorderRawTokens.width200, lineCap: .round, lineJoin: .round))
+                    .oudsForegroundColor(theme.colors.contentBrandPrimary)
+                    .rotationEffect(Angle(degrees: Self.rotationEffect))
                     .animation(.linear, value: statement.conformityAverage)
-                    .frame(width: circleSize, height: circleSize)
+                    .frame(width: Self.circleSize, height: Self.circleSize)
             }
 
             Text(
-                NSLocalizedString(
+                NSLocalizedString( // FIXME: Change API
                     "result_declaration_subtitle",
                     tableName: nil,
                     bundle: .module,
@@ -60,12 +63,12 @@ struct CircularProgressView: View {
                     comment: "")
                     .replacingOccurrences(of: "@", with: statement.conformityAverageDisplay)
             )
-            .font(.body)
+            .bodyDefaultLarge(theme)
             .multilineTextAlignment(.center)
-            .padding(.top, 10)
-            .padding([.leading, .trailing], 30)
+            .padding(.top, theme.spaces.fixedSmall)
+            .padding([.leading, .trailing], theme.spaces.fixedXlarge)
 
-            Divider()
+            OUDSHorizontalDivider(color: .default)
         }
     }
 }
@@ -78,8 +81,9 @@ struct CircularProgressView_Previews: PreviewProvider {
             statement: Statement(
                 conformityAverage: 0.75,
                 conformityAverageDisplay: "75"),
-            theme: .sosh)
+            theme: WireframeTheme())
             .environment(\.locale, .init(identifier: "fr"))
+            .wireframePreview()
     }
 }
 

@@ -28,13 +28,20 @@
 [![Code size](https://img.shields.io/github/languages/code-size/Orange-OpenSource/accessibility-statement-lib-ios?style=for-the-badge)](https://github.com/Orange-OpenSource/accessibility-statement-lib-ios)
 [![Opened issues](https://img.shields.io/github/issues-raw/Orange-OpenSource/accessibility-statement-lib-ios?style=for-the-badge)](https://github.com/Orange-OpenSource/accessibility-statement-lib-ios/issues)
 
-![iOS 15](https://img.shields.io/badge/iOS-15-FF1AB2?style=for-the-badge)
+[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2FOrange-OpenSource%2Faccessibility-statement-lib-ios%2Fbadge%3Ftype%3Dswift-versions)](https://swiftpackageindex.com/Orange-OpenSource/accessibility-statement-lib-ios)
+
+[![Open Hub](https://img.shields.io/badge/open%20hub-5A2A82?style=for-the-badge)](https://openhub.net/p/accessibility-statement-lib-ios)
 
 > [!CAUTION]
 > To use it, you need the XML accessibility result file from the [Orange Va11ydette](https://la-va11ydette.orange.com/)
 
 <p align="center">
-<img src=".github/images/preview_accessibility_statement.png" alt="Xcode preview of the Statement View" height="500">
+<img src="./.github/images/preview-ouds-Orange.png" alt="Preview with Orange theme from OUDS library (french)" title="Preview with Orange theme from OUDS library (french)" height="400" />
+&nbsp;
+<img src="./.github/images/preview-ouds-Sosh.png" alt="Preview with Sosh theme from OUDS library (french)" title="Preview with Sosh theme from OUDS library (french)" height="400" />
+&nbsp;
+<img src="./.github/images/preview-ouds-Wireframe.png" alt="Preview with Wireframe theme from OUDS library (french)" title="Preview with Wireframe theme from OUDS library (french)" height="400" />
+<!-- Not relevant maybe to display Orange Business Tools here because looks like a lot the Orange theme but smaller -->
 </p>
 
 ## 🚀 Import Accessibility Statement lib in your project

@@ -1,22 +1,26 @@
 # ``DeclarationAccessibility``
 
 @Metadata {
-    @DisplayName("Welcome to the DeclarationAccessibility library", style: symbol)
+    @DisplayName("Welcome to the Accessibility Statement Library for iOS", style: symbol)
     @TitleHeading("Swift Package")
 }
-<!-- 
-Do not add @PageImage(purpose: card) because not managed for landing page of online doc.
-See https://github.com/swiftlang/swift-docc/issues/1283
--->
-
 
 ## Overview
 
 This is a library, exposed as a Swift Package, which will help you to display a legal accessibility statement for your application.
+This library use XML report which can be generated from [La va11ydette](https://la-va11ydette.orange.com/?lang=en).
 
 > Tip: Feel free to submit pull requests if you can improve the support of any platforms!
 
+> Important: You used until now the version 1? Have [a look on the migration guide for v2](https://github.com/Orange-OpenSource/accessibility-statement-lib-ios/blob/develop/MIGRATION.md)
+
 ## How to use the library
+
+When you get the dependency, import from the Swift Package the dedicated product:
+
+```swift
+import DeclarationAccessibility
+```
 
 You can integrate the dedicated `View` in your app, e.g. in about pages:
 
@@ -25,9 +29,19 @@ with local HTML file:
 StatementView(xmlFileName: fileName, theme: .orange, localURL: someURL)
 ```
 
-or loading external HTML page:
+or if you use [OUDS](https://github.com/Orange-OpenSource/ouds-ios) library, prefer instead:
+```swift
+StatementView(xmlFileName: fileName, localURL: someURL, theme: theme)
+```
+
+You can also load an external HTML page for details:
 ```swift
 StatementView(xmlFileName: fileName, theme: .orange, remoteUrl: someURL, useWebView: true)
+```
+
+or if you use [OUDS](https://github.com/Orange-OpenSource/ouds-ios) library, prefer instead:
+```swift
+StatementView(xmlFileName: fileName, remoteUrl: someURL, useWebView: true, theme: theme)
 ```
 
 where:
@@ -36,12 +50,15 @@ where:
 
 > Tip: Note you can use La Va11ydette to generate such XML file (https://la-va11ydette.orange.com/)
 
-More complete sample:
+More complete sample with OUDS library:
 
 ```swift
+import DeclarationAccessibility
+
 struct AccessibilityStatementPage: View {
 
     let detailsPageURL: URL
+    @Environment(\.theme) var theme // Supposed the theme has been initialized
 
     init() {
         guard let detailsPageURL = Bundle.main.url(forResource: "accessibility_detail", withExtension: "html") else {
@@ -55,7 +72,7 @@ struct AccessibilityStatementPage: View {
         VStack {
             // Supposed to have "accessibility_result" XML file in app bundle
             // Here load a local HTML page ("accessibility_detail" HTML file in app bundle), forced to be in webview
-            StatementView(xmlFileName: "accessibility_result", theme: .orange, localURL: detailsPageURL.absoluteString)
+            StatementView(xmlFileName: "accessibility_result", localURL: detailsPageURL.absoluteString, theme: theme)
         }
     }
 }
@@ -63,7 +80,7 @@ struct AccessibilityStatementPage: View {
 
 ## Data and privacy
 
-The *DeclarationAccessibility* library is a Software Development Kit (SDK) that allows developpers to display accessibility statement on mobile applications.
+The *accessibility-statement-lib-ios* library is a Software Development Kit (SDK) that allows developpers to display accessibility statement on mobile applications.
 As such:
 - this SDK does not handle any personnal data
 - this SDK does not require any device permission to work

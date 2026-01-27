@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "8D49063D-6B4D-4380-B750-177CF7C12E61",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "testTimeoutsEnabled" : true
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:",
+        "identifier" : "DeclarationAccessibilityTests",
+        "name" : "DeclarationAccessibilityTests"
+      }
+    }
+  ],
+  "version" : 1
+}

@@ -146,6 +146,7 @@ cd scripts
 
 ```swift
 import DeclarationAccessibility
+import SwiftUI
 
 struct AccessibilityStatementView: View {
 
@@ -165,6 +166,34 @@ struct AccessibilityStatementView: View {
             // Supposed to have "accessibility_result" XML file in app bundle
             // Here load a local HTML page ("accessibility_detail" HTML file in app bundle), forced to be in webview
             StatementView(xmlFileName: "accessibility_result", theme: .orange, localURL: detailsPageURL.absoluteString)
+        }
+    }
+}
+```
+
+or with [OUDS library](https://github.com/Orange-OpenSource/ouds-ios):
+
+```swift
+import DeclarationAccessibility
+import OUDSSwiftUI
+import SwiftUI
+
+struct AccessibilityStatementPage: View {
+
+    let detailsPageURL: URL
+    @Environment(\.theme) var theme
+
+    init() {
+        guard let detailsPageURL = Bundle.main.url(forResource: "accessibility_detail", withExtension: "html") else {
+            OL.fatal("Unable to find accessibility_detail.html in resources")
+        }
+
+        self.detailsPageURL = detailsPageURL
+    }
+
+    var body: some View {
+        VStack {
+            StatementView(xmlFile: "accessibility_result", localUrl: detailsPageURL.absoluteString, theme: theme)
         }
     }
 }
@@ -192,12 +221,27 @@ Supposing `accessibility_result` is the XML file generated from [La va11ydette](
 use an HTML page with details about the statement outside on the web, displayed in a webview:
 
 ```swift
-StatementView(xmlFile: "accessibility_result", theme: .sosh, remoteUrl:  "https://a11y-guidelines.orange.com/fr/", useWebView: true)
+StatementView(xmlFile: "accessibility_result", theme: .orange, remoteUrl:  "https://a11y-guidelines.orange.com/fr/", useWebView: true)
 ```
 
 and displayed outside the app in browser:
 ```swift
-StatementView(xmlFile: "accessibility_result", theme: .sosh, remoteUrl:  "https://a11y-guidelines.orange.com/fr/", useWebView: false)
-// Or
-StatementView(xmlFile: "accessibility_result", theme: .sosh, remoteUrl:  "https://a11y-guidelines.orange.com/fr/")
+StatementView(xmlFile: "accessibility_result", theme: .orange, remoteUrl:  "https://a11y-guidelines.orange.com/fr/", useWebView: false)
+// Or same thing
+StatementView(xmlFile: "accessibility_result", theme: .orange, remoteUrl:  "https://a11y-guidelines.orange.com/fr/")
+```
+
+### Use of Orange Unified Design System library
+
+If you use the [OUDS library](https://github.com/Orange-OpenSource/ouds-ios), it is possible to give an `OUDSTheme` object to the `StatementView`
+so as to apply on it predefined themes (like instances of `OrangeTheme`, `OrangeBusinessToolsTheme`, `SoshTheme` and `WireframeTheme`) or any local theme.
+
+For example, with a local file:
+```swift
+StatementView(xmlFile: "accessibility_result", localUrl: absoluteStringUrlToLocalFile, theme: someOudsTheme)
+```
+
+Or with an external file:
+```swift
+StatementView(xmlFile: "accessibility_result", remoteUrl:  "https://a11y-guidelines.orange.com/fr/", useWebView: true, theme: someOudsTheme)
 ```

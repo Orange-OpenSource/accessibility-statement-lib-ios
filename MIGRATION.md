@@ -1,7 +1,45 @@
 # Migration Guide
 
-- [v1.3.0 → v2.0.0](#v100--v110)
+- [v2.0.0 → v2.1.0](#v200--v210)
+- [v1.3.0 → v2.0.0](#v130--v200)
 - [Support](#support)
+
+## v2.0.0 → v2.1.0
+
+### Overview
+
+Deprecation of local `Theme` API for benefit of [OUDS library](https://github.com/Orange-OpenSource/ouds-ios).
+
+> [!NOTE]
+> This older API is not yet removed, if you come from v1.3.0 you should migrate to v2.1.0
+
+### Before You Begin
+
+#### Prerequisites
+
+- Use version 2.0.0
+- Integrated OUDS library (e.g. dependency, module, `OUDSThemeableView`), version 1.0.0
+
+### Changes
+
+#### 1. `StatementView` has new init and deprecated older ones
+
+**Impact**: Low
+
+**Required Action**:
+- Use new init with `OUDSTheme` parameter instead of local `Theme` parameter
+
+**Before (v2.0.0)**:
+
+```swift
+StatementView(xmlFileName: fileName, theme: someTheme, localUrl: detailsPageURL)
+```
+
+**After (v2.1.0)**:
+```swift
+@Environment(\.theme) var theme
+StatementView(xmlFile: fileName, localUrl: detailsPageURLdetailsPageURL, theme: theme) 
+```
 
 ## v1.3.0 → v2.0.0
 
@@ -59,7 +97,7 @@ StatementView(xmlFileName: String, theme: Theme, remoteUrl: String, useWebView: 
 
 - **Backward Compatibility**: No
 - **v1.3.0 Support**: Use dedicated Git branch **release/1.x**
-- **End of Support**: Q2 2026
+- **End of Support**: End of 2026
 
 ## Support
 
