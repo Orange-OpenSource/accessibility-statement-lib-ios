@@ -75,6 +75,7 @@ struct CircularProgressView: View {
 
 // MARK: - Xcode Preview
 
+#if DEBUG
 struct CircularProgressView_Previews: PreviewProvider {
     static var previews: some View {
         CircularProgressView(
@@ -86,5 +87,6 @@ struct CircularProgressView_Previews: PreviewProvider {
             .wireframePreview()
     }
 }
+#endif
 
 #endif

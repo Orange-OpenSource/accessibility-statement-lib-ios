@@ -209,6 +209,7 @@ extension Theme {
 
 // MARK: - Xcode Preview
 
+#if DEBUG
 #Preview {
     StatementView(
         Statement(
@@ -224,4 +225,5 @@ extension Theme {
         theme: WireframeTheme())
         .wireframePreview()
 }
+#endif
 #endif

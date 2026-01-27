@@ -118,6 +118,7 @@ private struct WebViewPage: View {
 
 // MARK: - Xcode Preview
 
+#if DEBUG
 struct InformationView_Previews: PreviewProvider {
     static var previews: some View {
         InformationView(statement: Statement(
@@ -134,5 +135,6 @@ struct InformationView_Previews: PreviewProvider {
             .wireframePreview()
     }
 }
+#endif
 
 #endif
