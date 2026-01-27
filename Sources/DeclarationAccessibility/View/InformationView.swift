@@ -108,6 +108,7 @@ struct WebViewPage: View {
 
 // MARK: Preview
 
+#if DEBUG
 struct InformationView_Previews: PreviewProvider {
     static var previews: some View {
         InformationView(declarations: Declaration(
@@ -123,3 +124,4 @@ struct InformationView_Previews: PreviewProvider {
         .environment(\.locale,.init(identifier: "fr"))
     }
 }
+#endif
