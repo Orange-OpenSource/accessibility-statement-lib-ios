@@ -45,6 +45,8 @@ public struct InformationView: View {
                                 .background(selectedTheme.buttonColor)
                                 .foregroundColor(selectedTheme.foregroundColor)
                                 .font(.title3)
+                                .accessibilityRemoveTraits(.isButton)
+                                .accessibilityAddTraits(.isLink)
                         }
                     )
                 } else {
@@ -59,6 +61,8 @@ public struct InformationView: View {
                             .foregroundColor(selectedTheme.foregroundColor)
                             .font(.title3)
                     }
+                    .accessibilityRemoveTraits(.isButton)
+                    .accessibilityAddTraits(.isLink)
                 }
             }
         }
