@@ -53,6 +53,8 @@ struct InformationView: View {
                     {
                         showWebView = true
                     }
+                    .accessibilityRemoveTraits(.isButton)
+                    .accessibilityAddTraits(.isLink)
                 } else {
                     OUDSButton(text: NSLocalizedString("detail_button", bundle: .module, comment: ""),
                                appearance: .strong)
@@ -61,6 +63,8 @@ struct InformationView: View {
                             UIApplication.shared.open(url)
                         }
                     }
+                    .accessibilityRemoveTraits(.isButton)
+                    .accessibilityAddTraits(.isLink)
                 }
             }
         }
