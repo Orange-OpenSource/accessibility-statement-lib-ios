@@ -17,14 +17,17 @@ import SwiftUI
 public enum Theme: String {
 
     /// For the Orange Innovation Cup
-    @available(*, deprecated, message: "Use wireframe theme instead")
+    @available(*, deprecated, message: "Use .wireframe instead")
     case innovation
 
     /// For the Orange brand products
     case orange
 
-    /// For the Orange brand products with contraintes of spaces and sizes
+    @available(*, deprecated, message: "Use .orangeCompact instead")
     case orangeBusinessTools
+
+    /// For the Orange brand products with constraints of spaces and sizes
+    case orangeCompact
 
     /// For the Sosh brand products
     case sosh
