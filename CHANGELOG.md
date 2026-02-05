@@ -6,9 +6,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased](https://github.com/Orange-OpenSource/accessibility-statement-lib-ios/compare/2.1.2..develop)
 
-### Changed
+### Added
 
-- Update OUDS version
+- `.orangeCompact` configuration for `Theme` with new OUDS version (rename of `Orange Business Tools` to `Orange Compact`)
 
 ## [2.1.2](https://github.com/Orange-OpenSource/accessibility-statement-lib-ios/compare/2.0.0...2.1.2) - 2026-01-27
 
