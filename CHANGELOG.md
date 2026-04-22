@@ -12,7 +12,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
-- Use OUDS library from 1.2.0
+- Use OUDS library from 2.0.0-beta.4
 
 ## [2.1.2](https://github.com/Orange-OpenSource/accessibility-statement-lib-ios/compare/2.0.0...2.1.2) - 2026-01-27
 
