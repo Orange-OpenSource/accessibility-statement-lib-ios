@@ -199,8 +199,8 @@ extension Theme {
             return WireframeTheme()
         case .orange:
             return OrangeTheme()
-        case .orangeBusinessTools:
-            return OrangeBusinessToolsTheme()
+        case .orangeBusinessTools, .orangeCompact:
+            return OrangeCompactTheme()
         case .sosh:
             return SoshTheme()
         }

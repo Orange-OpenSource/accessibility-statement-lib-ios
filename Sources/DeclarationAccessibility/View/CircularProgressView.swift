@@ -27,7 +27,7 @@ struct CircularProgressView: View {
                 Circle()
                     .stroke(lineWidth: BorderRawTokens.width200)
                     .opacity(OpacityRawTokens._320)
-                    .oudsForegroundColor(theme.colors.contentDisabled)
+                    .foregroundColor(theme.colors.contentDisabled)
                     .frame(width: Self.circleSize, height: Self.circleSize)
 
                 Text(
@@ -48,7 +48,7 @@ struct CircularProgressView: View {
                 Circle()
                     .trim(from: 0.0, to: min(statement.conformityAverage, 1.0))
                     .stroke(style: StrokeStyle(lineWidth: BorderRawTokens.width200, lineCap: .round, lineJoin: .round))
-                    .oudsForegroundColor(theme.colors.contentBrandPrimary)
+                    .foregroundColor(theme.colors.contentBrandPrimary)
                     .rotationEffect(Angle(degrees: Self.rotationEffect))
                     .animation(.linear, value: statement.conformityAverage)
                     .frame(width: Self.circleSize, height: Self.circleSize)
