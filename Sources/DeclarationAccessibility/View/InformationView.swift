@@ -89,15 +89,12 @@ private struct GroupView: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: theme.spaces.fixedXsmall) {
-            Text(title, bundle: .module)
-                .headingMedium(theme)
+            OUDSHeading(title, bundle: .module, size: .medium)
                 .multilineTextAlignment(.leading)
                 .frame(maxWidth: .infinity, alignment: .leading)
-            Text(subTitle)
-                .bodyDefaultLarge(theme)
+            OUDSBody(text: subTitle, size: .large, weight: .default)
             if let text {
-                Text(text)
-                    .bodyDefaultLarge(theme)
+                OUDSBody(text: text, size: .large, weight: .default)
             }
         }
         .padding(theme.spaces.fixedSmall)

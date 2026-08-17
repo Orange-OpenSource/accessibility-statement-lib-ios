@@ -8,7 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
-- Use OUDS library from 3.0.0-beta.8
+- Use OUDS library from 3.0.0-beta.11
 
 ## [2.3.0](https://github.com/Orange-OpenSource/accessibility-statement-lib-ios/compare/2.2.0...2.3.0) - 2026-06-03
 
