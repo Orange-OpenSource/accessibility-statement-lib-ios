@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased](https://github.com/Orange-OpenSource/accessibility-statement-lib-ios/compare/2.3.0...develop)
 
+### Added
+
+- SKILL file
+
 ### Changed
 
 - Use OUDS library from 3.0.0-beta.11

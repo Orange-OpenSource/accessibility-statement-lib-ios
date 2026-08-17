@@ -1,0 +1,11 @@
+{
+  "$schema": "https://skills.sh/schemas/skills.sh.schema.json",
+  "notGrouped": "bottom",
+  "groupings": [
+    {
+      "title": "Accessibility",
+      "description": "Skills for integrating the Accessibility Statement Library iOS framework.",
+      "skills": ["usage"]
+    }
+  ]
+}

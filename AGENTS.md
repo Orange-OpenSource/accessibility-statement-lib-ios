@@ -140,6 +140,16 @@ cd scripts
 - Check if functions are too long or too complicated, complexity must be low
 - Check if the commit has been designed-off (i.e. DCO appplied) by all commits authors
 
+## Agent Skills
+
+This repository ships an Agent Skill describing how to use the `DeclarationAccessibility` library:
+
+- `skills/usage/SKILL.md` is the source of truth.
+- `.opencode/skills`, `.claude/skills`, and `.agents/skills` are symlinks to `../skills`, so the skill is auto-discovered by OpenCode, Claude Code, and other agent-compatible tools without duplicating content.
+- `skills.sh.json` at the repo root configures how this repo's skills are grouped/displayed on [skills.sh](https://skills.sh/).
+
+An agent can load the skill explicitly with `skill({ name: "usage" })`. When adding new skills, create them under `skills/<name>/SKILL.md` only — the symlinks make them available everywhere automatically.
+
 ## How to use Accessibility Statement Lib iOS framwork
 
 ## Basic setup
